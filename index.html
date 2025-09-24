@@ -25,6 +25,40 @@
       rel="stylesheet"
     />
 
+    <!-- Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Museo (MuseoModerno) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Quick Jump no está en Google Fonts, necesitarías archivo local -->
+
+    <style>
+      /* Importar Quick Jump desde archivo local */
+      @font-face {
+        font-family: "Quick Jump";
+        src: url("/fonts/quickJump.TTF") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      .museo {
+        font-family: "MuseoModerno", sans-serif;
+      }
+      .quickjump {
+        font-family: "Quick Jump", cursive;
+        line-height: 2;
+      }
+    </style>
+
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
@@ -49,7 +83,7 @@
 
     <!-- Navbar start -->
     <div
-      class="container-fluid border-bottom bg-light wow fadeIn"
+      class="container-fluid border-bottom  wow fadeIn"
       data-wow-delay="0.1s"
     >
       <div
@@ -108,14 +142,12 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
               <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="about.html" class="nav-item nav-link"
-                >Acerca de Nosotros</a
-              >
-              <a href="service.html" class="nav-item nav-link">Cultura</a>
-              <a href="program.html" class="nav-item nav-link">Galeria</a>
-              <a href="event.html" class="nav-item nav-link">Revistas Ocachi</a>
+              <a href="#" class="nav-item nav-link">Acerca de Nosotros</a>
+              <a href="#" class="nav-item nav-link">Cultura</a>
+              <a href="#" class="nav-item nav-link">Galeria</a>
+              <a href="#" class="nav-item nav-link">Revistas Ocachi</a>
               <div class="nav-item dropdown"></div>
-              <a href="contact.html" class="nav-item nav-link">Contacto</a>
+              <a href="#" class="nav-item nav-link">Contacto</a>
             </div>
             <div class="d-flex me-4">
               <div
@@ -204,9 +236,8 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-7 col-md-12">
-            <h1 class="mb-3 text-primary">Ocachi</h1>
-            <h1 class="mb-5 display-1 text-white">
-              Guiando Con Respeto, Formando Con Libertad
+            <h1 class="mb-5 text-white quickjump">
+              Guiando Con Respeto,<br><span style="margin-left: 60px">Formando Con Libertad
             </h1>
             <a
               href=""

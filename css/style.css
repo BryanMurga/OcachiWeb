@@ -34,7 +34,6 @@ h3,
 .h2,
 .h3 {
   font-weight: 200;
-  font-family: "Montserrat", sans-serif;
 }
 
 h4,
@@ -44,7 +43,6 @@ h6,
 .h5,
 .h6 {
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
 }
 
 .display-1,
@@ -54,7 +52,6 @@ h6,
 .display-5,
 .display-6 {
   font-weight: 700;
-  font-family: "Fredoka", sans-serif;
 }
 
 .display-4,
@@ -133,7 +130,6 @@ h6,
 .topbar .top-info {
   font-size: medium;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
@@ -180,7 +176,6 @@ h6,
 .navbar .dropdown-toggle::after {
   border: none;
   content: "\f107";
-  font-family: "Font Awesome 5 Free";
   font-weight: 700;
   vertical-align: middle;
   margin-left: 8px;
@@ -192,7 +187,6 @@ h6,
     visibility: hidden;
     top: 100%;
     font-weight: 400;
-    font-family: "Fredoka", sans-serif;
     transform: rotateX(-75deg);
     transform-origin: 0% 0%;
     border: 0;
@@ -444,6 +438,16 @@ h6,
 /*** Programs Start ***/
 .program {
   background: linear-gradient(rgba(255, 72, 128, 0.1), rgba(255, 72, 128, 0.1));
+}
+
+.program-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.program-text {
+  flex-grow: 1;
 }
 
 .program .program-item .program-img .program-rate {

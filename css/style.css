@@ -224,9 +224,56 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.page-headerAbout {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+    url(../img/ocachi2025/acercaNosotros.jpg);
+  height: 700px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-headerModelo {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+    url(../img/ocachi2025/modeloEducativo.jpg);
+  height: 700px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*** Hero Header ***/
 
 /*** About Start ***/
+.aboutImage {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../img/ocachi2025/somosUnicos.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.videoAbout {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../img/about.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
 .video {
   position: relative;
   height: 100%;
@@ -352,12 +399,16 @@ h6,
   border-radius: 50% 20% / 10% 40%;
 }
 
+.aboutImage.border {
+  border-radius: 50% 20% / 10% 40%;
+}
+
 .about {
   background: linear-gradient(
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8)
     ),
-    url(../img/background.jpg);
+    url(../img/ocachi2025/acercaNosotros.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -84,7 +84,7 @@ h1,
   margin-bottom: 0.5rem;
   font-weight: 600;
   line-height: 1.2;
-  color: #1A1833;
+  color: #1a1833;
 }
 h1,
 .h1 {
@@ -580,7 +580,7 @@ progress {
   .container-md,
   .container-sm,
   .container {
-    max-width: 1320px;
+    max-width: 1420px;
   }
 }
 .row {
@@ -2599,10 +2599,10 @@ textarea.form-control.is-invalid {
 fieldset:disabled .btn {
   pointer-events: none;
   opacity: 0.65;
-} 
+}
 .btn-primary {
   color: #fff !important;
-  background-color: #1A1833 !important;
+  background-color: #1a1833 !important;
 }
 .btn-primary:hover {
   color: #000;
@@ -6838,13 +6838,13 @@ fieldset:disabled .btn {
   word-break: break-word !important;
 }
 .text-primary {
-  color: #A81926 !important;
+  color: #a81926 !important;
 }
 .text-secondary {
   color: #fff !important;
 }
 .text-secondary2 {
-  color: #A81926 !important;
+  color: #a81926 !important;
 }
 .text-success {
   color: #198754 !important;
@@ -6883,7 +6883,7 @@ fieldset:disabled .btn {
   color: inherit !important;
 }
 .bg-primary {
-  background-color: #A81926 !important;
+  background-color: #a81926 !important;
 }
 .bg-secondary {
   background-color: #4d65f9 !important;

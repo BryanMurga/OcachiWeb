@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Comunidad Ocachi Nueva Escuela</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link href="img/logoOcachiIcon.jpg" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Museo (MuseoModerno) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Quick Jump no está en Google Fonts, necesitarías archivo local -->
+
+    <style>
+      /* Importar Quick Jump desde archivo local */
+      @font-face {
+        font-family: "Quick Jump";
+        src: url("./fonts/quickJump.TTF") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      .museo {
+        font-family: "MuseoModerno", sans-serif;
+      }
+      .quickjump {
+        font-family: "Quick Jump", cursive;
+        line-height: 2;
+      }
+    </style>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar start -->
+    <div class="container-fluid border-bottom wow fadeIn" data-wow-delay="0.1s">
+      <div
+        class="container topbar bg-primary d-none d-lg-block py-2"
+        style="border-radius: 0 40px"
+      >
+        <div class="d-flex justify-content-between">
+          <div class="top-info ps-2">
+            <small class="me-3"
+              ><i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+              <a
+                href="https://share.google/6vNeKcYzEe6iHhFmF"
+                class="text-white"
+                >Babilonia 5, Analco, 62166 Cuernavaca, Mor.</a
+              ></small
+            >
+            <small class="me-3"
+              ><i class="fas fa-envelope me-2 text-secondary"></i>
+              <a href="mailto:correo@ocachicualli.com" class="text-white"
+                >correo@ocachicualli.com</a
+              ></small
+            >
+          </div>
+          <div class="top-link pe-2">
+            <a
+              href="https://www.facebook.com/OcachiNuevaEscuela"
+              class="btn btn-light btn-sm-square rounded-circle"
+              ><i class="fab fa-facebook-f text-secondary2"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/ocachinuevaescuela/"
+              class="btn btn-light btn-sm-square rounded-circle"
+              ><i class="fab fa-instagram text-secondary2"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="container px-0">
+        <nav class="navbar navbar-light navbar-expand-xl py-3">
+          <a href="index.html" class="navbar-brand">
+            <img
+              src="img/ocachiLogo.webp"
+              alt="OcachiCare Logo"
+              style="height: 80px"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto">
+              <a
+                style="color: #000 !important; font-size: 15px"
+                href="index.html"
+                class="nav-item nav-link active"
+                >Home</a
+              >
+              <a
+                style="color: #000 !important; font-size: 15px"
+                href="about.html"
+                class="nav-item nav-link"
+                >Acerca de Nosotros</a
+              >
+              <a
+                style="color: #000 !important ; font-size: 15px"
+                href="educativeModel.html"
+                class="nav-item nav-link"
+                >Modelo Educativo</a
+              >
+              <a
+                style="color: #000 !important ; font-size: 15px"
+                href="schoolLife.html"
+                class="nav-item nav-link"
+                >Vida Escolar</a
+              >
+              <a
+                style="color: #000 !important ; font-size: 15px"
+                href="community.html"
+                class="nav-item nav-link"
+                >Comunidad Ocachi</a
+              >
+              <div class="nav-item dropdown"></div>
+              <a
+                style="color: #000 !important ; font-size: 15px"
+                href="./contact.html"
+                class="nav-item nav-link"
+                >Contacto</a
+              >
+            </div>
+            <div class="d-flex me-4">
+              <div
+                id="phone-tada"
+                class="d-flex align-items-center justify-content-center"
+              >
+                <a
+                  href=""
+                  class="position-relative wow tada"
+                  data-wow-delay=".9s"
+                >
+                  <i class="fa fa-phone-alt text-secondary2 fa-2x me-4"></i>
+                  <div class="position-absolute" style="top: -7px; left: 20px">
+                    <span
+                      ><i class="fa fa-comment-dots text-secondary2"></i
+                    ></span>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex flex-column pe-3 border-end border-primary">
+                <span class="text-primary"
+                  >Tienes alguna duda, contáctanos</span
+                >
+                <br />
+                <a href="tel:7771022411">
+                  <span style="color: #000 !important"
+                    ><b>(777) 102 2411</b></span
+                  >
+                </a>
+
+                <a href="tel:7771022411"
+                  ><span class="text-secondary">(777) 102 2411</span></a
+                >
+              </div>
+            </div>
+            <a
+              href="https://wa.me/527773042553?text=Hola%20vengo%20de%20la%20pagina%20web%20de%20Ocachi"
+              target="_blank"
+              class="btn btn-success btn-md-square rounded-circle"
+            >
+              <i class="fab fa-whatsapp text-white"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Search by keyword
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-75 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control p-3"
+                placeholder="keywords"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Page Header Start -->
+    <div
+      class="container-fluid page-headerComunidad py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container text-center py-5">
+        <h1 class="display-2 text-white mb-4 quickjump">Comunidad Ocachi</h1>
+      </div>
+    </div>
+    <!-- Page Header End -->
+    <style>
+      .welcome-text {
+        font-size: 1rem !important;
+        text-align: justify; /* Justifica el texto */
+        margin: 0 auto 1rem auto; /* Centra horizontalmente y agrega margen inferior */
+        max-width: 800px; /* Limita ancho para que la justificación se vea bien */
+      }
+    </style>
+    <!-- Welcome Start -->
+    <div class="container-fluid service py-5">
+      <div class="container py-5">
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 700px"
+        >
+          <h4
+            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            style="margin-bottom: 60px !important"
+          >
+            Escuela Activa vs Tradicional
+          </h4>
+        </div>
+        <div class="row g-5">
+          <h4 class="welcome-text my-3">
+            Mientras la escuela tradicional se centra en memorizar, en Ocachi se aprende preguntando,
+            explorando y creando. Aquí el error es parte del aprendizaje, el juego es una herramienta
+            central y la evaluación es formativa, no punitiva.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <!-- Welcome End -->
+
+    <style>
+      .welcome-text {
+        font-size: 1rem !important;
+        text-align: justify; /* Justifica el texto */
+        margin: 0 auto 1rem auto; /* Centra horizontalmente y agrega margen inferior */
+        max-width: 800px; /* Limita ancho para que la justificación se vea bien */
+      }
+    </style>
+    <!-- Welcome Start -->
+    <div class="container-fluid service py-5">
+      <div class="container py-5">
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 700px"
+        >
+          <h4
+            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            style="margin-bottom: 60px !important"
+          >
+            Escuela Activa vs Tradicional
+          </h4>
+        </div>
+        <div class="row g-5">
+          <h4 class="welcome-text my-3">
+            Mientras la escuela tradicional se centra en memorizar, en Ocachi se aprende preguntando,
+            explorando y creando. Aquí el error es parte del aprendizaje, el juego es una herramienta
+            central y la evaluación es formativa, no punitiva.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <!-- Welcome End -->
+
+    <!-- Misión y Visión -->
+    <div class="container-fluid" style="margin: 0; padding: 0">
+      <div class="row g-0">
+        <!-- Misión -->
+        <div
+          class="col-md-6 mission-block d-flex flex-column justify-content-center p-5"
+        >
+          <h5 class="fw-bold mb-3">Ámbito Académico</h5>
+          <p>
+            La curiosidad guía nuestros aprendizajes.
+            Conferencias, ferias de ciencia, escritura y
+            lectura creativa forman parte del día a día.
+          </p>
+        </div>
+
+        <!-- Visión -->
+        <div
+          class="col-md-6 vision-block d-flex flex-column justify-content-center p-5 text-white"
+        >
+          <h5 class="fw-bold mb-3">Ámbito Socioemocional</h5>
+          <p>
+            Reconocemos la importancia de las
+            emociones. A través de asambleas y
+            acompañamiento psicopedagógico,
+            cultivamos la empatía, la escucha y la
+            autorregulación.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSS -->
+    <style>
+      .mission-block {
+        background-color: #a81926; /* Color beige */
+        text-align: justify;
+        height: 500px;
+        color: white;
+      }
+
+      .vision-block {
+        background-color: #1a1833; /* Color gris */
+        text-align: justify;
+        height: 500px;
+        color: white;
+      }
+
+      .mission-block h5,
+      .vision-block h5 {
+        font-size: 1.2rem;
+        color: white;
+      }
+
+      .mission-block p,
+      .vision-block p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    </style>
+
+    <!-- Misión y Visión End -->
+
+    <style>
+      .welcome-text {
+        font-size: 1rem !important;
+        text-align: justify; /* Justifica el texto */
+        margin: 0 auto 1rem auto; /* Centra horizontalmente y agrega margen inferior */
+        max-width: 800px; /* Limita ancho para que la justificación se vea bien */
+      }
+    </style>
+    <!-- Welcome Start -->
+    <div class="container-fluid schoolLife py-5">
+      <div class="container py-5">
+        <!-- Título centrado -->
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 700px"
+        >
+          <h4
+            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            style="margin-bottom: 60px !important"
+          >
+            Arte y Expresión
+          </h4>
+        </div>
+
+        <!-- Fila principal con dos columnas -->
+        <div class="row align-items-center g-5">
+          <!-- Columna imagen -->
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div
+              class="schoolLifeImage border"
+              style="height: 100%; min-height: 400px"
+            ></div>
+          </div>
+
+          <!-- Columna texto + botón -->
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <h4 class="welcome-text my-3" style="opacity: 0.8; color: #7C7C7C !important;">
+              El arte tiene un lugar privilegiado en Ocachi:
+            </h4>   
+            <h4 class="welcome-text my-3">
+              Expresión corporal en primaria baja.
+            </h4>
+            <h4 class="welcome-text my-3">
+              Teatro en primaria alta.
+            </h4>
+            <h4 class="welcome-text my-3">
+              Exposición Trazos Infantiles, donde cada
+                creación es un testimonio único.
+            </h4>
+            <a
+              href="#"
+              class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
+              style="background-color: #a81926 !important"
+            >
+              Conoce más
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome End -->
+
+    <style>
+      .welcome-text {
+        font-size: 1rem !important;
+        text-align: justify; /* Justifica el texto */
+        margin: 0 auto 1rem auto; /* Centra horizontalmente y agrega margen inferior */
+        max-width: 800px; /* Limita ancho para que la justificación se vea bien */
+      }
+    </style>
+    <!-- Welcome Start -->
+    <div class="container-fluid schoolLife2 py-5">
+      <div class="container py-5">
+        <!-- Título centrado -->
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 700px"
+        >
+          <h4
+            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            style="margin-bottom: 60px !important"
+          >
+            Actividades Anuales
+          </h4>
+        </div>
+
+        <!-- Fila principal con dos columnas -->
+        <div class="row align-items-center g-5">
+
+          <!-- Columna texto + botón -->
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <h4 class="welcome-text my-3" style="opacity: 0.8; color: #7C7C7C !important;">
+              Nuestras actividades anuales son momentos de
+                encuentro, arte, juego y comunidad que fortalecen
+                vínculos y celebran la vida escolar.
+            </h4>   
+            <h4 class="welcome-text my-3">
+              Olimpiadas Infantiles: el cuerpo en
+                movimiento, sin competencia.
+            </h4>
+            <h4 class="welcome-text my-3">
+              Ofrenda Ocachi: arte, memoria y tradición.
+            </h4>
+            <h4 class="welcome-text my-3">
+              Feria del Libro: libros con voz infantil.
+            </h4>
+                        <h4 class="welcome-text my-3">
+              Festival Navideño: creación colectiva con
+                teatro, música y escenografía.
+            </h4>
+                        <h4 class="welcome-text my-3">
+              Excursiones y campamentos: aprendizaje en
+                comunidad, más allá del aula.
+            </h4>
+            <a
+              href="#"
+              class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
+              style="background-color: #a81926 !important"
+            >
+              Conoce más
+            </a>
+          </div>
+                    <!-- Columna imagen -->
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div
+              class="schoolLifeImage border"
+              style="height: 100%; min-height: 400px"
+            ></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Welcome End -->
+
+        <style>
+      .welcome-text {
+        font-size: 1rem !important;
+        text-align: justify; /* Justifica el texto */
+        margin: 0 auto 1rem auto; /* Centra horizontalmente y agrega margen inferior */
+        max-width: 800px; /* Limita ancho para que la justificación se vea bien */
+      }
+    </style>
+    <!-- Welcome Start -->
+    <div class="container-fluid schoolLife py-5">
+      <div class="container py-5">
+        <!-- Título centrado -->
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 700px"
+        >
+          <h4
+            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            style="margin-bottom: 60px !important"
+          >
+            Actividades Anuales
+          </h4>
+        </div>
+
+        <!-- Fila principal con dos columnas -->
+        <div class="row align-items-center g-5">
+          <!-- Columna imagen -->
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div
+              class="schoolLifeImage border"
+              style="height: 100%; min-height: 400px"
+            ></div>
+          </div>
+
+          <!-- Columna texto + botón -->
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <h4 class="welcome-text my-3" style="opacity: 0.8; color: #7C7C7C !important;">
+              Nuestras actividades anuales son momentos de
+                encuentro, arte, juego y comunidad que fortalecen
+                vínculos y celebran la vida escolar.
+            </h4>   
+            <h4 class="welcome-text my-3">
+              Olimpiadas Infantiles: el cuerpo en
+                movimiento, sin competencia.
+            </h4>
+            <h4 class="welcome-text my-3">
+              Ofrenda Ocachi: arte, memoria y tradición.
+            </h4>
+            <h4 class="welcome-text my-3">
+              Feria del Libro: libros con voz infantil.
+            </h4>
+                        <h4 class="welcome-text my-3">
+              Excursiones y campamentos: aprendizaje en
+                comunidad, más allá del aula.
+            </h4>
+            <a
+              href="#"
+              class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
+              style="background-color: #a81926 !important"
+            >
+              Conoce más
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="footer-item">
+              <h2 class="fw-bold mb-3">
+                <span class="text-primary mb-0">Ocachi </span
+                ><span style="color: #1a1833 !important" class="text-secondary"
+                  >Nueva Escuela</span
+                >
+              </h2>
+              <p class="mb-4">
+                La educación de los niños debe tratar del hombre mismo, de su
+                naturaleza, sus capacidades, sus aspiraciones, sus
+                responsabilidades, consigo mismo y con los demás.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="footer-item">
+              <div
+                class="d-flex flex-column p-4 ps-5 text-dark border border-primary"
+                style="border-radius: 50% 20% / 10% 40%"
+              >
+                <p>Lunes: 8am a 2pm</p>
+                <p>Martes: 8am a 2pm</p>
+                <p>Miércoles: 8am a 2pm</p>
+                <p>Jueves: 8am a 2pm</p>
+                <p>Viernes: 8am a 2pm</p>
+                <p>Sábado: Cerrado</p>
+                <p class="mb-0">Domingo: Cerrado</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="footer-item">
+              <h4
+                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+              >
+                Localización
+              </h4>
+              <div class="d-flex flex-column align-items-start">
+                <a
+                  href="https://share.google/fdVsEibnq690UQ7KD"
+                  class="text-body mb-4"
+                  ><i class="fa fa-map-marker-alt text-primary me-2"></i>
+                  Babilonia 5, Analco, 62166 Cuernavaca, Mor.</a
+                >
+                <a
+                  href="tel:7771022411"
+                  class="text-start rounded-0 text-body mb-4"
+                  ><i class="fa fa-phone-alt text-primary me-2"></i> (777) 102
+                  2411</a
+                >
+                <a
+                  href="mailto:correo@ocachicualli.com"
+                  class="text-start rounded-0 text-body mb-4"
+                  ><i class="fas fa-envelope text-primary me-2"></i>
+                  correo@ocachicualli.com</a
+                >
+                <div class="footer-icon d-flex">
+                  <a
+                    class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"
+                    href="https://www.facebook.com/OcachiNuevaEscuela"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/ocachinuevaescuela/"
+                    class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="footer-item">
+              <h4
+                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+              >
+                Nuestra galería
+              </h4>
+              <div class="row g-3">
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-1.jpg"
+                      class="img-fluid rounded-circle p-2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-2.jpg"
+                      class="img-fluid rounded-circle p-2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-3.jpg"
+                      class="img-fluid rounded-circle p-2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-4.jpg"
+                      class="img-fluid rounded-circle p-2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-5.jpg"
+                      class="img-fluid rounded-circle p-2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div
+                    class="footer-galary-img rounded-circle border border-primary"
+                  >
+                    <img
+                      src="img/galary-6.jpg"
+                      class="img-fluid rounded-circle p-2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <span class="text-light"
+              ><a href="#"
+                ><i class="fas fa-copyright text-light me-2"></i>Ocachi </a
+              >, Todos los derechos reservados.</span
+            >
+          </div>
+          <div class="col-md-6 my-auto text-center text-md-end text-white">
+            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+            Designed By
+            <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+            Distributed By
+            <a clas="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-primary border-3 border-primary rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

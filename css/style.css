@@ -175,7 +175,6 @@ h6,
 
 .navbar .dropdown-toggle::after {
   border: none;
-  content: "\f107";
   font-weight: 700;
   vertical-align: middle;
   margin-left: 8px;
@@ -261,6 +260,15 @@ h6,
   background-size: cover;
 }
 
+.page-headerEnrollment {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+    url(../img/ocachi2025/inscripcion.png);
+  height: 700px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*** Hero Header ***/
 
 /*** About Start ***/
@@ -288,6 +296,36 @@ h6,
       rgba(255, 255, 255, 0.1)
     ),
     url(../img/ocachi2025/vidaEscolarActividades.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.formAdmisionImage {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../img/ocachi2025/procesoInsc.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.visitImage {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../img/ocachi2025/agendaVisita.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -442,6 +480,12 @@ h6,
   border-radius: 50% 20% / 10% 40%;
 }
 
+.formAdmisionImage.border {
+  border-radius: 50% 20% / 10% 40%;
+}
+.visitImage.border {
+  border-radius: 50% 20% / 10% 40%;
+}
 .about {
   background: linear-gradient(
       rgba(255, 255, 255, 0.8),
@@ -526,7 +570,7 @@ h6,
 /*** Service End ***/
 
 .schoolLife {
-  background: #ffffff
+  background: #ffffff;
 }
 
 .schoolLife .schoolLife-item {
@@ -592,7 +636,7 @@ h6,
 }
 
 .schoolLife2 {
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 .schoolLife2 .schoolLife-item {
@@ -903,4 +947,5 @@ h6,
 .footer-item a.text-body:hover {
   color: var(--bs-secondary) !important;
 }
+
 /*** Footer End ***/

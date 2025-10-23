@@ -1,0 +1,191 @@
+:root {
+  --bg: #0b0b0b;
+  --card: #111215;
+  --txt: #f7f7f7;
+  --muted: #a0a0a0;
+  --grad: linear-gradient(135deg, #7dd3fc, #a78bfa, #f472b6, #fb923c);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ===== Contenedor IG ===== */
+.ig {
+  max-width: 1100px;
+  margin: auto;
+  padding: 28px 24px 36px;
+  position: relative;
+  isolation: isolate;
+}
+
+/* Línea/halo superior decorativa */
+.ig::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--grad);
+  border-radius: 999px;
+  filter: blur(0.4px);
+  opacity: 0.9;
+}
+
+/* ===== Header ===== */
+.ig__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin: 4px 0 18px;
+}
+
+.ig__header h1 {
+  margin: 0;
+  font-size: clamp(18px, 2.6vw, 26px);
+  line-height: 1.2;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+/* Botón/perfil estilo pill */
+.ig__profile {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #0b0b0b;
+  background: #ffffff;
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+.ig__profile::before {
+  content: ""; /* fallback invisible */
+}
+.ig__profile:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+.ig__profile:active {
+  transform: translateY(0) scale(0.99);
+}
+@media (prefers-color-scheme: dark) {
+  .ig__profile {
+    background: #16181d;
+    color: #e7e7e7;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* ===== Grid ===== */
+.ig__grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr; /* móvil: 1 */
+}
+
+/* ≥ 600px: 2 columnas */
+@media (min-width: 600px) {
+  .ig__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ≥ 900px: 3 columnas fijas */
+@media (min-width: 900px) {
+  .ig__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== Card (envoltura del blockquote/iframe) ===== */
+.ig__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: radial-gradient(
+      1200px 300px at -10% -10%,
+      rgba(255, 255, 255, 0.08),
+      transparent 60%
+    ),
+    var(--card);
+  /* Borde degradado con máscara (no afecta al iframe interno) */
+  --_b: 2px; /* grosor del borde */
+  padding: var(--_b); /* simula borde usando fondo */
+  background: linear-gradient(#0000, #0000) padding-box,
+    conic-gradient(
+        from 180deg,
+        #ffffff22,
+        #ffffff05 35%,
+        #ffffff22 70%,
+        #ffffff05
+      )
+      border-box;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.4s ease;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* Hover/focus elevación */
+.ig__card:hover,
+.ig__card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(#0000, #0000) padding-box, var(--grad) border-box; /* en hover el borde toma el gradiente */
+}
+
+/* Skeleton mientras el script de IG reemplaza el blockquote por el iframe */
+.ig__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #1a1b20 25%, #22242b 37%, #1a1b20 63%);
+  background-size: 400% 100%;
+  animation: ig-shimmer 1.4s infinite;
+  z-index: 0;
+}
+/* Cuando ya hay iframe dentro, oculta skeleton (usa :has, mejora progresiva) */
+.ig__card:has(iframe)::after {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+}
+
+/* Asegura que el contenido (blockquote/iframe) quede arriba del skeleton */
+.ig__card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Opcional: equilibrio visual del embed */
+.ig__card blockquote {
+  margin: 0;
+  background: transparent;
+}
+
+/* Animación shimmer */
+@keyframes ig-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ===== Accesibilidad / motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .ig__card,
+  .ig__profile {
+    transition: none;
+  }
+  .ig__card::after {
+    animation: none;
+  }
+}

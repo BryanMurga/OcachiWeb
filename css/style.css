@@ -160,7 +160,7 @@ h6,
 }
 
 .navbar .navbar-nav .nav-link {
-  padding: 10px 12px;
+  padding: 10px 9px;
   font-size: 16px;
   font-weight: 600;
   transition: 0.5s;
@@ -269,6 +269,42 @@ h6,
   background-size: cover;
 }
 
+.page-ofertaEducativa {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+    url(../img/ocachi2025/ofertaEducativaIntro.png);
+  height: 820px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-Preescolar {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+    url(../img/ocachi2025/preescolarFondo.png);
+  height: 820px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-Primaria {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+    url(../img/ocachi2025/primariaFondo.png);
+  height: 820px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-extra {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+    url(../img/ocachi2025/ocachi-CabezalExtracurriulares.jpg);
+  height: 820px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*** Hero Header ***/
 
 /*** About Start ***/
@@ -315,6 +351,101 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+}
+
+.formPrescolarImage {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../img/ocachi2025/ofertaPrescolar.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.formPrescolarImage.border {
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.formPrescolar2Image {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../img/ocachi2025/preescolarInfo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.formPrescolar2Image.border {
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.formPrimariaImage {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../img/ocachi2025/ofertaPrimaria.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.formPrimariaImage.border {
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.formPrimaria2Image {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../img/ocachi2025/ofertaPrimaria.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.formPrimaria2Image.border {
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.formPrimaria3Image {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../img/ocachi2025/primaria2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.formPrimaria3Image.border {
+  border-radius: 50% 20% / 10% 40%;
 }
 
 .visitImage {

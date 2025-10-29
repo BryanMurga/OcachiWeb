@@ -90,35 +90,39 @@
       >
         <div class="d-flex justify-content-between">
           <div class="top-info ps-2">
-            <small class="me-3"
-              ><i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+            <small class="me-3">
+              <i class="fas fa-map-marker-alt me-2 text-secondary"></i>
               <a
                 href="https://share.google/6vNeKcYzEe6iHhFmF"
                 class="text-white"
-                >Babilonia 5, Analco, 62166 Cuernavaca, Mor.</a
-              ></small
-            >
-            <small class="me-3"
-              ><i class="fas fa-envelope me-2 text-secondary"></i>
-              <a href="mailto:correo@ocachicualli.com" class="text-white"
-                >correo@ocachicualli.com</a
-              ></small
-            >
+              >
+                Babilonia 5, Analco, 62166 Cuernavaca, Mor.
+              </a>
+            </small>
+            <small class="me-3">
+              <i class="fas fa-envelope me-2 text-secondary"></i>
+              <a href="mailto:correo@ocachicualli.com" class="text-white">
+                correo@ocachicualli.com
+              </a>
+            </small>
           </div>
           <div class="top-link pe-2">
             <a
               href="https://www.facebook.com/OcachiNuevaEscuela"
               class="btn btn-light btn-sm-square rounded-circle"
-              ><i class="fab fa-facebook-f text-secondary2"></i
-            ></a>
+            >
+              <i class="fab fa-facebook-f text-secondary2"></i>
+            </a>
             <a
               href="https://www.instagram.com/ocachinuevaescuela/"
               class="btn btn-light btn-sm-square rounded-circle"
-              ><i class="fab fa-instagram text-secondary2"></i
-            ></a>
+            >
+              <i class="fab fa-instagram text-secondary2"></i>
+            </a>
           </div>
         </div>
       </div>
+
       <div class="container px-0">
         <nav class="navbar navbar-light navbar-expand-xl py-3">
           <a href="index.html" class="navbar-brand">
@@ -137,6 +141,7 @@
           >
             <span class="fa fa-bars text-primary"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
               <a
@@ -157,12 +162,54 @@
                 class="nav-item nav-link"
                 >Modelo educativo</a
               >
-              <a
-                style="color: #000 !important; font-size: 15px"
-                href="schoolLife.html"
-                class="nav-item nav-link"
-                >Vida escolar</a
-              >
+
+              <!-- VIDA ESCOLAR CON SUBMENÚ (CORREGIDO) -->
+              <div class="nav-item dropdown">
+                <a
+                  href="schoolLife.html"
+                  class="nav-link dropdown-toggle"
+                  id="vidaEscolarDropdown"
+                  style="color: #000 !important; font-size: 15px"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Vida escolar
+                </a>
+                <div
+                  class="dropdown-menu border-0 shadow-sm"
+                  aria-labelledby="vidaEscolarDropdown"
+                >
+                  <a
+                    style="color: #000 !important; font-size: 15px"
+                    href="schoolLife.html"
+                    class="dropdown-item"
+                  >
+                    Vida Escolar
+                  </a>
+                  <a
+                    style="color: #000 !important; font-size: 15px"
+                    href="vidaEscolar/actividadesExtra.html"
+                    class="dropdown-item"
+                  >
+                    Actividades Extracurriculares
+                  </a>
+                  <a
+                    style="color: #000 !important; font-size: 15px"
+                    href="vidaEscolar/diferentes.html"
+                    class="dropdown-item"
+                  >
+                    Lo que nos hace diferentes
+                  </a>
+                  <a
+                    style="color: #000 !important; font-size: 15px"
+                    href="vidaEscolar/eventosOcachi.html"
+                    class="dropdown-item"
+                  >
+                    Eventos Ocachi
+                  </a>
+                </div>
+              </div>
+
               <a
                 style="color: #000 !important; font-size: 15px"
                 href="community.html"
@@ -175,15 +222,16 @@
                 class="nav-item nav-link"
                 >Inscripciones</a
               >
+
+              <!-- OFERTA EDUCATIVA CON SUBMENÚ -->
               <div class="nav-item dropdown">
                 <a
                   href="ofertaEducativa.html"
                   class="nav-link dropdown-toggle"
                   style="color: #000 !important; font-size: 15px"
                   data-bs-toggle="dropdown"
+                  >Oferta educativa</a
                 >
-                  Oferta educativa
-                </a>
                 <div class="dropdown-menu border-0 shadow-sm">
                   <a
                     style="color: #000 !important; font-size: 15px"
@@ -205,6 +253,8 @@
                   >
                 </div>
               </div>
+              <!-- FIN OFERTA EDUCATIVA -->
+
               <a
                 style="color: #000 !important; font-size: 15px"
                 href="./contact.html"
@@ -212,6 +262,7 @@
                 >Contacto</a
               >
             </div>
+
             <div class="d-flex me-4">
               <div
                 id="phone-tada"
@@ -240,12 +291,12 @@
                     ><b>(777) 102 2411</b></span
                   >
                 </a>
-
-                <a href="tel:7771022411"
-                  ><span class="text-secondary">(777) 102 2411</span></a
-                >
+                <a href="tel:7771022411">
+                  <span class="text-secondary">(777) 102 2411</span>
+                </a>
               </div>
             </div>
+
             <a
               href="https://wa.me/527773042553?text=Hola%20vengo%20de%20la%20pagina%20web%20de%20Ocachi"
               target="_blank"
@@ -257,7 +308,6 @@
         </nav>
       </div>
     </div>
-    <!-- Navbar End -->
 
     <!-- Navbar End -->
 

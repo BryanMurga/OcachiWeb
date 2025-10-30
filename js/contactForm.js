@@ -6,57 +6,87 @@ import {
 
 import { db } from "./firebase.js";
 
-// 3️⃣ Referencias del formulario
+// 🔹 Referencias del formulario
 const form = document.getElementById("contactForm");
 const nombre = document.getElementById("nombre");
 const correo = document.getElementById("correo");
 const telefono = document.getElementById("telefono");
 const programa = document.getElementById("programa");
+const taller = document.getElementById("taller"); // opcional
 
-// 4️⃣ Funciones de validación
+// 🔸 Funciones de validación
 function validarNombre() {
   const pattern = /^[A-Za-zÀ-ÿ\s]{1,50}$/;
+  const error = document.getElementById("nombreError");
   if (!pattern.test(nombre.value.trim())) {
-    document.getElementById("nombreError").classList.remove("d-none");
+    error.classList.remove("d-none");
     return false;
-  } else {
-    document.getElementById("nombreError").classList.add("d-none");
-    return true;
   }
+  error.classList.add("d-none");
+  return true;
 }
 
 function validarCorreo() {
+  const error = document.getElementById("correoError");
   if (!correo.checkValidity()) {
-    document.getElementById("correoError").classList.remove("d-none");
+    error.classList.remove("d-none");
     return false;
-  } else {
-    document.getElementById("correoError").classList.add("d-none");
-    return true;
   }
+  error.classList.add("d-none");
+  return true;
 }
 
 function validarTelefono() {
   const pattern = /^[0-9]{1,12}$/;
+  const error = document.getElementById("telefonoError");
   if (!pattern.test(telefono.value.trim())) {
-    document.getElementById("telefonoError").classList.remove("d-none");
+    error.classList.remove("d-none");
     return false;
-  } else {
-    document.getElementById("telefonoError").classList.add("d-none");
-    return true;
   }
+  error.classList.add("d-none");
+  return true;
 }
 
 function validarPrograma() {
+  const error = document.getElementById("programaError");
   if (programa.value === "") {
-    document.getElementById("programaError").classList.remove("d-none");
+    error.classList.remove("d-none");
     return false;
-  } else {
-    document.getElementById("programaError").classList.add("d-none");
-    return true;
   }
+  error.classList.add("d-none");
+  return true;
 }
 
-// 5️⃣ Validación en tiempo real
+function validarTaller() {
+  if (!taller) return true; // si el campo no existe, no se valida
+  const error = document.getElementById("tallerError");
+  if (taller.value === "") {
+    error.classList.remove("d-none");
+    return false;
+  }
+  error.classList.add("d-none");
+  return true;
+}
+
+// 🧩 Función para mostrar alertas tipo toast
+function mostrarToast(mensaje, tipo = "success") {
+  const toast = document.createElement("div");
+  toast.className = `toast ${tipo}`;
+  const icon = tipo === "success" ? "✅" : "❌";
+  toast.innerHTML = `<span class="toast-icon">${icon}</span> <span>${mensaje}</span>`;
+  document.body.appendChild(toast);
+
+  // Mostrar con animación
+  setTimeout(() => toast.classList.add("show"), 100);
+
+  // Ocultar y eliminar después
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => toast.remove(), 400);
+  }, 4000);
+}
+
+// 🎧 Validación en tiempo real
 nombre.addEventListener("input", validarNombre);
 correo.addEventListener("input", validarCorreo);
 telefono.addEventListener("input", () => {
@@ -64,30 +94,40 @@ telefono.addEventListener("input", () => {
   validarTelefono();
 });
 programa.addEventListener("change", validarPrograma);
+if (taller) taller.addEventListener("change", validarTaller);
 
-// 6️⃣ Enviar formulario a Firestore
+// 📤 Envío del formulario
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const isNombreValid = validarNombre();
-  const isCorreoValid = validarCorreo();
-  const isTelefonoValid = validarTelefono();
-  const isProgramaValid = validarPrograma();
+  const isValid =
+    validarNombre() &&
+    validarCorreo() &&
+    validarTelefono() &&
+    validarPrograma() &&
+    validarTaller();
 
-  if (isNombreValid && isCorreoValid && isTelefonoValid && isProgramaValid) {
-    try {
-      await addDoc(collection(db, "registros"), {
-        nombre: nombre.value.trim(),
-        correo: correo.value.trim(),
-        telefono: telefono.value.trim(),
-        programa: programa.value,
-        creadoEn: serverTimestamp(),
-      });
-      alert("Formulario enviado correctamente a Firebase");
-      form.reset();
-    } catch (error) {
-      console.error("Error guardando en Firebase:", error);
-      alert("Ocurrió un error al enviar el formulario");
-    }
+  if (!isValid) return;
+
+  try {
+    const datos = {
+      nombre: nombre.value.trim(),
+      correo: correo.value.trim(),
+      telefono: telefono.value.trim(),
+      programa: programa.value,
+      creadoEn: serverTimestamp(),
+    };
+
+    // Si existe el campo taller, lo guarda en una colección separada
+    const coleccion = taller ? "talleres" : "registros";
+    if (taller) datos.taller = taller.value;
+
+    await addDoc(collection(db, coleccion), datos);
+
+    mostrarToast(`Formulario enviado correctamente (${coleccion})`, "success");
+    form.reset();
+  } catch (error) {
+    console.error("Error guardando en Firebase:", error);
+    mostrarToast("Ocurrió un error al enviar el formulario", "error");
   }
 });

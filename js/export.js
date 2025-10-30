@@ -1,4 +1,3 @@
-// js/export.js
 import { db, auth } from "./firebase.js";
 import {
   collection,
@@ -40,8 +39,8 @@ function normalizeValue(v) {
 // --- Escuchar evento de exportación ---
 window.addEventListener("request-export", async (e) => {
   const detail = e.detail;
-  if (!detail || !detail.start || !detail.end) {
-    console.error("request-export: faltan fechas");
+  if (!detail || !detail.start || !detail.end || !detail.collection) {
+    console.error("request-export: faltan datos (fechas o colección)");
     return;
   }
 
@@ -51,7 +50,7 @@ window.addEventListener("request-export", async (e) => {
     return;
   }
 
-  // Fechas del rango
+  const selectedCollection = detail.collection; // 🔹 colección dinámica
   const startDate = new Date(detail.start);
   const endDate = new Date(detail.end);
   endDate.setHours(23, 59, 59, 999);
@@ -60,7 +59,7 @@ window.addEventListener("request-export", async (e) => {
   const endTs = Timestamp.fromDate(endDate);
 
   try {
-    const colRef = collection(db, "registros");
+    const colRef = collection(db, selectedCollection); // 🔹 uso de colección dinámica
     const q = query(
       colRef,
       where("creadoEn", ">=", startTs),
@@ -71,7 +70,7 @@ window.addEventListener("request-export", async (e) => {
     const snap = await getDocs(q);
 
     if (snap.empty) {
-      alert("No se encontraron registros en ese rango.");
+      alert(`No se encontraron registros en la colección "${selectedCollection}" en ese rango.`);
       return;
     }
 
@@ -80,7 +79,6 @@ window.addEventListener("request-export", async (e) => {
       const data = doc.data();
       data.__id = doc.id;
 
-      // Normalizar timestamps
       Object.keys(data).forEach((k) => {
         data[k] = normalizeValue(data[k]);
       });
@@ -88,15 +86,7 @@ window.addEventListener("request-export", async (e) => {
       rows.push(data);
     });
 
-    // Campos esperados
-    const preferred = [
-      "__id",
-      "nombre",
-      "correo",
-      "telefono",
-      "programa",
-      "creadoEn",
-    ];
+    const preferred = ["__id", "nombre", "correo", "telefono", "programa", "creadoEn"];
     const headers = getHeadersFromRows(rows);
     const finalHeaders = [
       ...preferred.filter((h) => headers.includes(h)),
@@ -112,15 +102,15 @@ window.addEventListener("request-export", async (e) => {
     const startStr = startDate.toISOString().slice(0, 10);
     const endStr = endDate.toISOString().slice(0, 10);
     a.href = url;
-    a.download = `registros_${startStr}_a_${endStr}.csv`;
+    a.download = `${selectedCollection}_${startStr}_a_${endStr}.csv`; // 🔹 nombre dinámico
     document.body.appendChild(a);
     a.click();
     a.remove();
     URL.revokeObjectURL(url);
 
-    alert(`Exportados ${rows.length} registros. Archivo descargado.`);
+    alert(`Exportados ${rows.length} registros de "${selectedCollection}". Archivo descargado.`);
   } catch (err) {
-    console.error("Error exportando registros:", err);
+    console.error("Error exportando datos:", err);
     alert("Ocurrió un error al exportar. Revisa la consola.");
   }
 });

@@ -1,5 +1,5 @@
 // js/login.js
-import { auth } from "./firebase.js"; // tu app Firebase ya inicializada
+import { auth } from "./firebase.js";
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
 
 // --- Elementos del DOM ---
@@ -10,6 +10,7 @@ const passwordEl = document.getElementById("password");
 const loginFeedback = document.getElementById("loginFeedback");
 const loginBtn = document.getElementById("loginBtn");
 
+const collectionSelect = document.getElementById("collectionSelect");
 const downloadBtn = document.getElementById("downloadBtn");
 const downloadFeedback = document.getElementById("downloadFeedback");
 const rangeInfo = document.getElementById("rangeInfo");
@@ -18,6 +19,7 @@ const rangeInfo = document.getElementById("rangeInfo");
 let isAuthenticated = false;
 let currentUser = null;
 let selectedRange = null;
+let selectedCollection = "";
 
 // --- Inicializar flatpickr ---
 flatpickr.localize(flatpickr.l10ns.es);
@@ -37,7 +39,13 @@ flatpickr(dateInput, {
   },
 });
 
-// --- Validación simple de campos ---
+// --- Escuchar cambios en el selector de colección ---
+collectionSelect.addEventListener("change", () => {
+  selectedCollection = collectionSelect.value;
+  refreshDownloadState();
+});
+
+// --- Validación simple ---
 function validateLoginFields() {
   let valid = true;
   if (!emailEl.value.trim()) valid = false;
@@ -47,7 +55,12 @@ function validateLoginFields() {
 
 // --- Actualiza el estado del botón de descarga ---
 function refreshDownloadState() {
-  if (isAuthenticated && selectedRange && selectedRange.length === 2) {
+  if (
+    isAuthenticated &&
+    selectedRange &&
+    selectedRange.length === 2 &&
+    selectedCollection
+  ) {
     downloadBtn.disabled = false;
     downloadFeedback.innerHTML =
       '<span class="small text-success">Listo para descargar.</span>';
@@ -59,6 +72,9 @@ function refreshDownloadState() {
     else if (!selectedRange)
       downloadFeedback.innerHTML =
         '<span class="small text-muted">Selecciona un rango de fechas.</span>';
+    else if (!selectedCollection)
+      downloadFeedback.innerHTML =
+        '<span class="small text-muted">Selecciona una colección.</span>';
   }
 }
 
@@ -101,27 +117,34 @@ loginForm.addEventListener("submit", async (e) => {
 
 // --- Manejo del botón de descarga ---
 downloadBtn.addEventListener("click", () => {
-  if (!isAuthenticated || !selectedRange) return;
+  if (!isAuthenticated || !selectedRange || !selectedCollection) return;
 
   downloadBtn.disabled = true;
   downloadBtn.textContent = "Generando archivo...";
 
-  // Emitir evento para export.js
+  // Enviar evento al export.js con la colección elegida
   const eventDetail = {
     user: currentUser,
     start: selectedRange[0].toISOString(),
     end: selectedRange[1].toISOString(),
+    collection: selectedCollection,
   };
+
+  // Mostrar confirmación visual
+  alert(
+    `Descargando datos de la colección "${selectedCollection}" desde ${selectedRange[0].toLocaleDateString()} hasta ${selectedRange[1].toLocaleDateString()}.`
+  );
+
   window.dispatchEvent(
     new CustomEvent("request-export", { detail: eventDetail })
   );
 
   // Restaurar botón
-  downloadBtn.textContent = "Descargar registros (.csv)";
+  downloadBtn.textContent = "Descargar datos (.csv)";
   downloadBtn.disabled = false;
 });
 
-// --- Exponer helpers globales opcionales ---
+// --- Exponer helpers globales ---
 window._exportUI = {
   getSelectedRange: () => selectedRange,
   isAuthenticated: () => isAuthenticated,

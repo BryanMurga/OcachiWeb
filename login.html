@@ -138,11 +138,22 @@
               ></div>
             </form>
 
+            <!-- Selector de colección y botón de descarga -->
+            <div class="mb-3">
+              <label for="collectionSelect" class="form-label">Colección a descargar</label>
+              <select id="collectionSelect" class="form-select">
+                <option value="">Selecciona una colección</option>
+                <option value="registros">Registros</option>
+                <option value="talleres">Talleres</option>
+              </select>
+              <small class="text-muted">Elige si deseas exportar registros o talleres.</small>
+            </div>
+
             <hr />
 
             <div class="d-grid gap-2 mt-2">
               <button id="downloadBtn" class="btn btn-outline-success" disabled>
-                Descargar registros (.csv)
+                Descargar datos (.csv)
               </button>
               <small id="downloadHint" class="muted"
                 >El botón se activará cuando inicies sesión y selecciones un

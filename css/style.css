@@ -214,6 +214,149 @@ h6,
 /*** Navbar End ***/
 
 /*** Hero Header ***/
+
+/* Nueva Hero Section */
+
+/* ====== GRID BASE 1920 / 12 COLS PARA EL HERO ====== */
+
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 1920px; /* Canvas máximo */
+  margin: 0 auto;
+  min-height: 750px; /* Altura aprox. que marcaste */
+  overflow: hidden;
+}
+
+/* Fondo del hero: usa imagen de fondo en CSS */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* ⬇️ aquí cambias la ruta por la de tu foto actual */
+  /* background-image: url('../img/tu-imagen-hero.jpg'); */
+}
+
+/* Capa que contiene el contenido alineado a la retícula */
+.hero__overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  min-height: 750px;
+}
+
+/* Grid 12 columnas + márgenes 195 + medianil 12px */
+.hero__grid {
+  width: 100%;
+  padding-left: 195px; /* margen izquierdo */
+  padding-right: 195px; /* margen derecho */
+  padding-top: 200px; /* espacio superior que marcaste */
+  padding-bottom: 90px; /* separación con lo que sigue */
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 12px; /* medianil */
+}
+
+/* Bloque de texto del hero ocupando parte del grid */
+.hero__content {
+  grid-column: 3 / span 6; /* aprox. centrado en la retícula */
+  color: #ffffff;
+}
+
+/* Título, subtítulo y botones del hero */
+.hero__title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero__subtitle {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+/* Wrapper de botones */
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Si ya tienes estilos de botones, solo reutiliza las clases existentes */
+.hero__btn {
+  /* Ejemplo genérico, puede usar tus clases .btn-primario, etc. */
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ====== RESPONSIVE BÁSICO PARA OTRAS RESOLUCIONES ====== */
+
+@media (max-width: 1440px) {
+  .hero__grid {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .hero__grid {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__grid {
+    padding-left: 72px;
+    padding-right: 72px;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .hero__content {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__overlay {
+    align-items: flex-end;
+  }
+
+  .hero__grid {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    display: block; /* en móvil dejamos 1 columna */
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Termina Hero nueva */
+
 .hero-header,
 .page-header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),

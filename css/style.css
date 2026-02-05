@@ -2,12 +2,16 @@
 #spinner {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.8s ease-out, visibility 0s linear 0.5s;
+  transition:
+    opacity 0.8s ease-out,
+    visibility 0s linear 0.5s;
   z-index: 99999;
 }
 
 #spinner.show {
-  transition: opacity 0.8s ease-out, visibility 0s linear 0s;
+  transition:
+    opacity 0.8s ease-out,
+    visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
 }
@@ -118,7 +122,7 @@ h6,
 }
 
 .img-border-radius {
-  border-radius: 50% 20% / 10% 40%;
+  border-radius: 28px;
 }
 
 .title-border-radius {
@@ -356,11 +360,11 @@ h6,
 }
 
 /* Termina Hero nueva */
-
 .hero-header,
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
-    url(../img/ocachi2025/portadaA.jpg);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+    url(../img/2026/homeBanner.jpg);
   height: 700px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -368,7 +372,8 @@ h6,
 }
 
 .page-headerAbout {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/acercaNosotros.jpg);
   height: 700px;
   background-position: center center;
@@ -377,7 +382,8 @@ h6,
 }
 
 .page-headerModelo {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/modeloEducativo.jpg);
   height: 700px;
   background-position: center center;
@@ -386,7 +392,8 @@ h6,
 }
 
 .page-headerVidaEscolar {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/vidaEscolar.jpg);
   height: 700px;
   background-position: center center;
@@ -395,7 +402,8 @@ h6,
 }
 
 .page-headerComunidad {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/comunidad.jpg);
   height: 700px;
   background-position: center center;
@@ -404,7 +412,8 @@ h6,
 }
 
 .page-headerEnrollment {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/inscripcion.png);
   height: 700px;
   background-position: center center;
@@ -413,7 +422,8 @@ h6,
 }
 
 .page-ofertaEducativa {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/ofertaEducativaIntro.png);
   height: 820px;
   background-position: center center;
@@ -422,7 +432,8 @@ h6,
 }
 
 .page-Preescolar {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/preescolarFondo.png);
   height: 820px;
   background-position: center center;
@@ -431,7 +442,8 @@ h6,
 }
 
 .page-Primaria {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/primariaFondo.png);
   height: 820px;
   background-position: center center;
@@ -440,7 +452,8 @@ h6,
 }
 
 .page-extra {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/ocachi-CabezalExtracurriulares.jpg);
   height: 820px;
   background-position: center center;
@@ -449,7 +462,8 @@ h6,
 }
 
 .page-diferentes {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/diferentes.jpg);
   height: 820px;
   background-position: center center;
@@ -458,7 +472,8 @@ h6,
 }
 
 .page-eventos {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
     url(../img/ocachi2025/ocachi-CabezalEventos.jpg);
   height: 820px;
   background-position: center center;
@@ -473,10 +488,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/somosUnicos.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -488,10 +501,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/vidaEscolarActividades.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -503,10 +514,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/ofrenda.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -518,10 +527,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/procesoInsc.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -533,10 +540,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/ofertaPrescolar.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -552,10 +557,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/preescolarInfo.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -571,10 +574,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/ofertaPrimaria.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -590,10 +591,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/ofertaPrimaria.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -609,10 +608,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/primaria2.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -628,10 +625,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/agendaVisita.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -643,10 +638,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/about.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -658,10 +651,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/about.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -673,10 +664,8 @@ h6,
   position: relative;
   height: 100%;
   min-height: 400px;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url(../img/ocachi2025/acercaNosotros.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -946,10 +935,8 @@ h6,
   border-radius: 50% 20% / 10% 40%;
 }
 .about {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
-    ),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
     url(../img/ocachi2025/acercaNosotros.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -965,13 +952,20 @@ h6,
   );
 }
 
+.welcome-section {
+  background: #efe4d8; /* beige cálido, como tu imagen */
+}
+
 .service .service-item {
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+  background: #ffffff; /* Fondo blanco limpio */
+  box-shadow: none; /* Sin sombra suave */
   width: 100%;
   height: 100%;
-  border-radius: 50% 20% / 10% 40%;
-  transition: 0.5s;
+  border: 1.5px solid #e63946; /* Borde rojo fino */
+  border-radius: 26px 26px 10px 10px; /* 👈 EXACTO como imagen */
+  transition: 0.4s ease;
   position: relative;
+  overflow: hidden;
 }
 
 .service-content::after {
@@ -983,7 +977,7 @@ h6,
   left: 0;
   right: auto;
   background: transparent;
-  border-radius: 50% 20% / 10% 40%;
+  border-radius: 26px 26px 10px 10px; /* 👈 EXACTO como imagen */
   transition: 0.5s;
 }
 
@@ -1169,8 +1163,12 @@ h6,
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 28px !important; /* redondeado limpio */
+  overflow: hidden; /* CLAVE */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
+
 .program-text {
   flex-grow: 1;
 }
@@ -1385,7 +1383,8 @@ h6,
 
 /*** Footer Start ***/
 .footer {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)),
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)),
     url(../img/background.jpg);
   background-position: top center;
   background-repeat: no-repeat;

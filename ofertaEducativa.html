@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -70,14 +70,19 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-       <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MYYNL203Y"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2MYYNL203Y"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-2MYYNL203Y');
+      gtag("config", "G-2MYYNL203Y");
     </script>
   </head>
 
@@ -92,223 +97,264 @@
     <!-- Spinner End -->
 
     <!-- Navbar start -->
-    <div
-  class="container-fluid border-bottom wow fadeIn"
-  data-wow-delay="0.1s"
->
-  <div
-    class="container topbar bg-primary d-none d-lg-block py-2"
-    style="border-radius: 0 40px"
-  >
-    <div class="d-flex justify-content-between">
-      <div class="top-info ps-2">
-        <small class="me-3">
-          <i class="fas fa-map-marker-alt me-2 text-secondary"></i>
-          <a
-            href="https://share.google/6vNeKcYzEe6iHhFmF"
-            class="text-white"
-          >
-            Babilonia 5, Analco, 62166 Cuernavaca, Mor.
-          </a>
-        </small>
-        <small class="me-3">
-          <i class="fas fa-envelope me-2 text-secondary"></i>
-          <a href="mailto:correo@ocachicualli.com" class="text-white">
-            correo@ocachicualli.com
-          </a>
-        </small>
+    <div class="container-fluid border-bottom wow fadeIn" data-wow-delay="0.1s">
+      <div
+        class="container topbar bg-primary d-none d-lg-block py-2"
+        style="border-radius: 0 40px"
+      >
+        <div class="d-flex justify-content-between">
+          <div class="top-info ps-2">
+            <small class="me-3">
+              <i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+              <a
+                href="https://share.google/6vNeKcYzEe6iHhFmF"
+                class="text-white"
+              >
+                Babilonia 5, Analco, 62166 Cuernavaca, Mor.
+              </a>
+            </small>
+            <small class="me-3">
+              <i class="fas fa-envelope me-2 text-secondary"></i>
+              <a href="mailto:correo@ocachicualli.com" class="text-white"
+                >correo@ocachicualli.com</a
+              >
+            </small>
+          </div>
+
+          <div class="top-link pe-2">
+            <a
+              href="https://www.facebook.com/OcachiNuevaEscuela"
+              class="btn btn-light btn-sm-square rounded-circle"
+            >
+              <i class="fab fa-facebook-f text-secondary2"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/ocachinuevaescuela/"
+              class="btn btn-light btn-sm-square rounded-circle"
+            >
+              <i class="fab fa-instagram text-secondary2"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="top-link pe-2">
-        <a
-          href="https://www.facebook.com/OcachiNuevaEscuela"
-          class="btn btn-light btn-sm-square rounded-circle"
-        >
-          <i class="fab fa-facebook-f text-secondary2"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/ocachinuevaescuela/"
-          class="btn btn-light btn-sm-square rounded-circle"
-        >
-          <i class="fab fa-instagram text-secondary2"></i>
-        </a>
+
+      <div class="container px-0">
+        <nav class="navbar navbar-light navbar-expand-xl py-3">
+          <a href="index.html" class="navbar-brand">
+            <img
+              src="img/ocachiLogo.webp"
+              alt="OcachiCare Logo"
+              style="height: 80px"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars text-primary"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto">
+              <!-- Inicio -->
+              <a
+                href="index.html"
+                class="nav-item nav-link"
+                style="color: #000 !important; font-size: 15px"
+                >Inicio</a
+              >
+
+              <!-- Nosotros -->
+              <div class="nav-item dropdown btn-group">
+                <!-- LINK que SÍ navega -->
+                <a
+                  href="about.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Nosotros
+                </a>
+
+                <!-- BOTÓN que abre el dropdown -->
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
+                    href="educativeModel.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Modelo educativo
+                  </a>
+                </div>
+              </div>
+
+              <!-- Oferta Educativa -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="ofertaEducativa.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Oferta
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
+                    href="ofertaEducativa/prescolar.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Preescolar
+                  </a>
+                  <a
+                    href="ofertaEducativa/primaria.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Primaria
+                  </a>
+                </div>
+              </div>
+
+              <!-- Vida Ocachi -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="schoolLife.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Vida Ocachi
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
+                    href="vidaEscolar/actividadesExtra.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Actividades extracurriculares
+                  </a>
+                  <a
+                    href="vidaEscolar/diferentes.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Lo que nos hace diferentes
+                  </a>
+                  <a
+                    href="vidaEscolar/eventosOcachi.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Eventos Ocachi
+                  </a>
+                  <a
+                    href="community.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Comunidad Ocachi
+                  </a>
+                </div>
+              </div>
+
+              <!-- Inscripciones -->
+              <a
+                href="enrollment.html"
+                class="nav-item nav-link"
+                style="color: #000 !important; font-size: 15px"
+              >
+                Inscripciones
+              </a>
+
+              <!-- Contacto -->
+              <a
+                href="contact.html"
+                class="nav-item nav-link"
+                style="color: #000 !important; font-size: 15px"
+              >
+                Contacto
+              </a>
+            </div>
+
+            <!-- Tel + WhatsApp se mantiene igual -->
+            <div class="d-flex me-4">
+              <div
+                id="phone-tada"
+                class="d-flex align-items-center justify-content-center"
+              >
+                <a
+                  href=""
+                  class="position-relative wow tada"
+                  data-wow-delay=".9s"
+                >
+                  <i class="fa fa-phone-alt text-secondary2 fa-2x me-4"></i>
+                  <div class="position-absolute" style="top: -7px; left: 20px">
+                    <span
+                      ><i class="fa fa-comment-dots text-secondary2"></i
+                    ></span>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex flex-column pe-3 border-end border-primary">
+                <span class="text-primary"
+                  >Tienes alguna duda, contáctanos</span
+                >
+                <br />
+                <a href="tel:7771022411"
+                  ><span style="color: #000 !important"
+                    ><b>(777) 102 2411</b></span
+                  ></a
+                >
+                <a href="tel:7771022411"
+                  ><span class="text-secondary">(777) 102 2411</span></a
+                >
+              </div>
+            </div>
+
+            <a
+              href="https://wa.me/527773042553?text=Hola%20vengo%20de%20la%20pagina%20web%20de%20Ocachi"
+              target="_blank"
+              class="btn btn-success btn-md-square rounded-circle"
+            >
+              <i class="fab fa-whatsapp text-white"></i>
+            </a>
+          </div>
+        </nav>
       </div>
     </div>
-  </div>
-
-  <div class="container px-0">
-    <nav class="navbar navbar-light navbar-expand-xl py-3">
-      <a href="index.html" class="navbar-brand">
-        <img
-          src="img/ocachiLogo.webp"
-          alt="OcachiCare Logo"
-          style="height: 80px"
-        />
-      </a>
-
-      <button
-        class="navbar-toggler py-2 px-3"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="fa fa-bars text-primary"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-auto">
-          <a
-            style="color: #000 !important; font-size: 15px;"
-            href="index.html"
-            class="nav-item nav-link active"
-            >Home</a
-          >
-          <a
-            style="color: #000 !important; font-size: 15px;"
-            href="about.html"
-            class="nav-item nav-link"
-            >Acerca de nosotros</a
-          >
-          <a
-            style="color: #000 !important; font-size: 15px;"
-            href="educativeModel.html"
-            class="nav-item nav-link"
-            >Modelo educativo</a
-          >
-
-          <!-- VIDA ESCOLAR CON SUBMENÚ (CORREGIDO) -->
-      <div class="nav-item dropdown">
-        <a
-          href="schoolLife.html"
-          class="nav-link dropdown-toggle"
-          id="vidaEscolarDropdown"
-          style="color: #000 !important; font-size: 15px;"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Vida escolar
-        </a>
-        <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="vidaEscolarDropdown">
-                  <a
-            style="color: #000 !important; font-size: 15px;"
-            href="schoolLife.html"
-            class="dropdown-item"
-          >
-            Vida escolar
-          </a>
-          <a
-            style="color: #000 !important; font-size: 15px;"
-            href="vidaEscolar/actividadesExtra.html"
-            class="dropdown-item"
-          >
-            Actividades extracurriculares
-          </a>
-          <a
-            style="color: #000 !important; font-size: 15px;"
-            href="vidaEscolar/diferentes.html"
-            class="dropdown-item"
-          >
-            Lo que nos hace diferentes
-          </a>
-          <a
-            style="color: #000 !important; font-size: 15px;"
-            href="vidaEscolar/eventosOcachi.html"
-            class="dropdown-item"
-          >
-            Eventos Ocachi
-          </a>
-        </div>
-      </div>
-
-
-          <a
-            style="color: #000 !important; font-size: 15px;"
-            href="community.html"
-            class="nav-item nav-link"
-            >Comunidad Ocachi</a
-          >
-          <a
-            style="color: #000 !important; font-size: 15px;"
-            href="enrollment.html"
-            class="nav-item nav-link"
-            >Inscripciones</a
-          >
-
-          <!-- OFERTA EDUCATIVA CON SUBMENÚ -->
-          <div class="nav-item dropdown">
-            <a
-              href="ofertaEducativa.html"
-              class="nav-link dropdown-toggle"
-              style="color: #000 !important; font-size: 15px;"
-              data-bs-toggle="dropdown"
-              >Oferta educativa</a
-            >
-            <div class="dropdown-menu border-0 shadow-sm">
-              <a
-                style="color: #000 !important; font-size: 15px;"
-                href="/ofertaEducativa.html"
-                class="dropdown-item"
-                >Introducción</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px;"
-                href="/ofertaEducativa/prescolar.html"
-                class="dropdown-item"
-                >Preescolar</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px;"
-                href="/ofertaEducativa/primaria.html"
-                class="dropdown-item"
-                >Primaria</a
-              >
-            </div>
-          </div>
-          <!-- FIN OFERTA EDUCATIVA -->
-
-          <a
-            style="color: #000 !important; font-size: 15px;"
-            href="./contact.html"
-            class="nav-item nav-link"
-            >Contacto</a
-          >
-        </div>
-
-        <div class="d-flex me-4">
-          <div
-            id="phone-tada"
-            class="d-flex align-items-center justify-content-center"
-          >
-            <a href="" class="position-relative wow tada" data-wow-delay=".9s">
-              <i class="fa fa-phone-alt text-secondary2 fa-2x me-4"></i>
-              <div class="position-absolute" style="top: -7px; left: 20px">
-                <span><i class="fa fa-comment-dots text-secondary2"></i></span>
-              </div>
-            </a>
-          </div>
-          <div class="d-flex flex-column pe-3 border-end border-primary">
-            <span class="text-primary">Tienes alguna duda, contáctanos</span>
-            <br />
-            <a href="tel:7771022411">
-              <span style="color: #000 !important;"><b>(777) 102 2411</b></span>
-            </a>
-            <a href="tel:7771022411">
-              <span class="text-secondary">(777) 102 2411</span>
-            </a>
-          </div>
-        </div>
-
-        <a
-          href="https://wa.me/527773042553?text=Hola%20vengo%20de%20la%20pagina%20web%20de%20Ocachi"
-          target="_blank"
-          class="btn btn-success btn-md-square rounded-circle"
-        >
-          <i class="fab fa-whatsapp text-white"></i>
-        </a>
-      </div>
-    </nav>
-  </div>
-</div>
-    <!-- Navbar End -->
 
     <!-- Navbar End -->
 
@@ -370,7 +416,7 @@
       }
     </style>
     <!-- Welcome Start -->
-    <div class="container-fluid service py-5">
+    <div class="container-fluid welcome-section py-5">
       <div class="container py-5">
         <div
           class="mx-auto text-center wow fadeIn"
@@ -378,13 +424,18 @@
           style="max-width: 700px"
         >
           <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            class="text-primary mb-3 fw-bold fs-2 d-inline-block"
             style="margin-bottom: 60px !important"
           >
             Educación activa, respetuosa y con sentido.
           </h4>
         </div>
         <div class="row g-5">
+          <style>
+            .welcome-text {
+              color: #4a4a4a; /* gris más claro */
+            }
+          </style>
           <h4 class="welcome-text my-3">
             En Ocachi Nueva Escuela acompañamos el crecimiento de niñas y niños
             desde el descubrimiento hasta la reflexión crítica, en un entorno
@@ -393,10 +444,10 @@
             promoviendo una formación integral centrada en la dignidad humana,
             la curiosidad y la creatividad. Aquí, cada etapa es una experiencia
             única.
-          </h4>
-          <br>
-                    <h4 class="welcome-text my-3">
+            <br />
+            <br />
             Conoce cómo se vive la educación activa en nuestros niveles:
+          </h4>
         </div>
       </div>
     </div>
@@ -413,22 +464,8 @@
     <!-- Welcome Start -->
     <div class="container-fluid schoolLife py-5">
       <div class="container py-5">
-        <!-- Título centrado -->
-        <div
-          class="mx-auto text-center wow fadeIn"
-          data-wow-delay="0.1s"
-          style="max-width: 700px"
-        >
-          <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-            style="margin-bottom: 60px !important"
-          >
-            Preescolar
-          </h4>
-        </div>
-
         <!-- Fila principal con dos columnas -->
-        <div class="row align-items-center g-5">
+        <div class="row align-items-start g-5">
           <!-- Columna imagen -->
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <div
@@ -437,37 +474,44 @@
             ></div>
           </div>
 
-          <!-- Columna texto + botón -->
+          <!-- Columna texto + título + botón -->
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <!-- Título arriba del texto -->
+            <h4
+              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+              style="margin-bottom: 30px !important"
+            >
+              Preescolar
+            </h4>
+
             <h2 style="font-size: 1.8rem; font-weight: 700">
-             Aprender jugando, crecer sintiendo
+              Aprender jugando, crecer sintiendo
             </h2>
-            <br>
+
             <h4
               style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
               class="welcome-text my-3"
             >
-              El preescolar Ocachi es un espacio donde la infancia
-                se vive con alegría, respeto y libertad.
+              El preescolar Ocachi es un espacio donde la infancia se vive con
+              alegría, respeto y libertad.
             </h4>
-            <br>
+
             <h4
               style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
               class="welcome-text my-3"
             >
-              A través del juego, la exploración y el arte, las niñas y
-                los niños desarrollan confianza, autonomía y
-                empatía.
+              A través del juego, la exploración y el arte, las niñas y los
+              niños desarrollan confianza, autonomía y empatía.
             </h4>
-            <br>
+
             <h4
               style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
               class="welcome-text my-3"
             >
-             Cada día es una oportunidad para descubrir el
-            mundo con curiosidad y ternura.
+              Cada día es una oportunidad para descubrir el mundo con curiosidad
+              y ternura.
             </h4>
-            <br>
+
             <a
               href="/contact.html"
               class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
@@ -485,22 +529,26 @@
     <!-- Misión y Visión -->
     <div class="container-fluid" style="margin: 0; padding: 0">
       <div class="row g-0">
-        <!-- Misión -->
         <div
           class="col-md-12 other-block d-flex flex-column justify-content-center p-5"
         >
-        <h4
-            class="text-primary mb-4 p-2 title-border-radius"
-            style="margin-bottom: 40px !important"
-          >
-            Educación con propósito
-          </h4>
-          <p>
-            En cada etapa, nuestro compromiso es acompañar a los niños y niñas en su crecimiento
-            personal y académico con ternura, libertad y respeto.
-            <br><br>
-            Porque en Ocachi no formamos para el futuro: educamos para vivir plenamente el presente.
-          </p>
+          <div class="other-block-content">
+            <h4
+              class="other-title mb-4 p-2 title-border-radius"
+              style="margin-bottom: 40px !important; color: #a81926"
+            >
+              Educación con propósito
+            </h4>
+
+            <p class="other-text">
+              En cada etapa, nuestro compromiso es acompañar a los niños y niñas
+              en su crecimiento personal y académico con ternura, libertad y
+              respeto.
+              <br /><br />
+              Porque en Ocachi no formamos para el futuro: educamos para vivir
+              plenamente el presente.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -513,6 +561,10 @@
         height: 500px;
         color: #1a1833;
       }
+      .other-block-content {
+        max-width: 900px; /* ✅ mismo ancho para título y texto */
+        margin: 0 auto; /* ✅ centrado */
+      }
 
       .other-block h5,
       .other-block h5 {
@@ -524,85 +576,78 @@
       .other-block p {
         font-size: 1.4rem;
         line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
       }
     </style>
 
     <!-- Misión y Visión End -->
 
+    <!-- Welcome Start -->
+    <div class="container-fluid schoolLife py-5">
+      <div class="container py-5">
+        <!-- Fila principal con texto a la izquierda e imagen a la derecha -->
+        <div class="row align-items-start g-5">
+          <!-- Columna texto + TÍTULO + botón -->
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <!-- Título justo arriba del texto -->
+            <h4
+              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+              style="margin-bottom: 30px !important"
+            >
+              Primaria
+            </h4>
 
-<!-- Welcome Start -->
-<div class="container-fluid schoolLife py-5">
-  <div class="container py-5">
-    <!-- Título centrado -->
-    <div
-      class="mx-auto text-center wow fadeIn"
-      data-wow-delay="0.1s"
-      style="max-width: 700px"
-    >
-      <h4
-        class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-        style="margin-bottom: 60px !important"
-      >
-        Primaria
-      </h4>
-    </div>
+            <h2 style="font-size: 1.8rem; font-weight: 700">
+              Conocer, crear y convivir
+            </h2>
 
-    <!-- Fila principal con texto a la izquierda e imagen a la derecha -->
-    <div class="row align-items-center g-5">
-      <!-- Columna texto + botón -->
-      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-        <h2 style="font-size: 1.8rem; font-weight: 700">
-          Conocer, crear y convivir
-        </h2>
-        <br />
-        <h4
-          style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
-          class="welcome-text my-3"
-        >
-          En primaria, el aprendizaje se convierte en una
-experiencia profunda y significativa.
-        </h4>
-        <br />
-        <h4
-          style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
-          class="welcome-text my-3"
-        >
-          Aquí los estudiantes comienzan a investigar,
-argumentar, crear y colaborar, construyendo su
-propio conocimiento en comunidad.
-        </h4>
-        <br />
-        <h4
-          style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
-          class="welcome-text my-3"
-        >
-          Nuestro modelo pedagógico combina las técnicas
-Freinet, la educación activa y el acompañamiento
-psicoemocional, para formar infancias críticas,
-respetuosas y creativas.
-        </h4>
-        <br />
-        <a
-          href="/contact.html"
-          class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-          style="background-color: #a81926 !important"
-        >
-          Conoce más
-        </a>
-      </div>
+            <h4
+              style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+              class="welcome-text my-3"
+            >
+              En primaria, el aprendizaje se convierte en una experiencia
+              profunda y significativa.
+            </h4>
 
-      <!-- Columna imagen -->
-      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-        <div
-          class="formPrimariaImage border"
-          style="height: 100%; min-height: 400px"
-        ></div>
+            <h4
+              style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+              class="welcome-text my-3"
+            >
+              Aquí los estudiantes comienzan a investigar, argumentar, crear y
+              colaborar, construyendo su propio conocimiento en comunidad.
+            </h4>
+
+            <h4
+              style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+              class="welcome-text my-3"
+            >
+              Nuestro modelo pedagógico combina las técnicas Freinet, la
+              educación activa y el acompañamiento psicoemocional, para formar
+              infancias críticas, respetuosas y creativas.
+            </h4>
+
+            <a
+              href="/contact.html"
+              class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
+              style="background-color: #a81926 !important"
+            >
+              Conoce más
+            </a>
+          </div>
+
+          <!-- Columna imagen -->
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div
+              class="formPrimariaImage border"
+              style="height: 100%; min-height: 400px"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Welcome End -->
 
+    <!-- Welcome End -->
 
     <style>
       .welcome-text {
@@ -793,7 +838,9 @@ respetuosas y creativas.
 
             .row-equal .card {
               flex: 1 1 auto; /* fuerza que las tarjetas ocupen toda la altura disponible */
-              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
             }
 
             /* Hover para indicar interactividad */

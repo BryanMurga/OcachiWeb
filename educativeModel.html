@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -115,11 +115,12 @@
             </small>
             <small class="me-3">
               <i class="fas fa-envelope me-2 text-secondary"></i>
-              <a href="mailto:correo@ocachicualli.com" class="text-white">
-                correo@ocachicualli.com
-              </a>
+              <a href="mailto:correo@ocachicualli.com" class="text-white"
+                >correo@ocachicualli.com</a
+              >
             </small>
           </div>
+
           <div class="top-link pe-2">
             <a
               href="https://www.facebook.com/OcachiNuevaEscuela"
@@ -158,125 +159,157 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
+              <!-- Inicio -->
               <a
-                style="color: #000 !important; font-size: 15px"
                 href="index.html"
-                class="nav-item nav-link active"
-                >Home</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
-                href="about.html"
                 class="nav-item nav-link"
-                >Acerca de nosotros</a
-              >
-              <a
                 style="color: #000 !important; font-size: 15px"
-                href="educativeModel.html"
-                class="nav-item nav-link"
-                >Modelo educativo</a
+                >Inicio</a
               >
 
-              <!-- VIDA ESCOLAR CON SUBMENÚ (CORREGIDO) -->
-              <div class="nav-item dropdown">
+              <!-- Nosotros -->
+              <div class="nav-item dropdown btn-group">
+                <!-- LINK que SÍ navega -->
                 <a
-                  href="schoolLife.html"
-                  class="nav-link dropdown-toggle"
-                  id="vidaEscolarDropdown"
+                  href="about.html"
+                  class="nav-link"
                   style="color: #000 !important; font-size: 15px"
+                >
+                  Nosotros
+                </a>
+
+                <!-- BOTÓN que abre el dropdown -->
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
                 >
-                  Vida escolar
+                  <span class="visually-hidden">Toggle Dropdown</span>
                 </a>
-                <div
-                  class="dropdown-menu border-0 shadow-sm"
-                  aria-labelledby="vidaEscolarDropdown"
-                >
+
+                <div class="dropdown-menu border-0 shadow-sm">
                   <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="schoolLife.html"
+                    href="educativeModel.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
-                    Vida escolar
+                    Modelo educativo
+                  </a>
+                </div>
+              </div>
+
+              <!-- Oferta Educativa -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="ofertaEducativa.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Oferta
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
+                    href="ofertaEducativa/prescolar.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Preescolar
                   </a>
                   <a
+                    href="ofertaEducativa/primaria.html"
+                    class="dropdown-item"
                     style="color: #000 !important; font-size: 15px"
+                  >
+                    Primaria
+                  </a>
+                </div>
+              </div>
+
+              <!-- Vida Ocachi -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="schoolLife.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Vida Ocachi
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
                     href="vidaEscolar/actividadesExtra.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Actividades extracurriculares
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="vidaEscolar/diferentes.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Lo que nos hace diferentes
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="vidaEscolar/eventosOcachi.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Eventos Ocachi
+                  </a>
+                  <a
+                    href="community.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Comunidad Ocachi
                   </a>
                 </div>
               </div>
 
+              <!-- Inscripciones -->
               <a
-                style="color: #000 !important; font-size: 15px"
-                href="community.html"
-                class="nav-item nav-link"
-                >Comunidad Ocachi</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
                 href="enrollment.html"
                 class="nav-item nav-link"
-                >Inscripciones</a
-              >
-
-              <!-- OFERTA EDUCATIVA CON SUBMENÚ -->
-              <div class="nav-item dropdown">
-                <a
-                  href="ofertaEducativa.html"
-                  class="nav-link dropdown-toggle"
-                  style="color: #000 !important; font-size: 15px"
-                  data-bs-toggle="dropdown"
-                  >Oferta educativa</a
-                >
-                <div class="dropdown-menu border-0 shadow-sm">
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="/ofertaEducativa.html"
-                    class="dropdown-item"
-                    >Introducción</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="/ofertaEducativa/prescolar.html"
-                    class="dropdown-item"
-                    >Preescolar</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="/ofertaEducativa/primaria.html"
-                    class="dropdown-item"
-                    >Primaria</a
-                  >
-                </div>
-              </div>
-              <!-- FIN OFERTA EDUCATIVA -->
-
-              <a
                 style="color: #000 !important; font-size: 15px"
-                href="./contact.html"
-                class="nav-item nav-link"
-                >Contacto</a
               >
+                Inscripciones
+              </a>
+
+              <!-- Contacto -->
+              <a
+                href="contact.html"
+                class="nav-item nav-link"
+                style="color: #000 !important; font-size: 15px"
+              >
+                Contacto
+              </a>
             </div>
 
+            <!-- Tel + WhatsApp se mantiene igual -->
             <div class="d-flex me-4">
               <div
                 id="phone-tada"
@@ -300,14 +333,14 @@
                   >Tienes alguna duda, contáctanos</span
                 >
                 <br />
-                <a href="tel:7771022411">
-                  <span style="color: #000 !important"
+                <a href="tel:7771022411"
+                  ><span style="color: #000 !important"
                     ><b>(777) 102 2411</b></span
-                  >
-                </a>
-                <a href="tel:7771022411">
-                  <span class="text-secondary">(777) 102 2411</span>
-                </a>
+                  ></a
+                >
+                <a href="tel:7771022411"
+                  ><span class="text-secondary">(777) 102 2411</span></a
+                >
               </div>
             </div>
 
@@ -382,7 +415,7 @@
       }
     </style>
     <!-- Welcome Start -->
-    <div class="container-fluid service py-5">
+    <div class="container-fluid service service-white py-5">
       <div class="container py-5">
         <div
           class="mx-auto text-center wow fadeIn"
@@ -419,60 +452,106 @@
     <!-- Misión y Visión -->
     <div class="container-fluid" style="margin: 0; padding: 0">
       <div class="row g-0">
-        <!-- Misión -->
+        <!-- Preescolar -->
         <div
-          class="col-md-6 mission-block d-flex flex-column justify-content-center p-5"
+          class="col-md-6 mission-block d-flex justify-content-center align-items-center p-5"
         >
-          <h5 class="fw-bold mb-3">Preescolar</h5>
-          <p>
-            En preescolar, el aprendizaje se vive a través del juego, la música,
-            la imaginación y el descubrimiento. Nuestro objetivo es que los más
-            pequeños desarrollen seguridad, confianza en sí mismos y vínculos de
-            respeto con sus compañeros.
-          </p>
+          <div class="block-content text-center">
+            <h5 class="fw-bold mb-4">Preescolar</h5>
+            <p class="mb-4">
+              En preescolar, el aprendizaje se vive a través del juego, la
+              música, la imaginación y el descubrimiento. Nuestro objetivo es
+              que los más pequeños desarrollen seguridad, confianza en sí mismos
+              y vínculos de respeto con sus compañeros.
+            </p>
+
+            <a
+              href="ofertaEducativa/prescolar.html"
+              class="btn btn-outline-light px-5 py-2 btn-rounded"
+            >
+              Conoce más
+            </a>
+          </div>
         </div>
 
-        <!-- Visión -->
+        <!-- Primaria -->
         <div
-          class="col-md-6 vision-block d-flex flex-column justify-content-center p-5 text-white"
+          class="col-md-6 vision-block d-flex justify-content-center align-items-center p-5"
         >
-          <h5 class="fw-bold mb-3">Primaria</h5>
-          <p>
-            En primaria, ampliamos la experiencia con proyectos
-            interdisciplinarios, asambleas, conferencias y escritura creativa.
-            Cada estudiante aprende investigando, expresándose y compartiendo en
-            comunidad.
-          </p>
+          <div class="block-content text-center">
+            <h5 class="fw-bold mb-4">Primaria</h5>
+            <p class="mb-4">
+              En primaria, ampliamos la experiencia con proyectos
+              interdisciplinarios, asambleas, conferencias y escritura creativa.
+              Cada estudiante aprende investigando, expresándose y compartiendo
+              en comunidad.
+            </p>
+
+            <a
+              href="ofertaEducativa/primaria.html"
+              class="btn btn-outline-light px-5 py-2 btn-rounded"
+            >
+              Conoce más
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- CSS -->
     <style>
       .mission-block {
-        background-color: #a81926; /* Color beige */
-        text-align: justify;
+        background-color: #a81926;
         height: 500px;
-        color: white;
+        color: #fff;
       }
-
       .vision-block {
-        background-color: #1a1833; /* Color gris */
-        text-align: justify;
+        background-color: #1a1833;
         height: 500px;
-        color: white;
+        color: #fff;
       }
 
+      /* Contenido centrado y con ancho controlado */
+      .block-content {
+        max-width: 520px; /* similar a tu captura */
+      }
+
+      /* Título grande */
       .mission-block h5,
       .vision-block h5 {
-        font-size: 1.2rem;
-        color: white;
+        font-size: 2.2rem;
+        color: #fff;
       }
 
+      /* Texto más grande */
       .mission-block p,
       .vision-block p {
-        font-size: 1rem;
-        line-height: 1.6;
+        font-size: 1.15rem;
+        line-height: 1.7;
+        margin: 0 auto;
+      }
+
+      /* Botón estilo “pill” como en la imagen */
+      .btn-rounded {
+        border-radius: 999px;
+        border-width: 2px;
+        font-weight: 600;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .mission-block,
+        .vision-block {
+          height: auto;
+          padding: 3rem 1.5rem !important;
+        }
+        .mission-block h5,
+        .vision-block h5 {
+          font-size: 1.8rem;
+        }
+        .mission-block p,
+        .vision-block p {
+          font-size: 1.05rem;
+        }
       }
     </style>
 
@@ -485,57 +564,54 @@
         margin: 0 auto 1rem auto; /* Centra horizontalmente y agrega margen inferior */
         max-width: 800px; /* Limita ancho para que la justificación se vea bien */
       }
+      .service.service-white {
+        background: #fff !important;
+      }
     </style>
-    <!-- Welcome Start -->
-    <div class="container-fluid service py-5">
-      <div class="container py-5">
-        <!-- Título centrado -->
-        <div
-          class="mx-auto text-center wow fadeIn"
-          data-wow-delay="0.1s"
-          style="max-width: 700px"
-        >
-          <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-            style="margin-bottom: 60px !important"
-          >
-            Metodología
-          </h4>
-        </div>
 
-        <!-- Fila principal con dos columnas -->
-        <div class="row align-items-center g-5">
-          <!-- Columna imagen -->
+    <!-- Metodología Start -->
+    <div class="container-fluid py-5 service-white">
+      <div class="container py-5">
+        <!-- Fila principal -->
+        <div class="row align-items-start g-5">
+          <!-- Imagen -->
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <div
-              class="aboutImage border"
-              style="height: 100%; min-height: 400px"
+              class="aboutImage border metodo-img"
+              style="min-height: 400px"
             ></div>
           </div>
 
-          <!-- Columna texto + botón -->
+          <!-- Texto -->
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <h4 class="welcome-text my-3">
+            <!-- Título arriba del texto -->
+            <h2 class="metodo-title mb-4">Metodología</h2>
+
+            <!-- Intro -->
+            <p class="metodo-intro mb-4">
               En Ocachi trabajamos con técnicas de diversos autores y con
               pedagogía activa:
-            </h4>
-            <h4 class="welcome-text my-3">
+            </p>
+
+            <!-- Puntos (más grandes) -->
+            <p class="metodo-item mb-4">
               Texto libre y producción de escritos auténticos.
-            </h4>
-            <h4 class="welcome-text my-3">
+            </p>
+            <p class="metodo-item mb-4">
               Imprenta escolar para difundir ideas.
-            </h4>
-            <h4 class="welcome-text my-3">
+            </p>
+            <p class="metodo-item mb-4">
               Asambleas democráticas para resolver conflictos y tomar
               decisiones.
-            </h4>
-            <h4 class="welcome-text my-3">
+            </p>
+            <p class="metodo-item mb-4">
               Aprendizaje por proyectos que integran ciencias, arte y vida
               cotidiana.
-            </h4>
+            </p>
+
             <a
               href="/educativeModel.html"
-              class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
+              class="btn px-5 py-3 text-white btn-border-radius mt-2"
               style="background-color: #a81926 !important"
             >
               Conoce nuestro modelo educativo
@@ -545,16 +621,59 @@
       </div>
     </div>
 
+    <style>
+      /* Título como en tu imagen */
+      .metodo-title {
+        color: #a81926;
+        font-weight: 800;
+        font-size: 2.4rem;
+        line-height: 1.1;
+        margin-top: 8px;
+      }
+
+      /* Intro (gris) */
+      .metodo-intro {
+        color: #6b6b6b;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        font-weight: 500;
+      }
+
+      /* Items en negro, grandes y bold */
+      .metodo-item {
+        color: #000;
+        font-size: 1.35rem;
+        line-height: 1.55;
+        font-weight: 700;
+      }
+
+      /* Opcional: asegurar que la imagen tenga presencia similar */
+      .metodo-img {
+        border-radius: 40px; /* si ya usas redondeo en tu aboutImage, puedes quitarlo */
+      }
+
+      /* Responsive */
+      @media (max-width: 991.98px) {
+        .metodo-title {
+          font-size: 2rem;
+        }
+        .metodo-intro {
+          font-size: 1.1rem;
+        }
+        .metodo-item {
+          font-size: 1.15rem;
+        }
+      }
+    </style>
+
     <!-- Welcome End -->
 
     <!-- Misión y Visión -->
-    <div class="container-fluid" style="margin: 0; padding: 0">
+    <div class="container-fluid other-block" style="margin: 0; padding: 0">
       <div class="row g-0">
         <!-- Misión -->
-        <div
-          class="col-md-12 other-block d-flex flex-column justify-content-center p-5"
-        >
-          <p>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <p class="other-text">
             En preescolar, el aprendizaje se vive a través del juego, la música,
             la imaginación y el descubrimiento. Nuestro objetivo es que los más
             pequeños desarrollen seguridad, confianza en sí mismos y vínculos de
@@ -567,22 +686,29 @@
     <!-- CSS -->
     <style>
       .other-block {
-        background-color: #e9dfd2; /* Color beige */
-        text-align: justify;
-        height: 500px;
+        background-color: #e7ddd3;
         color: #1a1833;
+        padding: 80px; /* alto similar a tu captura */
       }
 
-      .other-block h5,
-      .other-block h5 {
-        font-size: 1.8rem;
-        color: #1a1833;
+      .other-text {
+        max-width: 980px; /* controla el ancho del párrafo */
+        text-align: center; /* centrado como en la imagen */
+        font-size: 1.65rem; /* más grande */
+        line-height: 1.55;
+        margin: 0;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        color: #1a1833 !important;
       }
 
-      .other-block p,
-      .other-block p {
-        font-size: 1.4rem;
-        line-height: 1.6;
+      @media (max-width: 768px) {
+        .other-text {
+          font-size: 1.25rem;
+          max-width: 100%;
+          padding: 0 12px;
+          color: #1a1833 !important;
+        }
       }
     </style>
 
@@ -824,7 +950,9 @@
 
             .row-equal .card {
               flex: 1 1 auto; /* fuerza que las tarjetas ocupen toda la altura disponible */
-              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
             }
 
             /* Hover para indicar interactividad */

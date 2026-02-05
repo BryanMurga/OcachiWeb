@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -119,11 +119,12 @@
             </small>
             <small class="me-3">
               <i class="fas fa-envelope me-2 text-secondary"></i>
-              <a href="mailto:correo@ocachicualli.com" class="text-white">
-                correo@ocachicualli.com
-              </a>
+              <a href="mailto:correo@ocachicualli.com" class="text-white"
+                >correo@ocachicualli.com</a
+              >
             </small>
           </div>
+
           <div class="top-link pe-2">
             <a
               href="https://www.facebook.com/OcachiNuevaEscuela"
@@ -162,125 +163,157 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
+              <!-- Inicio -->
               <a
-                style="color: #000 !important; font-size: 15px"
                 href="../index.html"
-                class="nav-item nav-link active"
-                >Home</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
-                href="../about.html"
                 class="nav-item nav-link"
-                >Acerca de nosotros</a
-              >
-              <a
                 style="color: #000 !important; font-size: 15px"
-                href="../educativeModel.html"
-                class="nav-item nav-link"
-                >Modelo educativo</a
+                >Inicio</a
               >
 
-              <!-- VIDA ESCOLAR CON SUBMENÚ (CORREGIDO) -->
-              <div class="nav-item dropdown">
+              <!-- Nosotros -->
+              <div class="nav-item dropdown btn-group">
+                <!-- LINK que SÍ navega -->
                 <a
-                  href="../schoolLife.html"
-                  class="nav-link dropdown-toggle"
-                  id="vidaEscolarDropdown"
+                  href="../about.html"
+                  class="nav-link"
                   style="color: #000 !important; font-size: 15px"
+                >
+                  Nosotros
+                </a>
+
+                <!-- BOTÓN que abre el dropdown -->
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
                 >
-                  Vida escolar
+                  <span class="visually-hidden">Toggle Dropdown</span>
                 </a>
-                <div
-                  class="dropdown-menu border-0 shadow-sm"
-                  aria-labelledby="vidaEscolarDropdown"
-                >
+
+                <div class="dropdown-menu border-0 shadow-sm">
                   <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../schoolLife.html"
+                    href="../../educativeModel.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
-                    Vida escolar
+                    Modelo educativo
+                  </a>
+                </div>
+              </div>
+
+              <!-- Oferta Educativa -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="../../ofertaEducativa.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Oferta
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
+                    href="../ofertaEducativa/prescolar.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Preescolar
                   </a>
                   <a
+                    href="../ofertaEducativa/primaria.html"
+                    class="dropdown-item"
                     style="color: #000 !important; font-size: 15px"
+                  >
+                    Primaria
+                  </a>
+                </div>
+              </div>
+
+              <!-- Vida Ocachi -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="../schoolLife.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Vida Ocachi
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
                     href="../vidaEscolar/actividadesExtra.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Actividades extracurriculares
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="../vidaEscolar/diferentes.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Lo que nos hace diferentes
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="../vidaEscolar/eventosOcachi.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Eventos Ocachi
+                  </a>
+                  <a
+                    href="../community.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Comunidad Ocachi
                   </a>
                 </div>
               </div>
 
+              <!-- Inscripciones -->
               <a
-                style="color: #000 !important; font-size: 15px"
-                href="../community.html"
-                class="nav-item nav-link"
-                >Comunidad Ocachi</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
                 href="../enrollment.html"
                 class="nav-item nav-link"
-                >Inscripciones</a
-              >
-
-              <!-- OFERTA EDUCATIVA CON SUBMENÚ -->
-              <div class="nav-item dropdown">
-                <a
-                  href="../ofertaEducativa.html"
-                  class="nav-link dropdown-toggle"
-                  style="color: #000 !important; font-size: 15px"
-                  data-bs-toggle="dropdown"
-                  >Oferta educativa</a
-                >
-                <div class="dropdown-menu border-0 shadow-sm">
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../ofertaEducativa.html"
-                    class="dropdown-item"
-                    >Introducción</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../ofertaEducativa/prescolar.html"
-                    class="dropdown-item"
-                    >Preescolar</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../ofertaEducativa/primaria.html"
-                    class="dropdown-item"
-                    >Primaria</a
-                  >
-                </div>
-              </div>
-              <!-- FIN OFERTA EDUCATIVA -->
-
-              <a
                 style="color: #000 !important; font-size: 15px"
+              >
+                Inscripciones
+              </a>
+
+              <!-- Contacto -->
+              <a
                 href="../contact.html"
                 class="nav-item nav-link"
-                >Contacto</a
+                style="color: #000 !important; font-size: 15px"
               >
+                Contacto
+              </a>
             </div>
 
+            <!-- Tel + WhatsApp se mantiene igual -->
             <div class="d-flex me-4">
               <div
                 id="phone-tada"
@@ -304,14 +337,14 @@
                   >Tienes alguna duda, contáctanos</span
                 >
                 <br />
-                <a href="tel:7771022411">
-                  <span style="color: #000 !important"
+                <a href="tel:7771022411"
+                  ><span style="color: #000 !important"
                     ><b>(777) 102 2411</b></span
-                  >
-                </a>
-                <a href="tel:7771022411">
-                  <span class="text-secondary">(777) 102 2411</span>
-                </a>
+                  ></a
+                >
+                <a href="tel:7771022411"
+                  ><span class="text-secondary">(777) 102 2411</span></a
+                >
               </div>
             </div>
 
@@ -389,7 +422,7 @@
       }
     </style>
     <!-- Welcome Start -->
-    <div class="container-fluid service py-5">
+    <div class="container-fluid welcome-section py-5">
       <div class="container py-5">
         <div
           class="mx-auto text-center wow fadeIn"
@@ -397,13 +430,18 @@
           style="max-width: 700px"
         >
           <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            class="text-primary mb-3 fw-bold fs-2 d-inline-block"
             style="margin-bottom: 60px !important"
           >
             Aprender también es jugar, crear y moverse
           </h4>
         </div>
         <div class="row g-5">
+          <style>
+            .welcome-text {
+              color: #4a4a4a; /* gris más claro */
+            }
+          </style>
           <h4 class="welcome-text my-3">
             Creemos que aprender también ocurre cuando jugamos, exploramos y
             creamos. Nuestras actividades extracurriculares amplían los
@@ -415,6 +453,7 @@
         </div>
       </div>
     </div>
+    <!-- Welcome End -->
     <!-- Welcome End -->
 
     <!--Opciones talleres start-->
@@ -558,66 +597,126 @@
     <section id="computacion">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Computación
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraComputacion.jpg"
                   alt="Computación Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El mundo digital se convierte aquí en un espacio para crear,
-                aprender y comprender. En este taller, los niños adquieren
-                habilidades tecnológicas básicas mientras desarrollan
-                pensamiento lógico, autonomía y responsabilidad en el uso de las
-                herramientas digitales.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Computación
+                </h2>
+
+                <!-- Texto grande y que ocupe el espacio -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El mundo digital se convierte aquí en un espacio para crear,
+                  aprender y comprender. En este taller, los niños adquieren
+                  habilidades tecnológicas básicas mientras desarrollan
+                  pensamiento lógico, autonomía y responsabilidad en el uso de
+                  las herramientas digitales.
+                </p>
+
+                <!-- Dirigido a / Horario en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Dirigido a: Primaria alta
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Horario: Viernes de 2:50 a 3:50 p.m.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Dirigido a: Primaria alta
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Horario: Viernes de 2:50 a 3:50 p.m.
-              </h4>
-              <a
-                href="#contactoTaller"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaComputacion"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Quiero más información (derecha) -->
+                <a
+                  href="#contactoTaller"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -628,67 +727,127 @@
     <section id="lectura">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Lectura y escritura creativa
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraLectura.jpg"
                   alt="Lectura y Escritura Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                En este taller, los niños descubren el poder de las palabras. A
-                través de lecturas, juegos literarios y escritura creativa,
-                fortalecen su comprensión, amplían su vocabulario y desarrollan
-                la capacidad de expresar ideas y emociones con claridad. La
-                lectura se convierte en un viaje compartido y la escritura en un
-                espejo donde cada estudiante reconoce su voz.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Lectura y escritura creativa
+                </h2>
+
+                <!-- Texto grande y que ocupe el espacio -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  En este taller, los niños descubren el poder de las palabras.
+                  A través de lecturas, juegos literarios y escritura creativa,
+                  fortalecen su comprensión, amplían su vocabulario y
+                  desarrollan la capacidad de expresar ideas y emociones con
+                  claridad. La lectura se convierte en un viaje compartido y la
+                  escritura en un espejo donde cada estudiante reconoce su voz.
+                </p>
+
+                <!-- Dirigido a / Horario en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Dirigido a: Primaria alta (4º en adelante)
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Horario: Lunes de 2:50 a 3:50 p.m.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Dirigido a: Primaria alta (4o en adelante)
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Horario: Lunes de 2:50 a 3:50 p.m.
-              </h4>
-              <a
-                href="#contactoTaller"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaLectura"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Quiero más información (derecha) -->
+                <a
+                  href="#contactoTaller"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -699,67 +858,128 @@
     <section id="arte">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <!-- Contenido (imagen izquierda / texto derecha) -->
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Arte
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraArte.jpg"
                   alt="Arte Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El arte en Ocachi es una forma de conocer el mundo y de
-                expresarse. En este taller, los niños experimentan con
-                materiales, colores y técnicas diversas que despiertan la
-                imaginación y la sensibilidad. Aprenden a observar, a crear y a
-                valorar la belleza que los rodea, comprendiendo que el arte
-                también es una manera de pensar y sentir con libertad.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Arte
+                </h2>
+
+                <!-- Texto grande y que ocupe el espacio -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El arte en Ocachi es una forma de conocer el mundo y de
+                  expresarse. En este taller, los niños experimentan con
+                  materiales, colores y técnicas diversas que despiertan la
+                  imaginación y la sensibilidad. Aprenden a observar, a crear y
+                  a valorar la belleza que los rodea, comprendiendo que el arte
+                  también es una manera de pensar y sentir con libertad.
+                </p>
+
+                <!-- Dirigido a / Horario en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Dirigido a: Primaria
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Horario: Lunes de 2:50 a 3:50 p.m.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Dirigido a: Primaria
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Horario: Lunes de 2:50 a 3:50 p.m.
-              </h4>
-              <a
-                href="#contactoTaller"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaArte"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Quiero más información (derecha) -->
+                <a
+                  href="#contactoTaller"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -770,67 +990,128 @@
     <section id="matematicas">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <!-- Contenido (invertido: texto izquierda / imagen derecha en desktop) -->
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Imagen (derecha en desktop) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Matemáticas
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraLectura.jpg"
-                  alt="Lectura y Escritura Ocachi"
+                  alt="Matemáticas Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Texto (izquierda en desktop) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                Las matemáticas también se viven con curiosidad y juego. Este
-                taller busca fortalecer el pensamiento lógico, la resolución de
-                problemas y la confianza en el propio proceso de aprendizaje. A
-                través de dinámicas y retos prácticos, los niños descubren que
-                los números están presentes en todo lo que hacen y que aprender
-                puede ser tan divertido como desafiante.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Matemáticas
+                </h2>
+
+                <!-- Texto grande y que ocupe el espacio -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  Las matemáticas también se viven con curiosidad y juego. Este
+                  taller busca fortalecer el pensamiento lógico, la resolución
+                  de problemas y la confianza en el propio proceso de
+                  aprendizaje. A través de dinámicas y retos prácticos, los
+                  niños descubren que los números están presentes en todo lo que
+                  hacen y que aprender puede ser tan divertido como desafiante.
+                </p>
+
+                <!-- Horarios en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Primaria alta: Martes de 2:50 a 3:50 p.m.
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Primaria baja: Viernes de 2:50 a 3:50 p.m.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Primaria alta: Martes de 2:50 a 3:50 p.m.
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Primaria baja: Viernes de 2:50 a 3:50 p.m.
-              </h4>
-              <a
-                href="#contactoTaller"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Quiero más información (izquierda, debajo del texto) -->
+                <a
+                  href="#contactoTaller"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+
+                <!-- Ver galería (derecha, debajo de la imagen) -->
+                <a
+                  href="#galeriaMatematicas"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -841,67 +1122,128 @@
     <section id="teatro">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <!-- Contenido (imagen izquierda / texto derecha) -->
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Teatro
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraTeatro.jpg"
                   alt="Teatro Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El teatro es un espacio para imaginar, compartir y construir en
-                comunidad. Aquí, los niños desarrollan habilidades de
-                comunicación, trabajo en equipo y empatía, al tiempo que
-                descubren el valor de la expresión corporal y la voz. Cada
-                representación se convierte en una oportunidad para aprender a
-                escuchar, sentir y confiar en sí mismos frente a los demás.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Teatro
+                </h2>
+
+                <!-- Texto grande y que ocupe el espacio -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El teatro es un espacio para imaginar, compartir y construir
+                  en comunidad. Aquí, los niños desarrollan habilidades de
+                  comunicación, trabajo en equipo y empatía, al tiempo que
+                  descubren el valor de la expresión corporal y la voz. Cada
+                  representación se convierte en una oportunidad para aprender a
+                  escuchar, sentir y confiar en sí mismos frente a los demás.
+                </p>
+
+                <!-- Dirigido a / Horario en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Dirigido a: Primaria alta
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Horario: Viernes de 2:50 a 3:50 p.m.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Dirigido a: Primaria alta
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Horario: Viernes de 2:50 a 3:50 p.m.
-              </h4>
-              <a
-                href="#contactoTallerq"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Ver galería (izquierda, debajo de la imagen) -->
+                <a
+                  href="#galeriaTeatro"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Quiero más información (derecha, debajo del texto) -->
+                <a
+                  href="#contactoTallerq"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -912,67 +1254,128 @@
     <section id="danza">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <!-- Contenido (invertido: texto izquierda / imagen derecha en desktop) -->
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (derecha en desktop) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Danza moderna para principiantes
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraDanza.jpg"
                   alt="Danza Moderna Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (izquierda en desktop) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                A través del movimiento, la música y el ritmo, este taller
-                invita a los niños a explorar la libertad del cuerpo y la
-                alegría del movimiento. La danza se convierte en una forma de
-                autoconocimiento, coordinación y expresión emocional. Cada paso
-                ayuda a fortalecer la confianza y el equilibrio entre mente y
-                cuerpo.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Danza moderna para principiantes
+                </h2>
+
+                <!-- Texto grande y que ocupe el espacio -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  A través del movimiento, la música y el ritmo, este taller
+                  invita a los niños a explorar la libertad del cuerpo y la
+                  alegría del movimiento. La danza se convierte en una forma de
+                  autoconocimiento, coordinación y expresión emocional. Cada
+                  paso ayuda a fortalecer la confianza y el equilibrio entre
+                  mente y cuerpo.
+                </p>
+
+                <!-- Dirigido a / Horario en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Dirigido a: Primaria
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Horario: Viernes de 2:50 a 3:50 p.m.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Dirigido a: Primaria
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Horario: Viernes de 2:50 a 3:50 p.m.
-              </h4>
-              <a
-                href="#contactoTaller"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Quiero más información (izquierda, debajo del texto) -->
+                <a
+                  href="#contactoTaller"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+
+                <!-- Ver galería (derecha, debajo de la imagen) -->
+                <a
+                  href="#galeriaDanza"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -983,67 +1386,128 @@
     <section id="musica">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <!-- Contenido (imagen izquierda / texto derecha) -->
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Música
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraMusica.jpg"
                   alt="Música Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                En este taller, los niños exploran el lenguaje universal de la
-                música a través del ritmo, la melodía y la armonía. Desarrollan
-                su sensibilidad auditiva, la concentración y la expresión
-                emocional, al tiempo que aprenden a escuchar y crear en
-                conjunto. La música se convierte en una experiencia compartida
-                que une, emociona y transforma.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Música
+                </h2>
+
+                <!-- Texto (más grande, justificado y ocupa el espacio) -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  En este taller, los niños exploran el lenguaje universal de la
+                  música a través del ritmo, la melodía y la armonía.
+                  Desarrollan su sensibilidad auditiva, la concentración y la
+                  expresión emocional, al tiempo que aprenden a escuchar y crear
+                  en conjunto. La música se convierte en una experiencia
+                  compartida que une, emociona y transforma.
+                </p>
+
+                <!-- Dirigido a / Horario en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Dirigido a: Primaria
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Horario: Jueves de 2:50 a 3:50 p.m.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Dirigido a: Primaria
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Horario: Jueves de 2:50 a 3:50 p.m.
-              </h4>
-              <a
-                href="#contactoTaller"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Ver galería (izquierda, debajo de la imagen) -->
+                <a
+                  href="#galeriaMusica"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Quiero más información (derecha, debajo del texto) -->
+                <a
+                  href="#contactoTaller"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1054,67 +1518,128 @@
     <section id="futbol">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <!-- Contenido (invertido: texto izquierda / imagen derecha en desktop) -->
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (derecha en desktop) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Fútbol
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraFutbol.jpg"
-                  alt="Lectura y Escritura Ocachi"
+                  alt="Fútbol Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (izquierda en desktop) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para igualar alto con la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                Más que un deporte, el fútbol en Ocachi es un espacio para
-                aprender a colaborar, a respetar y a perseverar. En cada
-                entrenamiento, los niños fortalecen su coordinación, su
-                resistencia y su sentido de equipo. Descubren la importancia de
-                esforzarse por un objetivo común y de disfrutar el juego por
-                encima del resultado.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Fútbol
+                </h2>
+
+                <!-- Texto (más grande, justificado y ocupa el espacio) -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  Más que un deporte, el fútbol en Ocachi es un espacio para
+                  aprender a colaborar, a respetar y a perseverar. En cada
+                  entrenamiento, los niños fortalecen su coordinación, su
+                  resistencia y su sentido de equipo. Descubren la importancia
+                  de esforzarse por un objetivo común y de disfrutar el juego
+                  por encima del resultado.
+                </p>
+
+                <!-- Dirigido a / Horario en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Dirigido a: Preescolar y Primaria
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Horario: Miércoles de 2:50 a 3:50 p.m.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Dirigido a: Preescolar y Primaria
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Horario: Miércoles de 2:50 a 3:50 p.m.
-              </h4>
-              <a
-                href="#contactoTaller"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Quiero más información (izquierda - debajo del texto) -->
+                <a
+                  href="#contactoTaller"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+
+                <!-- Ver galería (derecha - debajo de la imagen) -->
+                <a
+                  href="#galeriaFutbol"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1125,66 +1650,128 @@
     <section id="ingles">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <!-- Contenido (imagen izquierda / texto derecha) -->
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Inglés
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraIngles.jpg"
                   alt="Inglés Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para igualar alto con la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                Aprender inglés en Ocachi es abrir una ventana al mundo. En este
-                taller, los niños desarrollan habilidades comunicativas a través
-                de dinámicas, canciones y juegos que fomentan la confianza y la
-                curiosidad por otras culturas. Más allá del idioma, se promueve
-                una actitud de apertura y respeto hacia la diversidad.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Inglés
+                </h2>
+
+                <!-- Texto (más grande, justificado y ocupa el espacio) -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  Aprender inglés en Ocachi es abrir una ventana al mundo. En
+                  este taller, los niños desarrollan habilidades comunicativas a
+                  través de dinámicas, canciones y juegos que fomentan la
+                  confianza y la curiosidad por otras culturas. Más allá del
+                  idioma, se promueve una actitud de apertura y respeto hacia la
+                  diversidad.
+                </p>
+
+                <!-- Dirigido a / Horario en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Dirigido a: Primaria
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Horario: Viernes de 2:50 a 3:50 p.m.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Dirigido a: Primaria
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Horario: Viernes de 2:50 a 3:50 p.m.
-              </h4>
-              <a
-                href="#contactoTaller"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Ver galería (izquierda - debajo de la imagen) -->
+                <a
+                  href="#galeriaIngles"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833 !important;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Quiero más información (derecha - debajo del texto) -->
+                <a
+                  href="#contactoTaller"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1195,68 +1782,130 @@
     <section id="frances">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <!-- Contenido (invertido: texto izquierda / imagen derecha en desktop) -->
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (derecha en desktop) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Francés
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-extraFrances.jpg"
-                  alt="Danza Moderna Ocachi"
+                  alt="Francés Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (izquierda en desktop) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- Wrapper para igualar alto con la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El francés se vive desde la experiencia cultural, el juego y la
-                expresión. Con el acompañamiento de la Alianza Francesa, los
-                niños aprenden un nuevo idioma a través de actividades dinámicas
-                que fortalecen su memoria, pronunciación y comprensión auditiva.
-                Este taller despierta en ellos el gusto por el aprendizaje
-                global y la apreciación de otras formas de pensar y vivir.
-              </h4>
-              <br />
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Francés
+                </h2>
+
+                <!-- Texto (más grande, justificado y ocupa el espacio) -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0 0 18px 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El francés se vive desde la experiencia cultural, el juego y
+                  la expresión. Con el acompañamiento de la Alianza Francesa,
+                  los niños aprenden un nuevo idioma a través de actividades
+                  dinámicas que fortalecen su memoria, pronunciación y
+                  comprensión auditiva. Este taller despierta en ellos el gusto
+                  por el aprendizaje global y la apreciación de otras formas de
+                  pensar y vivir.
+                </p>
+
+                <!-- Dirigido a / Horario en bold -->
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0 0 10px 0;
+                  "
+                >
+                  Dirigido a: Primaria
+                </p>
+
+                <p
+                  style="
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: #1a1833;
+                    margin: 0;
+                  "
+                >
+                  Horario y lugar: Sábados de 9:00 a.m. a 12:00 p.m. en la BIU
+                  de Uninter
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Dirigido a: Primaria
-              </h4>
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 800; font-size: 1rem"
-              >
-                Horario y lugar: Sábados de 9:00 a.m. a 12:00 p.m. en la BIU de
-                Uninter
-              </h4>
-              <a
-                href="#contactoTaller"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
-              >
-                Quiero más información
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaFrances"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833 !important;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Quiero más información (derecha) -->
+                <a
+                  href="#contactoTaller"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero más información
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1406,7 +2055,9 @@
 
               .row-equal .card {
                 flex: 1 1 auto;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                transition:
+                  transform 0.3s ease,
+                  box-shadow 0.3s ease;
               }
 
               .card-hover:hover {
@@ -1547,7 +2198,7 @@
                   // Si todo es válido
                   if (valid) {
                     console.log(
-                      "Formulario válido, listo para enviar a Firebase."
+                      "Formulario válido, listo para enviar a Firebase.",
                     );
                   }
                 });

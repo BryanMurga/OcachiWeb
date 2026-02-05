@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -115,11 +115,12 @@
             </small>
             <small class="me-3">
               <i class="fas fa-envelope me-2 text-secondary"></i>
-              <a href="mailto:correo@ocachicualli.com" class="text-white">
-                correo@ocachicualli.com
-              </a>
+              <a href="mailto:correo@ocachicualli.com" class="text-white"
+                >correo@ocachicualli.com</a
+              >
             </small>
           </div>
+
           <div class="top-link pe-2">
             <a
               href="https://www.facebook.com/OcachiNuevaEscuela"
@@ -158,125 +159,157 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
+              <!-- Inicio -->
               <a
-                style="color: #000 !important; font-size: 15px"
                 href="index.html"
-                class="nav-item nav-link active"
-                >Home</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
-                href="about.html"
                 class="nav-item nav-link"
-                >Acerca de nosotros</a
-              >
-              <a
                 style="color: #000 !important; font-size: 15px"
-                href="educativeModel.html"
-                class="nav-item nav-link"
-                >Modelo educativo</a
+                >Inicio</a
               >
 
-              <!-- VIDA ESCOLAR CON SUBMENÚ (CORREGIDO) -->
-              <div class="nav-item dropdown">
+              <!-- Nosotros -->
+              <div class="nav-item dropdown btn-group">
+                <!-- LINK que SÍ navega -->
                 <a
-                  href="schoolLife.html"
-                  class="nav-link dropdown-toggle"
-                  id="vidaEscolarDropdown"
+                  href="about.html"
+                  class="nav-link"
                   style="color: #000 !important; font-size: 15px"
+                >
+                  Nosotros
+                </a>
+
+                <!-- BOTÓN que abre el dropdown -->
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
                 >
-                  Vida escolar
+                  <span class="visually-hidden">Toggle Dropdown</span>
                 </a>
-                <div
-                  class="dropdown-menu border-0 shadow-sm"
-                  aria-labelledby="vidaEscolarDropdown"
-                >
+
+                <div class="dropdown-menu border-0 shadow-sm">
                   <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="schoolLife.html"
+                    href="educativeModel.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
-                    Vida escolar
+                    Modelo educativo
+                  </a>
+                </div>
+              </div>
+
+              <!-- Oferta Educativa -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="ofertaEducativa.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Oferta
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
+                    href="ofertaEducativa/prescolar.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Preescolar
                   </a>
                   <a
+                    href="ofertaEducativa/primaria.html"
+                    class="dropdown-item"
                     style="color: #000 !important; font-size: 15px"
+                  >
+                    Primaria
+                  </a>
+                </div>
+              </div>
+
+              <!-- Vida Ocachi -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="schoolLife.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Vida Ocachi
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
                     href="vidaEscolar/actividadesExtra.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Actividades extracurriculares
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="vidaEscolar/diferentes.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Lo que nos hace diferentes
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="vidaEscolar/eventosOcachi.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Eventos Ocachi
+                  </a>
+                  <a
+                    href="community.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Comunidad Ocachi
                   </a>
                 </div>
               </div>
 
+              <!-- Inscripciones -->
               <a
-                style="color: #000 !important; font-size: 15px"
-                href="community.html"
-                class="nav-item nav-link"
-                >Comunidad Ocachi</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
                 href="enrollment.html"
                 class="nav-item nav-link"
-                >Inscripciones</a
-              >
-
-              <!-- OFERTA EDUCATIVA CON SUBMENÚ -->
-              <div class="nav-item dropdown">
-                <a
-                  href="ofertaEducativa.html"
-                  class="nav-link dropdown-toggle"
-                  style="color: #000 !important; font-size: 15px"
-                  data-bs-toggle="dropdown"
-                  >Oferta educativa</a
-                >
-                <div class="dropdown-menu border-0 shadow-sm">
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="/ofertaEducativa.html"
-                    class="dropdown-item"
-                    >Introducción</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="/ofertaEducativa/prescolar.html"
-                    class="dropdown-item"
-                    >Preescolar</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="/ofertaEducativa/primaria.html"
-                    class="dropdown-item"
-                    >Primaria</a
-                  >
-                </div>
-              </div>
-              <!-- FIN OFERTA EDUCATIVA -->
-
-              <a
                 style="color: #000 !important; font-size: 15px"
-                href="./contact.html"
-                class="nav-item nav-link"
-                >Contacto</a
               >
+                Inscripciones
+              </a>
+
+              <!-- Contacto -->
+              <a
+                href="contact.html"
+                class="nav-item nav-link"
+                style="color: #000 !important; font-size: 15px"
+              >
+                Contacto
+              </a>
             </div>
 
+            <!-- Tel + WhatsApp se mantiene igual -->
             <div class="d-flex me-4">
               <div
                 id="phone-tada"
@@ -300,14 +333,14 @@
                   >Tienes alguna duda, contáctanos</span
                 >
                 <br />
-                <a href="tel:7771022411">
-                  <span style="color: #000 !important"
+                <a href="tel:7771022411"
+                  ><span style="color: #000 !important"
                     ><b>(777) 102 2411</b></span
-                  >
-                </a>
-                <a href="tel:7771022411">
-                  <span class="text-secondary">(777) 102 2411</span>
-                </a>
+                  ></a
+                >
+                <a href="tel:7771022411"
+                  ><span class="text-secondary">(777) 102 2411</span></a
+                >
               </div>
             </div>
 
@@ -322,7 +355,6 @@
         </nav>
       </div>
     </div>
-
     <!-- Navbar End -->
 
     <!-- Modal Search Start -->
@@ -383,7 +415,10 @@
       }
     </style>
     <!-- Welcome Start -->
-    <div class="container-fluid service py-5">
+    <div
+      class="container-fluid service-gray py-5"
+      style="background-color: #e5e5e5 !important"
+    >
       <div class="container py-5">
         <div
           class="mx-auto text-center wow fadeIn"
@@ -410,42 +445,27 @@
     </div>
     <!-- Welcome End -->
 
-    <style>
-      .welcome-text {
-        font-size: 1rem !important;
-        text-align: justify; /* Justifica el texto */
-        margin: 0 auto 1rem auto; /* Centra horizontalmente y agrega margen inferior */
-        max-width: 800px; /* Limita ancho para que la justificación se vea bien */
-      }
-    </style>
     <!-- Welcome Start -->
     <div class="container-fluid schoolLife py-5">
       <div class="container py-5">
-        <!-- Título centrado -->
-        <div
-          class="mx-auto text-center wow fadeIn"
-          data-wow-delay="0.1s"
-          style="max-width: 700px"
-        >
-          <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-            style="margin-bottom: 60px !important"
-          >
-            Inicia tu proceso de inscripción
-          </h4>
-        </div>
-
-        <!-- Fila principal con dos columnas -->
-        <div class="row align-items-center g-5">
-          <!-- Columna imagen -->
+        <div class="row align-items-start g-5">
+          <!-- Columna imagen + título -->
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <!-- Título arriba de la imagen (como en tu ejemplo) -->
+            <h4
+              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+              style="margin-bottom: 30px !important"
+            >
+              Inicia tu proceso de inscripción
+            </h4>
+
             <div
               class="formAdmisionImage border"
               style="height: 100%; min-height: 400px"
             ></div>
           </div>
 
-          <!-- Columna texto + botón -->
+          <!-- Columna texto -->
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <h2 style="font-size: 1.8rem; font-weight: 700">
               1. Formulario en línea
@@ -463,6 +483,7 @@
             >
               Formulario
             </a>
+
             <h2 style="font-size: 1.8rem; font-weight: 700; margin-top: 40px">
               2. Agenda tu visita
             </h2>
@@ -479,6 +500,7 @@
             >
               Agenda tu visita
             </a>
+
             <h2 style="font-size: 1.8rem; font-weight: 700; margin-top: 40px">
               3. Entrevista inicial
             </h2>
@@ -498,11 +520,10 @@
     <!-- Misión y Visión -->
     <div class="container-fluid" style="margin: 0; padding: 0">
       <div class="row g-0">
-        <!-- Misión -->
         <div
           class="col-md-12 other-block d-flex flex-column justify-content-center p-5"
         >
-          <p>
+          <p class="other-block-text">
             En Ocachi, cada día se aprende desde la experiencia, la emoción y el
             asombro. Nuestro modelo educativo combina arte, pensamiento crítico
             y comunidad para formar infancias libres y felices.
@@ -511,6 +532,7 @@
       </div>
     </div>
 
+    <style></style>
     <!-- CSS -->
     <style>
       .other-block {
@@ -531,80 +553,139 @@
         font-size: 1.4rem;
         line-height: 1.6;
       }
+      .other-block-text {
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+        line-height: 1.55;
+        margin: 0 auto;
+        max-width: 980px;
+        color: #1a1833;
+      }
+
+      @media (max-width: 768px) {
+        .other-block-text {
+          font-size: 1.35rem;
+          max-width: 100%;
+        }
+      }
     </style>
 
     <!-- Misión y Visión End -->
 
-    <style>
-      .welcome-text {
-        font-size: 1rem !important;
-        text-align: justify; /* Justifica el texto */
-        margin: 0 auto 1rem auto; /* Centra horizontalmente y agrega margen inferior */
-        max-width: 800px; /* Limita ancho para que la justificación se vea bien */
-      }
-    </style>
-    <!-- Welcome Start -->
-    <div class="container-fluid py-5">
+    <!-- Agenda tu visita Start -->
+    <div class="container-fluid visit-section py-5">
       <div class="container py-5">
-        <!-- Título centrado -->
-        <div
-          class="mx-auto text-center wow fadeIn"
-          data-wow-delay="0.1s"
-          style="max-width: 700px"
-        >
-          <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-            style="margin-bottom: 60px !important"
-          >
-            Agenda tu visita
-          </h4>
-        </div>
+        <div class="row align-items-start g-5">
+          <!-- Columna izquierda: Título + Card -->
+          <div class="col-lg-7 wow fadeIn" data-wow-delay="0.1s">
+            <h2 class="visit-title mb-4">Agenda tu visita</h2>
 
-        <!-- Fila principal con dos columnas -->
-        <div class="row align-items-center g-5">
-          <!-- Columna texto + botón -->
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <h2 style="font-size: 1.8rem; font-weight: 700">
-              Contacto de vinculación
-            </h2>
-            <h4
-              style="opacity: 0.8; color: #1a1833 !important"
-              class="welcome-text my-3"
-            >
-              Yanin
-            </h4>
-            <a
-              href="tel:7771022411"
-              style="opacity: 0.8; color: #1a1833 !important"
-            >
-              777 102 24 11
-            </a>
-            <br />
-            <a
-              href="mailto:inscripciones@ocachinuevaescuela.com.mx"
-              style="opacity: 0.8; color: #1a1833 !important"
-            >
-              inscripciones@ocachinuevaescuela.com.mx
-            </a>
-            <br /><br />
-            <a
-              href="https://api.whatsapp.com/send?phone=5217771022411&text=Hola%20vengo%20de%20la%20pagina%20web%20de%20Ocachi"
-              class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-              style="background-color: #a81926 !important"
-            >
-              Whatsapp
-            </a>
+            <div class="visit-card p-5">
+              <h3 class="visit-subtitle mb-3">Contacto de vinculación</h3>
+
+              <p class="visit-text mb-2">Yanin</p>
+
+              <a class="visit-link d-block mb-2" href="tel:7771022411">
+                777 102 24 11
+              </a>
+
+              <a
+                class="visit-link d-block mb-3"
+                href="mailto:inscripciones@ocachinuevaescuela.com.mx"
+              >
+                inscripciones@ocachinuevaescuela.com.mx
+              </a>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=5217771022411&text=Hola%20vengo%20de%20la%20pagina%20web%20de%20Ocachi"
+                class="btn px-5 py-3 text-white btn-border-radius mt-2 visit-btn"
+                style="background-color: #a81926 !important"
+              >
+                Whatsapp
+              </a>
+            </div>
           </div>
-          <!-- Columna imagen -->
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+
+          <!-- Columna derecha: Imagen -->
+          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <div
-              class="visitImage border"
-              style="height: 100%; min-height: 400px"
+              class="visitImage border visit-img"
+              style="min-height: 360px"
             ></div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Agenda tu visita End -->
+
+    <style>
+      .visit-section {
+        background-color: #e7ddd3;
+      }
+
+      .visit-title {
+        color: #a81926;
+        font-weight: 800;
+        font-size: 2.2rem;
+        line-height: 1.1;
+        margin: 0;
+      }
+
+      .visit-card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      }
+
+      .visit-subtitle {
+        color: #1a1833;
+        font-weight: 800;
+        font-size: 1.4rem;
+      }
+
+      .visit-text {
+        color: #1a1833;
+        opacity: 0.8;
+        font-size: 1.1rem;
+        margin: 0;
+      }
+
+      /* FORZAR que se vean aunque haya estilos globales en <a> */
+      .visit-card .visit-link {
+        color: #1a1833 !important;
+        opacity: 0.8;
+        font-size: 1.1rem;
+        text-decoration: none;
+      }
+      .visit-card .visit-link:hover {
+        text-decoration: underline;
+      }
+
+      .visit-img {
+        border-radius: 40px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* Botón justo debajo del texto */
+      .visit-btn {
+        display: inline-block;
+        margin-top: 10px !important;
+      }
+
+      @media (max-width: 991.98px) {
+        .visit-title {
+          font-size: 1.9rem;
+        }
+        .visit-card {
+          padding: 2rem !important;
+        }
+        .visit-img {
+          min-height: 280px !important;
+        }
+      }
+    </style>
 
     <!-- Welcome End -->
 
@@ -724,7 +805,9 @@
 
             .row-equal .card {
               flex: 1 1 auto; /* fuerza que las tarjetas ocupen toda la altura disponible */
-              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
             }
 
             /* Hover para indicar interactividad */

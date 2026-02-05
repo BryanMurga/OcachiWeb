@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -119,11 +119,12 @@
             </small>
             <small class="me-3">
               <i class="fas fa-envelope me-2 text-secondary"></i>
-              <a href="mailto:correo@ocachicualli.com" class="text-white">
-                correo@ocachicualli.com
-              </a>
+              <a href="mailto:correo@ocachicualli.com" class="text-white"
+                >correo@ocachicualli.com</a
+              >
             </small>
           </div>
+
           <div class="top-link pe-2">
             <a
               href="https://www.facebook.com/OcachiNuevaEscuela"
@@ -162,125 +163,157 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
+              <!-- Inicio -->
               <a
-                style="color: #000 !important; font-size: 15px"
                 href="../index.html"
-                class="nav-item nav-link active"
-                >Home</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
-                href="../about.html"
                 class="nav-item nav-link"
-                >Acerca de nosotros</a
-              >
-              <a
                 style="color: #000 !important; font-size: 15px"
-                href="../educativeModel.html"
-                class="nav-item nav-link"
-                >Modelo educativo</a
+                >Inicio</a
               >
 
-              <!-- VIDA ESCOLAR CON SUBMENÚ (CORREGIDO) -->
-              <div class="nav-item dropdown">
+              <!-- Nosotros -->
+              <div class="nav-item dropdown btn-group">
+                <!-- LINK que SÍ navega -->
                 <a
-                  href="../schoolLife.html"
-                  class="nav-link dropdown-toggle"
-                  id="vidaEscolarDropdown"
+                  href="../about.html"
+                  class="nav-link"
                   style="color: #000 !important; font-size: 15px"
+                >
+                  Nosotros
+                </a>
+
+                <!-- BOTÓN que abre el dropdown -->
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
                 >
-                  Vida escolar
+                  <span class="visually-hidden">Toggle Dropdown</span>
                 </a>
-                <div
-                  class="dropdown-menu border-0 shadow-sm"
-                  aria-labelledby="vidaEscolarDropdown"
-                >
+
+                <div class="dropdown-menu border-0 shadow-sm">
                   <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../schoolLife.html"
+                    href="../../educativeModel.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
-                    Vida escolar
+                    Modelo educativo
+                  </a>
+                </div>
+              </div>
+
+              <!-- Oferta Educativa -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="../../ofertaEducativa.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Oferta
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
+                    href="../ofertaEducativa/prescolar.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Preescolar
                   </a>
                   <a
+                    href="../ofertaEducativa/primaria.html"
+                    class="dropdown-item"
                     style="color: #000 !important; font-size: 15px"
+                  >
+                    Primaria
+                  </a>
+                </div>
+              </div>
+
+              <!-- Vida Ocachi -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="../schoolLife.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Vida Ocachi
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
                     href="../vidaEscolar/actividadesExtra.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Actividades extracurriculares
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="../vidaEscolar/diferentes.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Lo que nos hace diferentes
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="../vidaEscolar/eventosOcachi.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Eventos Ocachi
+                  </a>
+                  <a
+                    href="../community.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Comunidad Ocachi
                   </a>
                 </div>
               </div>
 
+              <!-- Inscripciones -->
               <a
-                style="color: #000 !important; font-size: 15px"
-                href="../community.html"
-                class="nav-item nav-link"
-                >Comunidad Ocachi</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
                 href="../enrollment.html"
                 class="nav-item nav-link"
-                >Inscripciones</a
-              >
-
-              <!-- OFERTA EDUCATIVA CON SUBMENÚ -->
-              <div class="nav-item dropdown">
-                <a
-                  href="../ofertaEducativa.html"
-                  class="nav-link dropdown-toggle"
-                  style="color: #000 !important; font-size: 15px"
-                  data-bs-toggle="dropdown"
-                  >Oferta educativa</a
-                >
-                <div class="dropdown-menu border-0 shadow-sm">
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../ofertaEducativa.html"
-                    class="dropdown-item"
-                    >Introducción</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../ofertaEducativa/prescolar.html"
-                    class="dropdown-item"
-                    >Preescolar</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../ofertaEducativa/primaria.html"
-                    class="dropdown-item"
-                    >Primaria</a
-                  >
-                </div>
-              </div>
-              <!-- FIN OFERTA EDUCATIVA -->
-
-              <a
                 style="color: #000 !important; font-size: 15px"
+              >
+                Inscripciones
+              </a>
+
+              <!-- Contacto -->
+              <a
                 href="../contact.html"
                 class="nav-item nav-link"
-                >Contacto</a
+                style="color: #000 !important; font-size: 15px"
               >
+                Contacto
+              </a>
             </div>
 
+            <!-- Tel + WhatsApp se mantiene igual -->
             <div class="d-flex me-4">
               <div
                 id="phone-tada"
@@ -304,14 +337,14 @@
                   >Tienes alguna duda, contáctanos</span
                 >
                 <br />
-                <a href="tel:7771022411">
-                  <span style="color: #000 !important"
+                <a href="tel:7771022411"
+                  ><span style="color: #000 !important"
                     ><b>(777) 102 2411</b></span
-                  >
-                </a>
-                <a href="tel:7771022411">
-                  <span class="text-secondary">(777) 102 2411</span>
-                </a>
+                  ></a
+                >
+                <a href="tel:7771022411"
+                  ><span class="text-secondary">(777) 102 2411</span></a
+                >
               </div>
             </div>
 
@@ -389,7 +422,7 @@
       }
     </style>
     <!-- Welcome Start -->
-    <div class="container-fluid service py-5">
+    <div class="container-fluid py-5">
       <div class="container py-5">
         <div
           class="mx-auto text-center wow fadeIn"
@@ -397,13 +430,18 @@
           style="max-width: 700px"
         >
           <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            class="text-primary mb-3 fw-bold fs-2 d-inline-block"
             style="margin-bottom: 60px !important"
           >
             Una escuela que crece con cada niño
           </h4>
         </div>
         <div class="row g-5">
+          <style>
+            .welcome-text {
+              color: #4a4a4a; /* gris más claro */
+            }
+          </style>
           <h4 class="welcome-text my-3">
             En Ocachi cultivamos una forma de aprender que nace de la
             experiencia y del vínculo humano. Educamos desde la escucha, la
@@ -416,61 +454,111 @@
       </div>
     </div>
     <!-- Welcome End -->
+    <!-- Welcome End -->
 
     <!-- 🖥 SECCIÓN COMPUTACIÓN -->
     <section id="activo">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Aprendizaje activo y vivencial
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-diferentesActivo.jpg"
-                  alt="Computación Ocachi"
+                  alt="Aprendizaje activo y vivencial"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                En Ocachi, aprender significa vivir la experiencia del
-                conocimiento. Nuestros alumnos exploran el mundo a través de
-                proyectos, experimentos, juegos y actividades que los conectan
-                con la realidad. El aprendizaje activo fomenta la curiosidad, el
-                pensamiento crítico y la autonomía: cada tema se convierte en
-                una aventura donde se pregunta, se observa, se toca y se
-                transforma.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Aprendizaje activo y vivencial
+                </h2>
+
+                <!-- Texto (más grande y ocupa el espacio disponible) -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  En Ocachi, aprender significa vivir la experiencia del
+                  conocimiento. Nuestros alumnos exploran el mundo a través de
+                  proyectos, experimentos, juegos y actividades que los conectan
+                  con la realidad. El aprendizaje activo fomenta la curiosidad,
+                  el pensamiento crítico y la autonomía: cada tema se convierte
+                  en una aventura donde se pregunta, se observa, se toca y se
+                  transforma.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaActivo"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -481,56 +569,105 @@
     <section id="lectura">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (DERECHA en lg por flex-lg-row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Arte y expresión lúdica
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-diferentesExpresion.jpg"
-                  alt="Lectura y Escritura Ocachi"
+                  alt="Arte y expresión lúdica Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (IZQUIERDA en lg por flex-lg-row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El arte es un lenguaje esencial en nuestra escuela. A través de
-                la pintura, la música, la danza, el teatro y la escritura, los
-                niños expresan su mundo interior y aprenden a mirar el de los
-                demás. El juego y la creación van de la mano: se valora el
-                proceso más que el resultado, fortaleciendo la sensibilidad, la
-                confianza y la capacidad de imaginar nuevas formas de ser y
-                convivir.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Arte y expresión lúdica
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El arte es un lenguaje esencial en nuestra escuela. A través
+                  de la pintura, la música, la danza, el teatro y la escritura,
+                  los niños expresan su mundo interior y aprenden a mirar el de
+                  los demás. El juego y la creación van de la mano: se valora el
+                  proceso más que el resultado, fortaleciendo la sensibilidad,
+                  la confianza y la capacidad de imaginar nuevas formas de ser y
+                  convivir.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaExpresion"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -541,55 +678,105 @@
     <section id="activo">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen (IZQUIERDA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Inglés vivo
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-diferentesIngles.jpg"
-                  alt="Computación Ocachi"
+                  alt="Inglés vivo Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (DERECHA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El inglés se aprende de forma natural, viva y significativa. A
-                través de juegos, canciones, proyectos y situaciones cotidianas,
-                los alumnos incorporan el idioma como parte de su día a día. Más
-                allá de la gramática, lo que cultivamos es la comunicación, la
-                escucha activa y la apertura hacia otras culturas, fomentando la
-                seguridad para expresarse en un segundo idioma con autenticidad.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Inglés vivo
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El inglés se aprende de forma natural, viva y significativa. A
+                  través de juegos, canciones, proyectos y situaciones
+                  cotidianas, los alumnos incorporan el idioma como parte de su
+                  día a día. Más allá de la gramática, lo que cultivamos es la
+                  comunicación, la escucha activa y la apertura hacia otras
+                  culturas, fomentando la seguridad para expresarse en un
+                  segundo idioma con autenticidad.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaIngles"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -600,56 +787,105 @@
     <section id="lectura">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (DERECHA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Acompañamiento psicoemocional
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-diferentesPsicologico.jpg"
-                  alt="Lectura y Escritura Ocachi"
+                  alt="Acompañamiento psicoemocional Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (IZQUIERDA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El bienestar emocional es el punto de partida para todo
-                aprendizaje. En Ocachi, acompañamos a cada niño en su desarrollo
-                emocional, social y afectivo mediante dinámicas, conversaciones
-                y observación constante. Este acompañamiento promueve la
-                autorregulación, la empatía y la confianza, creando un entorno
-                donde cada estudiante puede ser escuchado, comprendido y
-                valorado.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Acompañamiento psicoemocional
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El bienestar emocional es el punto de partida para todo
+                  aprendizaje. En Ocachi, acompañamos a cada niño en su
+                  desarrollo emocional, social y afectivo mediante dinámicas,
+                  conversaciones y observación constante. Este acompañamiento
+                  promueve la autorregulación, la empatía y la confianza,
+                  creando un entorno donde cada estudiante puede ser escuchado,
+                  comprendido y valorado.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaPsicoemocional"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -660,56 +896,105 @@
     <section id="activo">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen (IZQUIERDA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Educación ambiental y comunidad
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-diferentesAmbiental.jpg"
-                  alt="Computación Ocachi"
+                  alt="Educación ambiental y comunidad Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (DERECHA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                Cuidar la tierra es una forma de cuidarnos a nosotros mismos.
-                Desde los huertos, la separación de residuos y los proyectos
-                ecológicos, los niños aprenden que cada acción cuenta.
-                Promovemos la conciencia ambiental y el sentido de pertenencia
-                comunitaria, fortaleciendo vínculos entre escuela, familia y
-                entorno natural. Aprendemos juntos a vivir en armonía con el
-                planeta.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Educación ambiental y comunidad
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  Cuidar la tierra es una forma de cuidarnos a nosotros mismos.
+                  Desde los huertos, la separación de residuos y los proyectos
+                  ecológicos, los niños aprenden que cada acción cuenta.
+                  Promovemos la conciencia ambiental y el sentido de pertenencia
+                  comunitaria, fortaleciendo vínculos entre escuela, familia y
+                  entorno natural. Aprendemos juntos a vivir en armonía con el
+                  planeta.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaAmbiental"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -720,56 +1005,105 @@
     <section id="lectura">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (DERECHA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Actividades y proyectos destacados
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-diferentesDestacados.jpg"
-                  alt="Lectura y Escritura Ocachi"
+                  alt="Actividades y proyectos destacados Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (IZQUIERDA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                A lo largo del ciclo escolar, la comunidad Ocachi se reúne en
-                actividades que celebran la creatividad, el conocimiento y el
-                trabajo en equipo: ferias, exposiciones, festivales y olimpiadas
-                escolares. Cada proyecto es una oportunidad para mostrar lo
-                aprendido, compartir con otros y reconocer el valor del esfuerzo
-                colectivo. En estas experiencias, la escuela se convierte en un
-                espacio vivo y participativo.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Actividades y proyectos destacados
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  A lo largo del ciclo escolar, la comunidad Ocachi se reúne en
+                  actividades que celebran la creatividad, el conocimiento y el
+                  trabajo en equipo: ferias, exposiciones, festivales y
+                  olimpiadas escolares. Cada proyecto es una oportunidad para
+                  mostrar lo aprendido, compartir con otros y reconocer el valor
+                  del esfuerzo colectivo. En estas experiencias, la escuela se
+                  convierte en un espacio vivo y participativo.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaDestacados"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -780,56 +1114,105 @@
     <section id="activo">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen (IZQUIERDA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Aprendizaje por proyectos
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-diferentesProyectos.jpg"
-                  alt="Computación Ocachi"
+                  alt="Aprendizaje por proyectos Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (DERECHA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                Los proyectos integran diversas áreas del conocimiento para
-                responder a preguntas reales y significativas. En lugar de
-                memorizar, los niños investigan, crean y construyen soluciones,
-                desarrollando pensamiento crítico y habilidades colaborativas.
-                Este enfoque despierta el sentido de propósito en el
-                aprendizaje, permitiendo que cada alumno se reconozca como
-                protagonista de su propio proceso.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Aprendizaje por proyectos
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  Los proyectos integran diversas áreas del conocimiento para
+                  responder a preguntas reales y significativas. En lugar de
+                  memorizar, los niños investigan, crean y construyen
+                  soluciones, desarrollando pensamiento crítico y habilidades
+                  colaborativas. Este enfoque despierta el sentido de propósito
+                  en el aprendizaje, permitiendo que cada alumno se reconozca
+                  como protagonista de su propio proceso.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaProyectos"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -840,56 +1223,105 @@
     <section id="lectura">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (DERECHA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Conferencias y pensamiento crítico
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-diferentesConferencias.jpg"
-                  alt="Lectura y Escritura Ocachi"
+                  alt="Conferencias y pensamiento crítico Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (IZQUIERDA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                En Ocachi fomentamos el diálogo, la reflexión y la curiosidad
-                intelectual. A través de conferencias, encuentros y
-                conversaciones con especialistas, los alumnos amplían su mirada
-                sobre el mundo. Estas experiencias fortalecen su capacidad de
-                argumentar, preguntar y discernir, valores esenciales para una
-                educación que forma personas libres, informadas y comprometidas
-                con su entorno.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Conferencias y pensamiento crítico
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  En Ocachi fomentamos el diálogo, la reflexión y la curiosidad
+                  intelectual. A través de conferencias, encuentros y
+                  conversaciones con especialistas, los alumnos amplían su
+                  mirada sobre el mundo. Estas experiencias fortalecen su
+                  capacidad de argumentar, preguntar y discernir, valores
+                  esenciales para una educación que forma personas libres,
+                  informadas y comprometidas con su entorno.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaConferencias"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -900,56 +1332,105 @@
     <section id="activo">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen (IZQUIERDA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Texto libre e imprenta escolar
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-diferentesImprenta.jpg"
-                  alt="Computación Ocachi"
+                  alt="Texto libre e imprenta escolar Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (DERECHA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                Inspirados en las pedagogías activas, en Ocachi los niños
-                escriben, ilustran y publican sus propios textos. La imprenta
-                escolar es un espacio donde las palabras cobran vida y las ideas
-                se comparten con otros. Este proceso desarrolla la escritura
-                creativa, la lectura comprensiva y el orgullo por el propio
-                trabajo, haciendo del lenguaje un puente entre pensamiento y
-                expresión.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Texto libre e imprenta escolar
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  Inspirados en las pedagogías activas, en Ocachi los niños
+                  escriben, ilustran y publican sus propios textos. La imprenta
+                  escolar es un espacio donde las palabras cobran vida y las
+                  ideas se comparten con otros. Este proceso desarrolla la
+                  escritura creativa, la lectura comprensiva y el orgullo por el
+                  propio trabajo, haciendo del lenguaje un puente entre
+                  pensamiento y expresión.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaImprenta"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1097,7 +1578,9 @@
 
               .row-equal .card {
                 flex: 1 1 auto; /* fuerza que las tarjetas ocupen toda la altura disponible */
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                transition:
+                  transform 0.3s ease,
+                  box-shadow 0.3s ease;
               }
 
               /* Hover para indicar interactividad */

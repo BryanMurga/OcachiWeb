@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -119,11 +119,12 @@
             </small>
             <small class="me-3">
               <i class="fas fa-envelope me-2 text-secondary"></i>
-              <a href="mailto:correo@ocachicualli.com" class="text-white">
-                correo@ocachicualli.com
-              </a>
+              <a href="mailto:correo@ocachicualli.com" class="text-white"
+                >correo@ocachicualli.com</a
+              >
             </small>
           </div>
+
           <div class="top-link pe-2">
             <a
               href="https://www.facebook.com/OcachiNuevaEscuela"
@@ -162,125 +163,157 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
+              <!-- Inicio -->
               <a
-                style="color: #000 !important; font-size: 15px"
                 href="../index.html"
-                class="nav-item nav-link active"
-                >Home</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
-                href="../about.html"
                 class="nav-item nav-link"
-                >Acerca de nosotros</a
-              >
-              <a
                 style="color: #000 !important; font-size: 15px"
-                href="../educativeModel.html"
-                class="nav-item nav-link"
-                >Modelo educativo</a
+                >Inicio</a
               >
 
-              <!-- VIDA ESCOLAR CON SUBMENÚ (CORREGIDO) -->
-              <div class="nav-item dropdown">
+              <!-- Nosotros -->
+              <div class="nav-item dropdown btn-group">
+                <!-- LINK que SÍ navega -->
                 <a
-                  href="../schoolLife.html"
-                  class="nav-link dropdown-toggle"
-                  id="vidaEscolarDropdown"
+                  href="../about.html"
+                  class="nav-link"
                   style="color: #000 !important; font-size: 15px"
+                >
+                  Nosotros
+                </a>
+
+                <!-- BOTÓN que abre el dropdown -->
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
                 >
-                  Vida escolar
+                  <span class="visually-hidden">Toggle Dropdown</span>
                 </a>
-                <div
-                  class="dropdown-menu border-0 shadow-sm"
-                  aria-labelledby="vidaEscolarDropdown"
-                >
+
+                <div class="dropdown-menu border-0 shadow-sm">
                   <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../schoolLife.html"
+                    href="../../educativeModel.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
-                    Vida escolar
+                    Modelo educativo
+                  </a>
+                </div>
+              </div>
+
+              <!-- Oferta Educativa -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="../../ofertaEducativa.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Oferta
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
+                    href="../ofertaEducativa/prescolar.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Preescolar
                   </a>
                   <a
+                    href="../ofertaEducativa/primaria.html"
+                    class="dropdown-item"
                     style="color: #000 !important; font-size: 15px"
+                  >
+                    Primaria
+                  </a>
+                </div>
+              </div>
+
+              <!-- Vida Ocachi -->
+              <div class="nav-item dropdown btn-group">
+                <a
+                  href="../schoolLife.html"
+                  class="nav-link"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  Vida Ocachi
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle-split"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #000 !important; font-size: 15px"
+                >
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0 shadow-sm">
+                  <a
                     href="../vidaEscolar/actividadesExtra.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Actividades extracurriculares
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="../vidaEscolar/diferentes.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Lo que nos hace diferentes
                   </a>
                   <a
-                    style="color: #000 !important; font-size: 15px"
                     href="../vidaEscolar/eventosOcachi.html"
                     class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
                   >
                     Eventos Ocachi
+                  </a>
+                  <a
+                    href="../community.html"
+                    class="dropdown-item"
+                    style="color: #000 !important; font-size: 15px"
+                  >
+                    Comunidad Ocachi
                   </a>
                 </div>
               </div>
 
+              <!-- Inscripciones -->
               <a
-                style="color: #000 !important; font-size: 15px"
-                href="../community.html"
-                class="nav-item nav-link"
-                >Comunidad Ocachi</a
-              >
-              <a
-                style="color: #000 !important; font-size: 15px"
                 href="../enrollment.html"
                 class="nav-item nav-link"
-                >Inscripciones</a
-              >
-
-              <!-- OFERTA EDUCATIVA CON SUBMENÚ -->
-              <div class="nav-item dropdown">
-                <a
-                  href="../ofertaEducativa.html"
-                  class="nav-link dropdown-toggle"
-                  style="color: #000 !important; font-size: 15px"
-                  data-bs-toggle="dropdown"
-                  >Oferta educativa</a
-                >
-                <div class="dropdown-menu border-0 shadow-sm">
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../ofertaEducativa.html"
-                    class="dropdown-item"
-                    >Introducción</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../ofertaEducativa/prescolar.html"
-                    class="dropdown-item"
-                    >Preescolar</a
-                  >
-                  <a
-                    style="color: #000 !important; font-size: 15px"
-                    href="../ofertaEducativa/primaria.html"
-                    class="dropdown-item"
-                    >Primaria</a
-                  >
-                </div>
-              </div>
-              <!-- FIN OFERTA EDUCATIVA -->
-
-              <a
                 style="color: #000 !important; font-size: 15px"
+              >
+                Inscripciones
+              </a>
+
+              <!-- Contacto -->
+              <a
                 href="../contact.html"
                 class="nav-item nav-link"
-                >Contacto</a
+                style="color: #000 !important; font-size: 15px"
               >
+                Contacto
+              </a>
             </div>
 
+            <!-- Tel + WhatsApp se mantiene igual -->
             <div class="d-flex me-4">
               <div
                 id="phone-tada"
@@ -304,14 +337,14 @@
                   >Tienes alguna duda, contáctanos</span
                 >
                 <br />
-                <a href="tel:7771022411">
-                  <span style="color: #000 !important"
+                <a href="tel:7771022411"
+                  ><span style="color: #000 !important"
                     ><b>(777) 102 2411</b></span
-                  >
-                </a>
-                <a href="tel:7771022411">
-                  <span class="text-secondary">(777) 102 2411</span>
-                </a>
+                  ></a
+                >
+                <a href="tel:7771022411"
+                  ><span class="text-secondary">(777) 102 2411</span></a
+                >
               </div>
             </div>
 
@@ -387,7 +420,7 @@
       }
     </style>
     <!-- Welcome Start -->
-    <div class="container-fluid service py-5">
+    <div class="container-fluid py-5">
       <div class="container py-5">
         <div
           class="mx-auto text-center wow fadeIn"
@@ -395,13 +428,18 @@
           style="max-width: 700px"
         >
           <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            class="text-primary mb-3 fw-bold fs-2 d-inline-block"
             style="margin-bottom: 60px !important"
           >
             La escuela como comunidad viva
           </h4>
         </div>
         <div class="row g-5">
+          <style>
+            .welcome-text {
+              color: #4a4a4a; /* gris más claro */
+            }
+          </style>
           <h4 class="welcome-text my-3">
             Cada encuentro en Ocachi es una celebración del aprendizaje
             compartido. Nuestros eventos reúnen a familias, maestros y
@@ -414,60 +452,110 @@
       </div>
     </div>
     <!-- Welcome End -->
+    <!-- Welcome End -->
 
     <!-- 🖥 SECCIÓN COMPUTACIÓN -->
     <section id="activo">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen (IZQUIERDA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Olimpiadas Ocachi: el cuerpo en movimiento, sin competencia
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-eventosOlimpiadas.jpg"
-                  alt="Computación Ocachi"
+                  alt="Olimpiadas Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (DERECHA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                Más que competir, en nuestras Olimpiadas celebramos el esfuerzo,
-                la constancia y la superación personal. Cada niño y niña
-                participa desde su propio ritmo, descubriendo que el verdadero
-                logro está en concluir una carrera, compartir en equipo y
-                disfrutar del movimiento. Este evento fortalece la comunidad, el
-                respeto y la alegría por el juego limpio.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Olimpiadas Ocachi: el cuerpo en movimiento, sin competencia
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  Más que competir, en nuestras Olimpiadas celebramos el
+                  esfuerzo, la constancia y la superación personal. Cada niño y
+                  niña participa desde su propio ritmo, descubriendo que el
+                  verdadero logro está en concluir una carrera, compartir en
+                  equipo y disfrutar del movimiento. Este evento fortalece la
+                  comunidad, el respeto y la alegría por el juego limpio.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaOlimpiadas"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -478,55 +566,105 @@
     <section id="lectura">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (DERECHA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Feria del Libro
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/proyectosDestaca2.png"
-                  alt="Lectura y Escritura Ocachi"
+                  alt="Feria del Libro Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (IZQUIERDA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                La lectura es un viaje compartido, y la Feria del Libro Ocachi
-                es uno de sus momentos más esperados. Durante esta semana, la
-                escuela se llena de cuentos, historias y palabras que inspiran.
-                Los niños conocen autores, recomiendan libros, escriben y leen
-                en voz alta, comprendiendo que los libros son una puerta hacia
-                otros mundos y una herramienta para pensar, sentir y crear.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Feria del Libro
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  La lectura es un viaje compartido, y la Feria del Libro Ocachi
+                  es uno de sus momentos más esperados. Durante esta semana, la
+                  escuela se llena de cuentos, historias y palabras que
+                  inspiran. Los niños conocen autores, recomiendan libros,
+                  escriben y leen en voz alta, comprendiendo que los libros son
+                  una puerta hacia otros mundos y una herramienta para pensar,
+                  sentir y crear.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaFeriaLibro"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -537,55 +675,103 @@
     <section id="activo">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen (IZQUIERDA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Campamento Ocachi
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-eventosCampamento.jpg"
-                  alt="Computación Ocachi"
+                  alt="Campamento Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (DERECHA) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El campamento es una experiencia vivencial donde los niños
-                aprenden a convivir, cuidar y disfrutar de la naturaleza. A
-                través del juego, la exploración y la aventura, fortalecen la
-                autonomía, la conanza y los lazos de amistad. Dormir bajo las
-                estrellas y compartir historias alrededor del fuego se convierte
-                en un recuerdo que une generaciones.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Campamento Ocachi
+                </h2>
+
+                <!-- Texto -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El campamento es una experiencia vivencial donde los niños
+                  aprenden a convivir, cuidar y disfrutar de la naturaleza. A
+                  través del juego, la exploración y la aventura, fortalecen la
+                  autonomía, la confianza y los lazos de amistad. Dormir bajo
+                  las estrellas y compartir historias alrededor del fuego se
+                  convierte en un recuerdo que une generaciones.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaCampamento"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -596,55 +782,103 @@
     <section id="lectura">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (DERECHA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Semana de las Ciencias
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-eventosCiencias.jpg"
-                  alt="Lectura y Escritura Ocachi"
+                  alt="Semana de las Ciencias Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (IZQUIERDA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                Durante la Semana de las Ciencias, la curiosidad se convierte en
-                protagonista. Los alumnos experimentan, observan, preguntan y
-                presentan sus propios proyectos cientícos. Este espacio fomenta
-                el pensamiento crítico y la capacidad de asombro, mostrando que
-                la ciencia no está solo en los libros, sino en todo lo que nos
-                rodea y podemos descubrir juntos.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Semana de las Ciencias
+                </h2>
+
+                <!-- Texto -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  Durante la Semana de las Ciencias, la curiosidad se convierte
+                  en protagonista. Los alumnos experimentan, observan, preguntan
+                  y presentan sus propios proyectos científicos. Este espacio
+                  fomenta el pensamiento crítico y la capacidad de asombro,
+                  mostrando que la ciencia no está solo en los libros, sino en
+                  todo lo que nos rodea y podemos descubrir juntos.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaCiencias"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -655,55 +889,103 @@
     <section id="activo">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen (izquierda) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Trazos Infantiles
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-eventosTrazosInfantiles.jpg"
-                  alt="Computación Ocachi"
+                  alt="Trazos Infantiles Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (derecha) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El arte también tiene su gran celebración en Trazos Infantiles,
-                una exposición donde los niños muestran sus procesos creativos y
-                su mirada del mundo. Aquí se valora el gesto, la intención y la
-                emoción detrás de cada trazo. Este encuentro es un recordatorio
-                de que el arte infantil no busca la perfección, sino expresar lo
-                que somos y soñamos.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Trazos Infantiles
+                </h2>
+
+                <!-- Texto -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El arte también tiene su gran celebración en Trazos
+                  Infantiles, una exposición donde los niños muestran sus
+                  procesos creativos y su mirada del mundo. Aquí se valora el
+                  gesto, la intención y la emoción detrás de cada trazo. Este
+                  encuentro es un recordatorio de que el arte infantil no busca
+                  la perfección, sino expresar lo que somos y soñamos.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaTrazos"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -714,55 +996,104 @@
     <section id="lectura">
       <div class="container-fluid py-5" style="background-color: #ffffff">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (derecha por reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Festival de la Raíz
-            </h4>
-          </div>
-
-          <!-- Contenido (invertido) -->
-          <div class="row align-items-top g-5 flex-lg-row-reverse">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-eventosRaiz.jpg"
-                  alt="Lectura y Escritura Ocachi"
+                  alt="Festival de la Raíz Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto (izquierda) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                El Festival de la Raíz celebra nuestra identidad y nuestras
-                raíces culturales. A través de danzas, música, comidas
-                tradicionales y relatos, los niños se conectan con la riqueza de
-                la cultura mexicana desde la infancia. Este evento fortalece el
-                sentido de pertenencia y el orgullo por nuestras tradiciones,
-                recordándonos que en cada raíz hay vida, historia y comunidad.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Festival de la Raíz
+                </h2>
+
+                <!-- Texto -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  El Festival de la Raíz celebra nuestra identidad y nuestras
+                  raíces culturales. A través de danzas, música, comidas
+                  tradicionales y relatos, los niños se conectan con la riqueza
+                  de la cultura mexicana desde la infancia. Este evento
+                  fortalece el sentido de pertenencia y el orgullo por nuestras
+                  tradiciones, recordándonos que en cada raíz hay vida, historia
+                  y comunidad.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaRaiz"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -773,57 +1104,106 @@
     <section id="activo">
       <div class="container-fluid py-5" style="background-color: #e9ecf1">
         <div class="container py-5">
-          <!-- Título -->
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-              style="margin-bottom: 60px !important"
+          <div class="row align-items-stretch g-5">
+            <!-- Columna imagen -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
             >
-              Efemérides y Festividades
-            </h4>
-          </div>
-
-          <!-- Contenido -->
-          <div class="row align-items-top g-5">
-            <!-- Imagen -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <div class="image-container shadow-sm">
+              <div class="image-container shadow-sm flex-grow-1">
                 <img
                   src="../img/ocachi2025/ocachi-eventosEfemerides.jpg"
-                  alt="Computación Ocachi"
+                  alt="Efemérides y Festividades Ocachi"
                   class="img-fluid w-100 styled-image"
-                  style="min-height: 550px; object-fit: cover"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
                 />
               </div>
             </div>
 
-            <!-- Texto -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-              <h4
-                class="welcome-text my-3"
-                style="font-weight: 500; font-size: 1rem; margin-bottom: 20px"
+            <!-- Columna texto -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
               >
-                En Ocachi, cada fecha signicativa es una oportunidad para
-                aprender desde la emoción y la participación. Celebramos juntos
-                el Festival de Primavera, el Día del Niño, el Día de las Madres
-                y los Padres, el Día de la Independencia, el Día de Muertos y la
-                Navidad, entre otras conmemoraciones. Cada festividad se vive
-                con sentido educativo y afectivo: los niños comprenden su valor
-                histórico y simbólico mientras disfrutan el arte, la música, el
-                color y la alegría de ser parte de una comunidad viva.
-              </h4>
-              <br />
-              <a
-                href="#contacto"
-                class="btn btn-primary px-5 py-3 text-white btn-border-radius mt-3"
-                style="background-color: #1a1833 !important"
+                <!-- Título -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                  "
+                >
+                  Efemérides y Festividades
+                </h2>
+
+                <!-- Texto -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  En Ocachi, cada fecha significativa es una oportunidad para
+                  aprender desde la emoción y la participación. Celebramos
+                  juntos el Festival de Primavera, el Día del Niño, el Día de
+                  las Madres y los Padres, el Día de la Independencia, el Día de
+                  Muertos y la Navidad, entre otras conmemoraciones. Cada
+                  festividad se vive con sentido educativo y afectivo: los niños
+                  comprenden su valor histórico y simbólico mientras disfrutan
+                  el arte, la música, el color y la alegría de ser parte de una
+                  comunidad viva.
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                Quiero agendar una cita
-              </a>
+                <!-- Ver galería (izquierda) -->
+                <a
+                  href="#galeriaEfemerides"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                <!-- Agendar cita (derecha) -->
+                <a
+                  href="#contacto"
+                  class="btn px-5 py-3 text-white btn-border-radius"
+                  style="
+                    background-color: #1a1833 !important;
+                    font-weight: 700;
+                    min-width: 260px;
+                  "
+                >
+                  Quiero agendar una cita
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -971,7 +1351,9 @@
 
               .row-equal .card {
                 flex: 1 1 auto; /* fuerza que las tarjetas ocupen toda la altura disponible */
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                transition:
+                  transform 0.3s ease,
+                  box-shadow 0.3s ease;
               }
 
               /* Hover para indicar interactividad */

@@ -143,11 +143,21 @@
 <a href="index.html" class="nav-item nav-link" style="color:#000 !important; font-size:15px;">Inicio</a>
 
 <!-- Nosotros -->
-<div class="nav-item dropdown">
-  <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-     style="color:#000 !important; font-size:15px;">
+<div class="nav-item dropdown btn-group">
+  <!-- LINK que SÍ navega -->
+  <a href="about.html" class="nav-link" style="color:#000 !important; font-size:15px;">
     Nosotros
   </a>
+
+  <!-- BOTÓN que abre el dropdown -->
+  <a class="nav-link dropdown-toggle dropdown-toggle-split"
+     href="#"
+     data-bs-toggle="dropdown"
+     aria-expanded="false"
+     style="color:#000 !important; font-size:15px;">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </a>
+
   <div class="dropdown-menu border-0 shadow-sm">
     <a href="educativeModel.html" class="dropdown-item" style="color:#000 !important; font-size:15px;">
       Modelo educativo
@@ -155,12 +165,21 @@
   </div>
 </div>
 
+
 <!-- Oferta Educativa -->
-<div class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-     style="color:#000 !important; font-size:15px;">
-    Oferta educativa
+<div class="nav-item dropdown btn-group">
+  <a href="ofertaEducativa.html" class="nav-link" style="color:#000 !important; font-size:15px;">
+    Oferta
   </a>
+
+  <a class="nav-link dropdown-toggle dropdown-toggle-split"
+     href="#"
+     data-bs-toggle="dropdown"
+     aria-expanded="false"
+     style="color:#000 !important; font-size:15px;">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </a>
+
   <div class="dropdown-menu border-0 shadow-sm">
     <a href="ofertaEducativa/prescolar.html" class="dropdown-item" style="color:#000 !important; font-size:15px;">
       Preescolar
@@ -171,12 +190,21 @@
   </div>
 </div>
 
+
 <!-- Vida Ocachi -->
-<div class="nav-item dropdown">
-  <a href="schoolLife.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-     style="color:#000 !important; font-size:15px;">
+<div class="nav-item dropdown btn-group">
+  <a href="schoolLife.html" class="nav-link" style="color:#000 !important; font-size:15px;">
     Vida Ocachi
   </a>
+
+  <a class="nav-link dropdown-toggle dropdown-toggle-split"
+     href="#"
+     data-bs-toggle="dropdown"
+     aria-expanded="false"
+     style="color:#000 !important; font-size:15px;">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </a>
+
   <div class="dropdown-menu border-0 shadow-sm">
     <a href="vidaEscolar/actividadesExtra.html" class="dropdown-item" style="color:#000 !important; font-size:15px;">
       Actividades extracurriculares
@@ -192,6 +220,7 @@
     </a>
   </div>
 </div>
+
 
 <!-- Inscripciones -->
 <a href="enrollment.html" class="nav-item nav-link" style="color:#000 !important; font-size:15px;">
@@ -295,14 +324,14 @@
           style="max-width: 700px"
         >
         <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            class="text-primary mb-3 fw-bold fs-2 d-inline-block"
             style="margin-bottom: 60px !important;"
           >
             ¡Hola!
           </h4>
         </div>
         <div class="row g-5">
-<h4 class=" my-3 text-center fw-bold fs-2">
+<h4 class=" my-3 text-center fs-2 quickjump">
   Te damos la bienvenida
 </h4>
 
@@ -334,8 +363,6 @@ Infancias que crecen libres, críticas y felices.
     Agenda una visita y vive la experiencia Ocachi.
   </a>
 </div>
-
-
         </div>
       </div>
     </div>
@@ -607,22 +634,21 @@ Infancias que crecen libres, críticas y felices.
             </div>
           </div>
           <div
-           <div
-            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            </div>
-          </div>
-          <div
-            class="d-inline-block text-center wow fadeIn"
-            data-wow-delay="0.1s"
-          >
-            <a style="background-color: #A81926 !important;"
-              href="#"
-              class="btn btn-primary px-5 py-3 text-white btn-border-radius"
-              >Conoce todos los talleres</a
-            >
-          </div>
+<div class="row mt-5">
+  <div
+    class="col-12 text-center wow fadeIn"
+    data-wow-delay="0.1s"
+  >
+    <a
+      style="background-color: #A81926 !important;"
+      href="#"
+      class="btn btn-primary px-5 py-3 text-white btn-border-radius"
+    >
+      Conoce todos los talleres
+    </a>
+  </div>
+</div>
+
         </div>
       </div>
     </div>
@@ -639,7 +665,9 @@ Infancias que crecen libres, críticas y felices.
           >
             Nuestro equipo
           </h4>
-          <h1 class="mb-5 display-3">Equipo docente</h1>
+                <h1 class="mb-5 fw-bold fs-2 quickjump">
+        Equipo docente
+      </h1> 
         </div>
         <div class="row g-5 justify-content-center">
           <div
@@ -649,7 +677,7 @@ Infancias que crecen libres, críticas y felices.
             <div
               class="team-item border border-primary img-border-radius overflow-hidden"
             >
-              <img src="img/ocachi2025/profesores/carolina2.jpeg" class="img-fluid w-100" alt="" />
+              <img src="img/2026/docentes/carolina.jpg" class="img-fluid w-100" alt="" />
 
               <div class="team-content text-center py-3">
                 <h4 class="text-primary">Carolina de la Rosa</h4>
@@ -664,7 +692,7 @@ Infancias que crecen libres, críticas y felices.
             <div
               class="team-item border border-primary img-border-radius overflow-hidden"
             >
-              <img src="img/ocachi2025/profesores/iris2.jpeg" class="img-fluid w-100" alt="" />
+              <img src="img/2026/docentes/iris.jpg" class="img-fluid w-100" alt="" />
 
               <div class="team-content text-center py-3">
                 <h4 class="text-primary">Iris Morales</h4>
@@ -679,7 +707,7 @@ Infancias que crecen libres, críticas y felices.
             <div
               class="team-item border border-primary img-border-radius overflow-hidden"
             >
-              <img src="img/ocachi2025/profesores/marisela2.jpeg" class="img-fluid w-100" alt="" />
+              <img src="img/2026/docentes/maricela.jpg" class="img-fluid w-100" alt="" />
 
               <div class="team-content text-center py-3">
                 <h4 class="text-primary">Maricela García</h4>
@@ -694,7 +722,7 @@ Infancias que crecen libres, críticas y felices.
             <div
               class="team-item border border-primary img-border-radius overflow-hidden"
             >
-              <img src="img/ocachi2025/profesores/marina2.jpeg" class="img-fluid w-100" alt="" />
+              <img src="img/2026/docentes/mariana.jpg" class="img-fluid w-100" alt="" />
               <div class="team-content text-center py-3">
                 <h4 class="text-primary">Mariana Sadik</h4>
                 <p class="text-muted mb-2">Coordinación de Psicología</p>
@@ -773,6 +801,7 @@ Infancias que crecen libres, críticas y felices.
         </div>
       </div>
     </div>
+ </section>
     <!-- Modal Video -->
     <div
       class="modal fade"

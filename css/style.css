@@ -956,6 +956,10 @@ h6,
   background: #efe4d8; /* beige cálido, como tu imagen */
 }
 
+.active-education-section {
+  background: #E5E5E5; /* beige cálido, como tu imagen */
+}
+
 .service .service-item {
   background: #ffffff; /* Fondo blanco limpio */
   box-shadow: none; /* Sin sombra suave */

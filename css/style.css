@@ -1369,25 +1369,6 @@ h6,
   color: var(--bs-dark) !important;
 }
 
-/* ===== CONTROL DE TAMAÑO DE IMAGEN SIN RECORTE ===== */
-
-/* Que la tarjeta NO se estire al 100% de la columna */
-.team .team-item.team-card {
-  width: fit-content; /* se ajusta al contenido */
-  max-width: 100%;
-  margin: 0 auto; /* centra dentro de la columna */
-}
-
-/* Controla el tamaño real de la imagen (y por ende del contenedor) */
-.team .team-item .team-img {
-  width: 331px; /* AJUSTA (300-360) según tu gusto */
-  height: 338px; /* alto fijo para consistencia */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  background: #fff;
-}
 
 /* Imagen completa, sin recorte */
 .team .team-item .team-img img {

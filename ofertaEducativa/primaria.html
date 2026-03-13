@@ -830,9 +830,9 @@
               el día a día.
             </p>
           </div>
-          <!-- HTML -->
+
+          <!-- Tarjetas de contacto -->
           <div class="row g-4 mb-5 row-equal">
-            <!-- Dirección -->
             <div
               class="col-12 col-md-6 col-lg-4 wow fadeIn"
               data-wow-delay="0.1s"
@@ -859,7 +859,6 @@
               </a>
             </div>
 
-            <!-- Correo -->
             <div
               class="col-12 col-md-6 col-lg-4 wow fadeIn"
               data-wow-delay="0.3s"
@@ -883,7 +882,6 @@
               </a>
             </div>
 
-            <!-- Teléfono / WhatsApp -->
             <div
               class="col-12 col-md-6 col-lg-4 wow fadeIn"
               data-wow-delay="0.5s"
@@ -912,106 +910,92 @@
               display: flex;
               flex-wrap: wrap;
             }
-
-            .row-equal > .col-12,
-            .row-equal > .col-md-6,
-            .row-equal > .col-lg-4 {
+            .row-equal > [class*="col-"] {
               display: flex;
             }
-
             .row-equal .card {
-              flex: 1 1 auto; /* fuerza que las tarjetas ocupen toda la altura disponible */
+              flex: 1 1 auto;
               transition:
                 transform 0.3s ease,
                 box-shadow 0.3s ease;
             }
-
-            /* Hover para indicar interactividad */
             .card-hover:hover {
               transform: translateY(-5px);
               box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
               cursor: pointer;
             }
 
-            /* Quitar subrayado y color de links */
-            .text-decoration-none {
-              color: inherit;
+            /* Wrapper del formulario */
+            .form-iframe-wrapper {
+              background: linear-gradient(
+                160deg,
+                #fce4e4 0%,
+                #f5b8b8 50%,
+                #e88a8a 100%
+              );
+              border-radius: 12px;
+              padding: 12px;
+              width: 100%;
+            }
+
+            .form-iframe-wrapper iframe {
+              width: 100%;
+              height: 780px;
+              border: none;
+              border-radius: 8px;
+              display: block;
+            }
+
+            /* En móvil: escalar el iframe para que el contenido interno se vea completo */
+            @media (max-width: 991.98px) {
+              .form-iframe-wrapper {
+                padding: 8px;
+              }
+
+              .form-iframe-wrapper iframe {
+                /* Hacemos el iframe más ancho que su contenedor y lo escalamos hacia abajo */
+                width: 130%;
+                transform: scale(0.77);
+                transform-origin: top left;
+                height: 900px;
+                margin-bottom: -200px; /* Compensa el espacio extra del scale */
+              }
+            }
+
+            @media (max-width: 575.98px) {
+              .form-iframe-wrapper iframe {
+                width: 140%;
+                transform: scale(0.71);
+                transform-origin: top left;
+                height: 950px;
+                margin-bottom: -280px;
+              }
             }
           </style>
 
           <div class="row g-5">
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
-              <form id="contactForm" novalidate>
-                <!-- Nombre -->
-                <input
-                  type="text"
-                  id="nombre"
-                  class="w-100 form-control py-3 mb-4 border-primary"
-                  placeholder="Nombre"
-                  maxlength="50"
-                  required
-                />
-                <small class="text-danger d-none" id="nombreError"
-                  >El nombre solo puede contener letras y espacios, máximo 50
-                  caracteres.</small
-                >
-
-                <!-- Correo -->
-                <input
-                  type="email"
-                  id="correo"
-                  class="w-100 form-control py-3 mb-4 border-primary"
-                  placeholder="Correo Electrónico"
-                  required
-                />
-                <small class="text-danger d-none" id="correoError"
-                  >Ingrese un correo válido.</small
-                >
-
-                <!-- Celular / WhatsApp -->
-                <input
-                  type="tel"
-                  id="telefono"
-                  class="w-100 form-control py-3 mb-4 border-primary"
-                  placeholder="Celular / Whatsapp"
-                  maxlength="12"
-                  required
-                />
-                <small class="text-danger d-none" id="telefonoError"
-                  >Solo números, máximo 12 dígitos.</small
-                >
-
-                <!-- Programa de interés -->
-                <select
-                  id="programa"
-                  class="w-100 form-control py-3 mb-4 border-primary"
-                  required
-                >
-                  <option value="">Seleccione un programa</option>
-                  <option value="Prescolar">Prescolar</option>
-                  <option value="Primaria">Primaria</option>
-                </select>
-                <small class="text-danger d-none" id="programaError"
-                  >Seleccione un programa.</small
-                >
-
-                <!-- Botón -->
-                <button
-                  class="w-100 btn btn-primary form-control py-3 border-primary text-white bg-primary"
-                  type="submit"
-                >
-                  Enviar
-                </button>
-              </form>
+            <!-- Formulario via iframe -->
+            <div class="col-12 col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+              <div class="form-iframe-wrapper">
+                <iframe
+                  src="https://link.superleads.mx/widget/form/iKlR0LCmOApGv1MDlB9D"
+                  title="Formulario de Contacto Ocachi"
+                  loading="lazy"
+                  scrolling="no"
+                ></iframe>
+              </div>
             </div>
 
-            <script></script>
-
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <div class="border border-primary h-100 rounded">
+            <!-- Mapa -->
+            <div class="col-12 col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <div
+                class="border border-primary rounded"
+                style="min-height: 480px; height: 100%"
+              >
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d963721.2851652568!2d-99.53090328940264!3d19.34591892006946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdde250f6b890d%3A0x5e7aa49dbf6d79c0!2sOcachi%20Nueva%20Escuela!5e0!3m2!1ses-419!2smx!4v1759870376694!5m2!1ses-419!2smx"
                   class="w-100 h-100 rounded"
+                  style="min-height: 400px"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"

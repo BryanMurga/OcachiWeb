@@ -434,7 +434,7 @@
             >
               <div class="image-container shadow-sm flex-grow-1">
                 <img
-                  src="../img/2026/eventos/openSchoolOcachi.jpeg"
+                  src="../img/2026/eventos/openSchoolOcachi2.jpeg"
                   alt="Feria del Libro Ocachi"
                   class="img-fluid w-100 styled-image"
                   style="
@@ -483,54 +483,82 @@
                   VIVE LA EXPERIENCIA OCACHI
                 </h2>
 
-                <!-- Texto más grande y justificado -->
-                <p
-                  style="
-                    color: #7c7c7c;
-                    font-weight: 500;
-                    font-size: 1.35rem;
-                    line-height: 1.85;
-                    margin: 0;
-                    flex: 1;
-                    text-align: justify;
-                  "
-                >
-                  ✨ Elegir escuela es elegir el entorno donde crecerá tu hijo
-                  Sabemos que no es una decisión cualquiera. Por eso queremos
-                  que vivas Ocachi más allá de lo que se puede explicar en
-                  palabras. Recorre nuestros espacios, conoce cómo acompañamos a
-                  cada niño y descubre por qué nuestra comunidad hace la
-                  diferencia. 📅 Este 17 de abril tienes la oportunidad de verlo
-                  por ti mismo 📍 Instalaciones Ocachi
-                </p>
-              </div>
-            </div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 16px; margin-top: 8px; align-items: center;">
+
+  <!-- Fecha -->
+  <div style="display: flex; align-items: center; gap: 14px; width: 100%; justify-content: center;">
+    <div style="
+      width: 48px; height: 48px; border-radius: 12px;
+      background: #a81926; display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0;
+    ">
+      <span style="font-size: 1.3rem;">📅</span>
+    </div>
+    <div>
+      <div style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.1rem; color: #1b1833; text-transform: uppercase; letter-spacing: 0.5px;">
+        Viernes 17 de abril
+      </div>
+      <div style="font-weight: 600; font-size: 1rem; color: #a81926;">
+        4:30 pm
+      </div>
+    </div>
+  </div>
+
+  <!-- Ubicación -->
+  <div style="display: flex; align-items: center; gap: 14px; width: 100%; justify-content: center;">
+    <div style="
+      width: 48px; height: 48px; border-radius: 12px;
+      background: #1b1833; display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0;
+    ">
+      <span style="font-size: 1.3rem;">📍</span>
+    </div>
+    <div>
+      <div style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.1rem; color: #1b1833; text-transform: uppercase; letter-spacing: 0.5px;">
+        Instalaciones Ocachi
+      </div>
+      <div style="font-weight: 500; font-size: 0.92rem; color: #7c7c7c;">
+        Babilonia 5, Analco, 62166 Cuernavaca, Mor.
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón Maps -->
+
+  <a
+  
+    href="https://maps.app.goo.gl/X7ZFnoHNr5dEsLTr5"
+    target="_blank"
+    rel="noopener noreferrer"
+style="
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: 2px solid #1b1833;
+    color: #1b1833 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 0.5px;
+    padding: 12px 28px;
+    border-radius: 100px;
+    text-decoration: none !important;
+    transition: background 0.25s, color 0.25s, transform 0.15s;
+  "
+onmouseover="this.style.setProperty('color', '#fff', 'important'); this.style.background='#1b1833'; this.style.transform='translateY(-2px)';"
+onmouseout="this.style.setProperty('color', '#1b1833', 'important'); this.style.background='transparent'; this.style.transform='translateY(0)';"
+>
+  📍 Ver en Google Maps
+</a>
+
+</div>
 
             <!-- BOTONES ABAJO (misma altura) -->
             <div class="col-12">
               <div
                 class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
               >
-                <!-- Ver galería (izquierda) -->
-
-                <!--
-                <a
-                  href="#galeriaFeriaLibro"
-                  class="btn px-5 py-3 btn-border-radius"
-                  style="
-                    border: 2px solid #1a1833;
-                    color: #1a1833 !important;
-                    background: transparent;
-                    font-weight: 700;
-                    min-width: 220px;
-                  "
-                >
-                  Ver Galería
-                </a>
-
-                -->
-
-                <!-- Agendar cita (derecha) -->
                 <button
                   class="btn px-5 py-3 text-white btn-border-radius btn-apartar-ocachi"
                   onclick="ocachiAbrirModal()"
@@ -635,6 +663,12 @@
               style="cursor: pointer"
             >
               <option value="">Selecciona una opción</option>
+              <option value="NINGUNO DE LOS ANTERIORES">
+                NINGUNO DE LOS ANTERIORES
+              </option>
+              <option value="ALUMNO OCACHI">
+                ALUMNO OCACHI
+              </option>
               <option value="ADRIAN MOLINA">ADRIAN MOLINA</option>
               <option value="ALDAHIR GOMEZ">ALDAHIR GOMEZ</option>
               <option value="ALEJANDRA RIVAS">ALEJANDRA RIVAS</option>
@@ -747,9 +781,6 @@
               <option value="VICENTE DELGADO MENA">VICENTE DELGADO MENA</option>
               <option value="XIMENA MARTÍNEZ">XIMENA MARTÍNEZ</option>
               <option value="YANIN VAZQUEZ">YANIN VAZQUEZ</option>
-              <option value="NINGUNO DE LOS ANTERIORES">
-                NINGUNO DE LOS ANTERIORES
-              </option>
             </select>
             <span class="ocachi-error-msg" id="ocachi-err-invitado"
               >Por favor selecciona una opción.</span

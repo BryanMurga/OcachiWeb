@@ -96,7 +96,7 @@ loginForm.addEventListener("submit", async (e) => {
     const userCredential = await signInWithEmailAndPassword(
       auth,
       emailEl.value.trim(),
-      passwordEl.value.trim()
+      passwordEl.value.trim(),
     );
     currentUser = userCredential.user;
     isAuthenticated = true;
@@ -132,11 +132,11 @@ downloadBtn.addEventListener("click", () => {
 
   // Mostrar confirmación visual
   alert(
-    `Descargando datos de la colección "${selectedCollection}" desde ${selectedRange[0].toLocaleDateString()} hasta ${selectedRange[1].toLocaleDateString()}.`
+    `Descargando datos de la colección "${selectedCollection}" desde ${selectedRange[0].toLocaleDateString()} hasta ${selectedRange[1].toLocaleDateString()}.`,
   );
 
   window.dispatchEvent(
-    new CustomEvent("request-export", { detail: eventDetail })
+    new CustomEvent("request-export", { detail: eventDetail }),
   );
 
   // Restaurar botón

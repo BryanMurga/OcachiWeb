@@ -1,0 +1,564 @@
+/* ── BOTÓN "Aparta tu lugar" ── */
+.btn-apartar-ocachi {
+  display: inline-block;
+  background-color: #1a1833 !important;
+  color: #fff !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  padding: 16px 42px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  min-width: 260px;
+  transition:
+    background 0.25s,
+    transform 0.15s,
+    box-shadow 0.25s;
+  box-shadow: 0 4px 20px rgba(27, 24, 53, 0.25);
+  text-decoration: none;
+}
+
+.btn-apartar-ocachi:hover {
+  background: #a81627 !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(168, 22, 39, 0.35);
+}
+
+/* ── OVERLAY ── */
+.ocachi-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(27, 24, 53, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 12px; /* ✅ reducido para móvil */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.ocachi-modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ── MODAL ── */
+.ocachi-modal {
+  background: #fff;
+  border-radius: 28px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 92vh; /* ✅ limita altura en móvil */
+  overflow-y: auto; /* ✅ scroll interno si el contenido es largo */
+  overflow-x: hidden;
+  transform: translateY(30px) scale(0.97);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+  /* Scrollbar discreta */
+  scrollbar-width: thin;
+  scrollbar-color: #e8e8e8 transparent;
+}
+
+.ocachi-modal::-webkit-scrollbar {
+  width: 4px;
+}
+.ocachi-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ocachi-modal::-webkit-scrollbar-thumb {
+  background: #e8e8e8;
+  border-radius: 4px;
+}
+
+.ocachi-modal-overlay.active .ocachi-modal {
+  transform: translateY(0) scale(1);
+}
+
+/* ── HEADER ── */
+.ocachi-modal-header {
+  background: linear-gradient(135deg, #1b1835 0%, #2d2856 100%);
+  padding: 32px 36px 28px;
+  position: relative;
+  text-align: center;
+}
+
+.ocachi-modal-header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+}
+
+.ocachi-modal-icon {
+  width: 54px;
+  height: 54px;
+  background: #a81627;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  font-size: 1.5rem;
+}
+
+.ocachi-modal-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.ocachi-modal-subtitle {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.85rem;
+}
+
+.ocachi-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  width: 38px; /* ✅ más grande para touch */
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  line-height: 1;
+  touch-action: manipulation; /* ✅ evita delay de 300ms en móvil */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ocachi-modal-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ── BODY / FORM ── */
+.ocachi-modal-body {
+  padding: 28px 36px 36px;
+}
+
+.ocachi-form-group {
+  margin-bottom: 20px;
+}
+
+.ocachi-form-label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1b1835;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.ocachi-form-input {
+  width: 100%;
+  padding: 13px 16px;
+  border: 2px solid #e8e8e8;
+  border-radius: 12px;
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  font-size: 0.97rem;
+  color: #1b1835;
+  background: #fafafa;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
+  outline: none;
+  /* ✅ evita zoom automático en iOS al enfocar inputs */
+  font-size: max(16px, 0.97rem);
+}
+
+.ocachi-form-input:focus {
+  border-color: #a81627;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(168, 22, 39, 0.08);
+}
+
+.ocachi-form-input.is-error {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.08);
+}
+
+.ocachi-form-input.is-valid {
+  border-color: #27ae60;
+}
+
+.ocachi-error-msg {
+  font-size: 0.78rem;
+  color: #e74c3c;
+  margin-top: 5px;
+  display: none;
+}
+
+.ocachi-error-msg.show {
+  display: block;
+}
+
+/* ── ALUMNOS ── */
+.ocachi-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e8e8e8, transparent);
+  margin: 4px 0 20px;
+}
+
+.ocachi-alumnos-label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1b1835;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.ocachi-alumnos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.ocachi-alumno-card {
+  background: #fafafa;
+  border: 2px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 14px 16px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.ocachi-alumno-card:focus-within {
+  border-color: #a81627;
+  box-shadow: 0 0 0 4px rgba(168, 22, 39, 0.08);
+}
+
+.ocachi-alumno-card.is-error {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.08);
+}
+
+.ocachi-alumno-card.is-valid {
+  border-color: #27ae60;
+}
+
+.ocachi-alumno-tag {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ocachi-tag-preescolar {
+  color: #a81627;
+}
+.ocachi-tag-primaria {
+  color: #1b1835;
+}
+
+.ocachi-tag-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ocachi-dot-preescolar {
+  background: #a81627;
+}
+.ocachi-dot-primaria {
+  background: #1b1835;
+}
+
+.ocachi-alumno-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1b1835;
+  outline: none;
+  text-align: center;
+}
+
+.ocachi-alumno-input::-webkit-outer-spin-button,
+.ocachi-alumno-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.ocachi-alumno-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.ocachi-alumno-hint {
+  font-size: 0.68rem;
+  color: #b0b0b0;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.ocachi-alumnos-error {
+  font-size: 0.78rem;
+  color: #e74c3c;
+  margin-top: 6px;
+  display: none;
+}
+
+.ocachi-alumnos-error.show {
+  display: block;
+}
+
+/* ── SUBMIT ── */
+.ocachi-btn-submit {
+  width: 100%;
+  background: linear-gradient(135deg, #a81627 0%, #c71f35 100%);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  padding: 16px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+  transition:
+    transform 0.15s,
+    box-shadow 0.25s,
+    opacity 0.2s;
+  box-shadow: 0 6px 24px rgba(168, 22, 39, 0.35);
+  touch-action: manipulation; /* ✅ sin delay en móvil */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ocachi-btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(168, 22, 39, 0.45);
+}
+
+.ocachi-btn-submit:active {
+  transform: scale(0.98);
+}
+
+.ocachi-btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.ocachi-nota {
+  font-size: 0.75rem;
+  color: #b0b0b0;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ── SUCCESS ── */
+.ocachi-success {
+  display: none;
+  text-align: center;
+  padding: 40px 36px;
+}
+
+.ocachi-success.show {
+  display: block;
+}
+
+.ocachi-success-icon {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #a81627, #c71f35);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 2rem;
+  animation: ocachiPopIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes ocachiPopIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.ocachi-success-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #1b1835;
+  margin-bottom: 10px;
+}
+
+.ocachi-success-text {
+  color: #7c7c7c;
+  font-size: 0.97rem;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+.ocachi-btn-cerrar {
+  background: #1b1835;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 13px 36px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ocachi-btn-cerrar:hover {
+  background: #a81627;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — MÓVIL
+   ══════════════════════════════════════ */
+@media (max-width: 576px) {
+  /* Overlay sin padding lateral para aprovechar pantalla */
+  .ocachi-modal-overlay {
+    padding: 0;
+    align-items: flex-end; /* ✅ modal sube desde abajo en móvil */
+  }
+
+  /* Modal ocupa todo el ancho y tiene bordes solo arriba */
+  .ocachi-modal {
+    border-radius: 24px 24px 0 0;
+    max-height: 95vh;
+    width: 100%;
+  }
+
+  /* Animación de entrada desde abajo */
+  .ocachi-modal-overlay .ocachi-modal {
+    transform: translateY(100%);
+  }
+
+  .ocachi-modal-overlay.active .ocachi-modal {
+    transform: translateY(0);
+  }
+
+  /* Header más compacto */
+  .ocachi-modal-header {
+    padding: 24px 20px 22px;
+  }
+
+  .ocachi-modal-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .ocachi-modal-title {
+    font-size: 1.1rem;
+  }
+
+  .ocachi-modal-subtitle {
+    font-size: 0.8rem;
+  }
+
+  /* Botón cerrar más accesible */
+  .ocachi-modal-close {
+    width: 42px;
+    height: 42px;
+    top: 12px;
+    right: 12px;
+    font-size: 1.2rem;
+  }
+
+  /* Body con menos padding */
+  .ocachi-modal-body {
+    padding: 20px 18px 32px;
+  }
+
+  /* Inputs más cómodos al tacto */
+  .ocachi-form-input {
+    padding: 14px 14px;
+    border-radius: 10px;
+  }
+
+  /* Tarjetas de alumnos más compactas */
+  .ocachi-alumnos-grid {
+    gap: 8px;
+  }
+
+  .ocachi-alumno-card {
+    padding: 12px 10px;
+    border-radius: 12px;
+  }
+
+  .ocachi-alumno-input {
+    font-size: 1.4rem;
+  }
+
+  .ocachi-alumno-tag {
+    font-size: 0.62rem;
+  }
+
+  /* Botón submit fácil de tocar */
+  .ocachi-btn-submit {
+    padding: 18px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+  }
+
+  /* Success más compacto */
+  .ocachi-success {
+    padding: 32px 20px;
+  }
+
+  .ocachi-success-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+  }
+
+  .ocachi-success-title {
+    font-size: 1.25rem;
+  }
+
+  .ocachi-btn-cerrar {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+  }
+}

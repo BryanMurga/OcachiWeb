@@ -8,6 +8,8 @@
     <meta content="" name="description" />
     <link href="../img/logoOcachiIcon.jpg" rel="icon" />
 
+    <link href="../css/modal.css" rel="stylesheet" />
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -419,40 +421,423 @@
         max-width: 800px; /* Limita ancho para que la justificación se vea bien */
       }
     </style>
-    <!-- Welcome Start -->
-    <div class="container-fluid py-5">
-      <div class="container py-5">
-        <div
-          class="mx-auto text-center wow fadeIn"
-          data-wow-delay="0.1s"
-          style="max-width: 700px"
-        >
-          <h4
-            class="text-primary mb-3 fw-bold fs-2 d-inline-block"
-            style="margin-bottom: 60px !important"
-          >
-            La escuela como comunidad viva
-          </h4>
-        </div>
-        <div class="row g-5">
-          <style>
-            .welcome-text {
-              color: #4a4a4a; /* gris más claro */
-            }
-          </style>
-          <h4 class="welcome-text my-3">
-            Cada encuentro en Ocachi es una celebración del aprendizaje
-            compartido. Nuestros eventos reúnen a familias, maestros y
-            estudiantes en torno a la creatividad, la memoria y la comunidad.
-            Son espacios donde el conocimiento se vive, la alegría se contagia y
-            los lazos se fortalecen, recordándonos que la escuela es también un
-            lugar para sentirnos parte de algo más grande.
-          </h4>
+
+    <!-- 📚 OPENSCHOOL Ocachi-->
+    <section id="openschoolOcachi">
+      <div class="container-fluid py-5" style="background-color: #ffffff">
+        <div class="container py-5">
+          <div class="row align-items-stretch g-5 flex-lg-row-reverse">
+            <!-- Columna imagen (DERECHA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <div class="image-container shadow-sm flex-grow-1">
+                <img
+                  src="../img/2026/eventos/openSchoolOcachi.jpeg"
+                  alt="Feria del Libro Ocachi"
+                  class="img-fluid w-100 styled-image"
+                  style="
+                    min-height: 550px;
+                    object-fit: cover;
+                    border-radius: 40px;
+                  "
+                />
+              </div>
+            </div>
+
+            <!-- Columna texto (IZQUIERDA por row-reverse) -->
+            <div
+              class="col-lg-6 wow fadeIn d-flex flex-column"
+              data-wow-delay="0.1s"
+            >
+              <!-- wrapper para ocupar el alto de la imagen -->
+              <div
+                class="d-flex flex-column flex-grow-1"
+                style="min-height: 550px"
+              >
+                <!-- Título arriba del texto -->
+                <h2
+                  style="
+                    color: #a81926;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                    text-align: center;
+                  "
+                >
+                  OPENSCHOOL OCACHI
+                </h2>
+
+                <h2
+                  style="
+                    color: #1b1833;
+                    font-weight: 800;
+                    font-size: 2.35rem;
+                    line-height: 1.1;
+                    margin: 6px 0 22px 0;
+                    text-align: center;
+                  "
+                >
+                  VIVE LA EXPERIENCIA OCACHI
+                </h2>
+
+                <!-- Texto más grande y justificado -->
+                <p
+                  style="
+                    color: #7c7c7c;
+                    font-weight: 500;
+                    font-size: 1.35rem;
+                    line-height: 1.85;
+                    margin: 0;
+                    flex: 1;
+                    text-align: justify;
+                  "
+                >
+                  ✨ Elegir escuela es elegir el entorno donde crecerá tu hijo
+                  Sabemos que no es una decisión cualquiera. Por eso queremos
+                  que vivas Ocachi más allá de lo que se puede explicar en
+                  palabras. Recorre nuestros espacios, conoce cómo acompañamos a
+                  cada niño y descubre por qué nuestra comunidad hace la
+                  diferencia. 📅 Este 17 de abril tienes la oportunidad de verlo
+                  por ti mismo 📍 Instalaciones Ocachi
+                </p>
+              </div>
+            </div>
+
+            <!-- BOTONES ABAJO (misma altura) -->
+            <div class="col-12">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-4"
+              >
+                <!-- Ver galería (izquierda) -->
+
+                <!--
+                <a
+                  href="#galeriaFeriaLibro"
+                  class="btn px-5 py-3 btn-border-radius"
+                  style="
+                    border: 2px solid #1a1833;
+                    color: #1a1833 !important;
+                    background: transparent;
+                    font-weight: 700;
+                    min-width: 220px;
+                  "
+                >
+                  Ver Galería
+                </a>
+
+                -->
+
+                <!-- Agendar cita (derecha) -->
+                <button
+                  class="btn px-5 py-3 text-white btn-border-radius btn-apartar-ocachi"
+                  onclick="ocachiAbrirModal()"
+                >
+                  Aparta tu lugar
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!--
+     3. MODAL (pega justo antes de </body>)
+
+      -->
+    <div
+      class="ocachi-modal-overlay"
+      id="ocachiModalOverlay"
+      onclick="ocachiCerrarAlClick(event)"
+    >
+      <div class="ocachi-modal" id="ocachiModal">
+        <!-- Header -->
+        <div class="ocachi-modal-header">
+          <button
+            class="ocachi-modal-close"
+            onclick="ocachiCerrarModal()"
+            aria-label="Cerrar"
+          >
+            ✕
+          </button>
+          <div class="ocachi-modal-icon">🏫</div>
+          <div class="ocachi-modal-title">REGISTRO OPENSCHOOL</div>
+          <div class="ocachi-modal-subtitle">
+            17 de abril &nbsp;·&nbsp; Instalaciones Ocachi
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="ocachi-modal-body" id="ocachiFormSection">
+          <!-- Nombre -->
+          <div class="ocachi-form-group">
+            <label class="ocachi-form-label" for="ocachi-nombre"
+              >Nombre del tutor</label
+            >
+            <input
+              class="ocachi-form-input"
+              type="text"
+              id="ocachi-nombre"
+              placeholder="Ej. María González"
+              autocomplete="name"
+            />
+            <span class="ocachi-error-msg" id="ocachi-err-nombre"
+              >Por favor ingresa tu nombre completo.</span
+            >
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="ocachi-form-group">
+            <label class="ocachi-form-label" for="ocachi-whatsapp"
+              >WhatsApp</label
+            >
+            <input
+              class="ocachi-form-input"
+              type="tel"
+              id="ocachi-whatsapp"
+              placeholder="Ej. 7771234567"
+              maxlength="15"
+              inputmode="numeric"
+              autocomplete="tel"
+            />
+            <span class="ocachi-error-msg" id="ocachi-err-whatsapp"
+              >Ingresa un número válido (10 dígitos).</span
+            >
+          </div>
+
+          <!-- Correo -->
+          <div class="ocachi-form-group">
+            <label class="ocachi-form-label" for="ocachi-correo"
+              >Correo electrónico</label
+            >
+            <input
+              class="ocachi-form-input"
+              type="email"
+              id="ocachi-correo"
+              placeholder="Ej. maria@correo.com"
+              autocomplete="email"
+            />
+            <span class="ocachi-error-msg" id="ocachi-err-correo"
+              >Ingresa un correo electrónico válido.</span
+            >
+          </div>
+
+          <div class="ocachi-form-group">
+            <label class="ocachi-form-label" for="ocachi-invitado"
+              >¿Quién te invitó?</label
+            >
+            <select
+              class="ocachi-form-input"
+              id="ocachi-invitado"
+              style="cursor: pointer"
+            >
+              <option value="">Selecciona una opción</option>
+              <option value="ADRIAN MOLINA">ADRIAN MOLINA</option>
+              <option value="ALDAHIR GOMEZ">ALDAHIR GOMEZ</option>
+              <option value="ALEJANDRA RIVAS">ALEJANDRA RIVAS</option>
+              <option value="ALMA CECILIA RIVERA AMILPA">
+                ALMA CECILIA RIVERA AMILPA
+              </option>
+              <option value="ANALIT ROMÁN ARCE">ANALIT ROMÁN ARCE</option>
+              <option value="ANGEL BAHENA">ANGEL BAHENA</option>
+              <option value="ANGÉLICA NIETO">ANGÉLICA NIETO</option>
+              <option value="ASLHEY GONZÁLEZ">ASLHEY GONZÁLEZ</option>
+              <option value="AURA MARÍA RUBÍ MORENO">
+                AURA MARÍA RUBÍ MORENO
+              </option>
+              <option value="BRANDON JESÚS FLORES ALBARRAN">
+                BRANDON JESÚS FLORES ALBARRAN
+              </option>
+              <option value="BRYAN MURGA">BRYAN MURGA</option>
+              <option value="CAROLINA DE LA ROSA PRIETO">
+                CAROLINA DE LA ROSA PRIETO
+              </option>
+              <option value="CARLOS SANTIAGO MÉNDEZ VALERO">
+                CARLOS SANTIAGO MÉNDEZ VALERO
+              </option>
+              <option value="CÉSAR SANTA OLALLA">CÉSAR SANTA OLALLA</option>
+              <option value="DANIELA FLORES ACOSTA">
+                DANIELA FLORES ACOSTA
+              </option>
+              <option value="DERIAN MALENI FRAGOZA LAGUNAS">
+                DERIAN MALENI FRAGOZA LAGUNAS
+              </option>
+              <option value="DIANA VILLALOBOS LÓPEZ">
+                DIANA VILLALOBOS LÓPEZ
+              </option>
+              <option value="ESTELA LÓPEZ MONDRAGÓN">
+                ESTELA LÓPEZ MONDRAGÓN
+              </option>
+              <option value="GABRIELA HERNÁNDEZ LÓPEZ">
+                GABRIELA HERNÁNDEZ LÓPEZ
+              </option>
+              <option value="GENARO EDIVALDO CALDERÓN MENA">
+                GENARO EDIVALDO CALDERÓN MENA
+              </option>
+              <option value="IGNACIO CAMPOS GALLARDO">
+                IGNACIO CAMPOS GALLARDO
+              </option>
+              <option value="ILEANA REYES">ILEANA REYES</option>
+              <option value="IRIS MORALES CERVANTES">
+                IRIS MORALES CERVANTES
+              </option>
+              <option value="ISIS CORTES">ISIS CORTES</option>
+              <option value="ISRAEL OSORIO">ISRAEL OSORIO</option>
+              <option value="IVONNE MURILLO SALAS">IVONNE MURILLO SALAS</option>
+              <option value="JAQUELINE MONTOYA ROMÁN">
+                JAQUELINE MONTOYA ROMÁN
+              </option>
+              <option value="JAVER ESPINOSA">JAVER ESPINOSA</option>
+              <option value="JESÚS GUZMÁN">JESÚS GUZMÁN</option>
+              <option value="JESUS TRILLO">JESUS TRILLO</option>
+              <option value="JOB GIOVANNI HERNANDEZ DELGADO">
+                JOB GIOVANNI HERNANDEZ DELGADO
+              </option>
+              <option value="JOSÉ GUILLERMO CUATA OLMOS">
+                JOSÉ GUILLERMO CUATA OLMOS
+              </option>
+              <option value="KAREN MICHAELLE GÓMEZ CERVANTES">
+                KAREN MICHAELLE GÓMEZ CERVANTES
+              </option>
+              <option value="KEREN GOMEZ">KEREN GOMEZ</option>
+              <option value="LAURA ANGÉLICA GALLEGOS ALEMÁN">
+                LAURA ANGÉLICA GALLEGOS ALEMÁN
+              </option>
+              <option value="LAURA DARNELI MÉNDEZ ÁVILA">
+                LAURA DARNELI MÉNDEZ ÁVILA
+              </option>
+              <option value="MARCO SALGADO">MARCO SALGADO</option>
+              <option value="MARIANA SADIK CIENFUEGOS">
+                MARIANA SADIK CIENFUEGOS
+              </option>
+              <option value="MARICELA GARCÍA OCAMPO">
+                MARICELA GARCÍA OCAMPO
+              </option>
+              <option value="MARÍA FERNANDA HERNÁNDEZ CORTÉS">
+                MARÍA FERNANDA HERNÁNDEZ CORTÉS
+              </option>
+              <option value="MARÍA NICOLASA ROJAS CAMACHO">
+                MARÍA NICOLASA ROJAS CAMACHO
+              </option>
+              <option value="MELYSSA MONROY">MELYSSA MONROY</option>
+              <option value="OMAR OFELIO BLANCAS AGUILAR">
+                OMAR OFELIO BLANCAS AGUILAR
+              </option>
+              <option value="PAOLA GONZALEZ BAEZ">PAOLA GONZALEZ BAEZ</option>
+              <option value="RAUL CASTILLEJA">RAUL CASTILLEJA</option>
+              <option value="REDES SOCIALES / CORREO">
+                REDES SOCIALES / CORREO
+              </option>
+              <option value="RENATA JIMÉNEZ">RENATA JIMÉNEZ</option>
+              <option value="ROBERTO TURU AZALI">ROBERTO TURU AZALI</option>
+              <option value="ROXANA DENISS PORCAYO BAHENA">
+                ROXANA DENISS PORCAYO BAHENA
+              </option>
+              <option value="SARA DURÁN">SARA DURÁN</option>
+              <option value="SAÚL MORALES CAMACHO">SAÚL MORALES CAMACHO</option>
+              <option value="TANIA JANET REYES URIBE">
+                TANIA JANET REYES URIBE
+              </option>
+              <option value="VERONICA LILIANA ÁLVAREZ BUSTAMENTE">
+                VERONICA LILIANA ÁLVAREZ BUSTAMENTE
+              </option>
+              <option value="VICENTE DELGADO MENA">VICENTE DELGADO MENA</option>
+              <option value="XIMENA MARTÍNEZ">XIMENA MARTÍNEZ</option>
+              <option value="YANIN VAZQUEZ">YANIN VAZQUEZ</option>
+              <option value="NINGUNO DE LOS ANTERIORES">
+                NINGUNO DE LOS ANTERIORES
+              </option>
+            </select>
+            <span class="ocachi-error-msg" id="ocachi-err-invitado"
+              >Por favor selecciona una opción.</span
+            >
+          </div>
+
+          <div class="ocachi-divider"></div>
+
+          <!-- Alumnos -->
+          <div>
+            <span class="ocachi-alumnos-label"
+              >Número de alumnos que asistirán</span
+            >
+            <div class="ocachi-alumnos-grid">
+              <!-- Preescolar -->
+              <div class="ocachi-alumno-card" id="ocachi-card-preescolar">
+                <div class="ocachi-alumno-tag ocachi-tag-preescolar">
+                  <span class="ocachi-tag-dot ocachi-dot-preescolar"></span>
+                  Preescolar
+                </div>
+                <input
+                  class="ocachi-alumno-input"
+                  type="number"
+                  id="ocachi-preescolar"
+                  min="1"
+                  max="10"
+                  placeholder="0"
+                  inputmode="numeric"
+                />
+                <div class="ocachi-alumno-hint">Rango: 0 – 10</div>
+              </div>
+
+              <!-- Primaria -->
+              <div class="ocachi-alumno-card" id="ocachi-card-primaria">
+                <div class="ocachi-alumno-tag ocachi-tag-primaria">
+                  <span class="ocachi-tag-dot ocachi-dot-primaria"></span>
+                  Primaria
+                </div>
+                <input
+                  class="ocachi-alumno-input"
+                  type="number"
+                  id="ocachi-primaria"
+                  min="1"
+                  max="10"
+                  placeholder="0"
+                  inputmode="numeric"
+                />
+                <div class="ocachi-alumno-hint">Rango: 0 – 10</div>
+              </div>
+            </div>
+            <span class="ocachi-alumnos-error" id="ocachi-err-alumnos">
+              Ingresa al menos 1 alumno (preescolar o primaria) con un valor
+              entre 0 y 10.
+            </span>
+          </div>
+
+          <!-- Submit -->
+          <button
+            class="ocachi-btn-submit"
+            id="ocachiBtnSubmit"
+            onclick="ocachiEnviar()"
+          >
+            APARTAR MI LUGAR &nbsp;→
+          </button>
+          <p class="ocachi-nota">
+            Te contactaremos por WhatsApp para confirmar tu registro.
+          </p>
+        </div>
+        <!-- /ocachi-modal-body -->
+
+        <!-- Estado de éxito -->
+        <div class="ocachi-success" id="ocachiSuccess">
+          <div class="ocachi-success-icon">✓</div>
+          <div class="ocachi-success-title">¡Registro exitoso!</div>
+          <p class="ocachi-success-text">
+            Gracias por apartar tu lugar en el
+            <strong>OpenSchool Ocachi</strong>.<br />
+            Nos comunicaremos contigo por WhatsApp para confirmar tu asistencia.
+            <br />¡Nos vemos el 17 de abril! 🎉
+          </p>
+          <button class="ocachi-btn-cerrar" onclick="ocachiCerrarModal()">
+            Cerrar
+          </button>
+        </div>
+      </div>
+      <!-- /ocachi-modal -->
     </div>
-    <!-- Welcome End -->
-    <!-- Welcome End -->
+    <!-- /ocachi-modal-overlay -->
 
     <!-- 🖥 SECCIÓN COMPUTACIÓN -->
     <section id="activo">
@@ -1641,5 +2026,6 @@
     <script src="../js/main.js"></script>
     <script type="module" src="../js/firebase.js"></script>
     <script type="module" src="../js/contactForm.js"></script>
+    <script type="module" src="../js/modal.js"></script>
   </body>
 </html>

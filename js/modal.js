@@ -177,7 +177,7 @@ import {
       creadoEn: serverTimestamp(),
     };
 
-addDoc(collection(db, "eventoOpenSchool"), registro)      .then(function () {
+addDoc(collection(db, "eventoMercadito"), registro)      .then(function () {
         qs("ocachiFormSection").style.display = "none";
         qs("ocachiSuccess").classList.add("show");
       })
